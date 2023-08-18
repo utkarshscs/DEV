@@ -30,7 +30,7 @@ jobs:
     
     # Install SFDX CLI treu
     - name: Install SFDX CLI
-      run: npm install sfdx-cli --global
+      run: npm install @salesforce/cli --global
 
     # Authorize SF Org
     - name: Authorize SF Org
