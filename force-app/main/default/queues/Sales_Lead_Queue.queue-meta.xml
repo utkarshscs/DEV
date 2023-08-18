@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Sales Lead Queue</name>
+    <queueMembers>
+        <roleAndSubordinates>
+            <roleAndSubordinate>ECS</roleAndSubordinate>
+            <roleAndSubordinate>Food_and_Agriculture</roleAndSubordinate>
+            <roleAndSubordinate>Marketing_Director</roleAndSubordinate>
+            <roleAndSubordinate>Marketing_Executive</roleAndSubordinate>
+            <roleAndSubordinate>Natural_Resources</roleAndSubordinate>
+            <roleAndSubordinate>Sales_Director</roleAndSubordinate>
+            <roleAndSubordinate>Sales_Executive</roleAndSubordinate>
+            <roleAndSubordinate>SCS_Consulting</roleAndSubordinate>
+            <roleAndSubordinate>SCS_Global</roleAndSubordinate>
+            <roleAndSubordinate>SCS_Standard</roleAndSubordinate>
+            <roleAndSubordinate>SCS_Standard_Leadership</roleAndSubordinate>
+            <roleAndSubordinate>SCS_Standard_Technical_Associate</roleAndSubordinate>
+            <roleAndSubordinate>VP_Marketing</roleAndSubordinate>
+            <roleAndSubordinate>Research_and_Development</roleAndSubordinate>
+            <roleAndSubordinate>VP_Sales</roleAndSubordinate>
+        </roleAndSubordinates>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

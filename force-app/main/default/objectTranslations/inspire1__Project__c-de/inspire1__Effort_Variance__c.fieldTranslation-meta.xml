@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Die Differenz zwischen der geplanten Leistung und des tatsächlichen angefallenen Aufwands für das Projekt. Kalkulation: Erreichter Aufwand - tatsächlicher Aufwand</help>
+    <label></label>
+    <name>inspire1__Effort_Variance__c</name>
+</CustomFieldTranslation>

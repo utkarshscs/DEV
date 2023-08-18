@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FFB_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(
+        OR(
+            INCLUDES(Phase_of_Group__c, &quot;Eligibility&quot;),
+            INCLUDES(Phase_of_Group__c, &quot;MS A&quot;)
+        ),
+        INCLUDES(Phase_of_Group__c, &quot;MS B&quot;)
+    ),
+    &quot;IS-FFB, IS-CSPO, IS-CSPKO, IS-CSPK, FFB (ISH)&quot;,
+    IF(
+        OR(
+            INCLUDES(Phase_of_Group__c, &quot;Eligibility&quot;),
+            INCLUDES(Phase_of_Group__c, &quot;MS A&quot;)
+        ),
+        &quot;IS-FFB, IS-CSPO, IS-CSPKO, IS-CSPK&quot;,
+        IF(
+            INCLUDES(Phase_of_Group__c, &quot;MS B&quot;),
+            &quot;FFB (ISH)&quot;,
+            &quot;&quot;
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>FFB Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

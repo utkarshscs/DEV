@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>ECS</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ECS</label>
+        <sharedTo>
+            <group>ECS</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>ECS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Food_and_Agriculture</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Food and Agriculture</label>
+        <sharedTo>
+            <group>Food_and_Agriculture</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Food and Agriculture</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Natural_Resources</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Natural Resources</label>
+        <sharedTo>
+            <group>Natural_Resources</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Natural Resources</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Program_Global_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Program Global Sharing</label>
+        <sharedTo>
+            <group>SCS_Global_Services</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>ECS,Food and Agriculture,Natural Resources,SCS Consulting,Research and Development,Advanced Technical Programs</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Research_and_Development</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Research and Development</label>
+        <sharedTo>
+            <group>Research_and_Development</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Research and Development</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SCS_Consulting</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>SCS Consulting</label>
+        <sharedTo>
+            <group>SCS_Consulting</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>SCS Consulting</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SCS_Standard</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>SCS Standard</label>
+        <sharedTo>
+            <group>SCS_Standard</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>SCS Standard</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

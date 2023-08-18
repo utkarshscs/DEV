@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_change_the_stage_from_CW_CL</fullName>
+    <active>false</active>
+    <description>Cannot_change_the_stage_from_CW\CL</description>
+    <errorConditionFormula>OR(
+AND(
+ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Won&quot;),
+ISCHANGED(StageName),
+OR(
+ISPICKVAL(StageName , &quot;Qualification&quot;),
+ISPICKVAL(StageName , &quot;Needs Analysis&quot;),
+ISPICKVAL(StageName , &quot;Proposal&quot;),
+ISPICKVAL(StageName , &quot;Negotiation&quot;),
+ISPICKVAL(StageName , &quot;Closed Lost&quot;)
+)
+),
+AND(
+ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Lost&quot;),
+ISCHANGED(StageName),
+OR(
+ISPICKVAL(StageName , &quot;Qualification&quot;),
+ISPICKVAL(StageName , &quot;Needs Analysis&quot;),
+ISPICKVAL(StageName , &quot;Proposal&quot;),
+ISPICKVAL(StageName , &quot;Negotiation&quot;),
+ISPICKVAL(StageName , &quot;Closed Won&quot;)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>You cannot change the Stage when the Opportunity is Closed</errorMessage>
+</ValidationRule>

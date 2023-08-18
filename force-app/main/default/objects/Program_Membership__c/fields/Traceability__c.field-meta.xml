@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Traceability__c</fullName>
+    <externalId>false</externalId>
+    <label>Traceability</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Identity Preserved</fullName>
+                <default>false</default>
+                <label>Identity Preserved</label>
+            </value>
+            <value>
+                <fullName>Identity Preserved, Mass Balance</fullName>
+                <default>false</default>
+                <label>Identity Preserved, Mass Balance</label>
+            </value>
+            <value>
+                <fullName>IP &amp; MB</fullName>
+                <default>false</default>
+                <label>IP &amp; MB</label>
+            </value>
+            <value>
+                <fullName>IP &amp; MB &amp; S</fullName>
+                <default>false</default>
+                <label>IP &amp; MB &amp; S</label>
+            </value>
+            <value>
+                <fullName>IP &amp; MB &amp; SG</fullName>
+                <default>false</default>
+                <label>IP &amp; MB &amp; SG</label>
+            </value>
+            <value>
+                <fullName>IP &amp; S</fullName>
+                <default>false</default>
+                <label>IP &amp; S</label>
+            </value>
+            <value>
+                <fullName>IP &amp; SG</fullName>
+                <default>false</default>
+                <label>IP &amp; SG</label>
+            </value>
+            <value>
+                <fullName>Mass Balance</fullName>
+                <default>false</default>
+                <label>Mass Balance</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>NA, Mass Balance</fullName>
+                <default>false</default>
+                <label>NA, Mass Balance</label>
+            </value>
+            <value>
+                <fullName>Identity Preserved, Segregated, Mass Balance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Identity Preserved, Segregated, Mass Balance</label>
+            </value>
+            <value>
+                <fullName>Identiy Preserved</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Identiy Preserved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

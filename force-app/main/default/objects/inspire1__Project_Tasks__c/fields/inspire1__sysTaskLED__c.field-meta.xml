@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__sysTaskLED__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(AND( inspire1__Days_Overdue__c &gt; 0, inspire1__Days_Overdue__c &lt;= $Setup.inspire1__InspirePlannerConfig__c.inspire1__Task_Amber_Days_Overdue__c),&apos;Amber&apos;,
+IF( inspire1__Days_Overdue__c &gt; $Setup.inspire1__InspirePlannerConfig__c.inspire1__Task_Amber_Days_Overdue__c , &apos;Red&apos;, &apos;Green&apos;))</formula>
+    <label>sysTaskLED</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IvoryCoastTravelExpenseDescription__c</fullName>
+    <externalId>false</externalId>
+    <label>Ivory Coast Travel Expense Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Auditor Travel Expenses</fullName>
+                <default>false</default>
+                <label>Auditor Travel Expenses</label>
+            </value>
+            <value>
+                <fullName>Frais de voyage de l’auditeur</fullName>
+                <default>false</default>
+                <label>Frais de voyage de l’auditeur</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

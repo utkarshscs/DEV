@@ -1,0 +1,12 @@
+<aura:component implements="lightning:actionOverride,lightning:hasPageReference" >  
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    <lightning:listView aura:id="listObjects"
+                        objectApiName="Opportunity"
+                        listName="Recent"
+                        rows="50"
+                        showSearchBar="true"
+                        showActionBar="true"
+                        enableInlineEdit="true"
+                        showRowLevelActions="true"
+                        />
+</aura:component>

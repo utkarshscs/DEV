@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Assign_to_ECS_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Assign to ECS Group</label>
+        <sharedTo>
+            <group>ECS</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>ECS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Assign_to_Food_and_Agriculture_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Assign to Food and Agriculture Group</label>
+        <sharedTo>
+            <group>Food_and_Agriculture</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Food and Agriculture</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Assign_to_Natural_Resources_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Assign to Natural Resources Group</label>
+        <sharedTo>
+            <group>Natural_Resources</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Natural Resources</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Assign_to_Research_and_Development_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Assign to Research and Development Group</label>
+        <sharedTo>
+            <group>Research_and_Development</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Research and Development</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Assign_to_SCS_Consulting_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Assign to SCS Consulting Group</label>
+        <sharedTo>
+            <group>SCS_Consulting</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>SCS Consulting</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Assign_to_SCS_Standard_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Assign to SCS Standard Group</label>
+        <sharedTo>
+            <group>SCS_Standard</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>SCS Standard</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Lead_Global_Sharing_Rules</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Lead Global Sharing Rules</label>
+        <sharedTo>
+            <group>SCS_Global_Services</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>ECS,Food and Agriculture,Natural Resources,Research and Development,Advanced Technical Programs</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sharing_Advance_Object_Permission_Lead</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing all the records to Advance Object Permission Group to have RW permission</description>
+        <label>Sharing Advance Object Permission Lead</label>
+        <sharedTo>
+            <group>Sales_super_user</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LastName</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

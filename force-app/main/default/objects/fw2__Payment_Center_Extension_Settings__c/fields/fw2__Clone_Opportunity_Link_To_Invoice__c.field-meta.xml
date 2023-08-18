@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw2__Clone_Opportunity_Link_To_Invoice__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, original opportunity related to a recurring invoice will be cloned per invoice created (except the first invoice)</description>
+    <externalId>false</externalId>
+    <label>Clone Opportunity</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

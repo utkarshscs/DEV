@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MQL__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Added this field as per Case : 00001106</description>
+    <externalId>false</externalId>
+    <label>MQL</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Check_Contact_Role_is_present</name>
+        <label>Check Contact Role is present</label>
+        <locationX>182</locationX>
+        <locationY>671</locationY>
+        <defaultConnector>
+            <targetReference>Update_Check_Contact_Role_Checkbox_to_false</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_Contact_Role</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Contact_Role</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Check_Contact_Role_Checkbox_to_true</targetReference>
+            </connector>
+            <label>Check Contact Role</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Is_Active</name>
+        <label>Check Is Active</label>
+        <locationX>380</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Active</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Trigger_Setting</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Trigger_Setting.Is_Active__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Contact_Role</targetReference>
+            </connector>
+            <label>Is Active</label>
+        </rules>
+    </decisions>
+    <description>This flow updates the field checkcontactrole if Primary Contact Role is present or not which is further used in a validation rule</description>
+    <environments>Default</environments>
+    <interviewLabel>Validate Primary Contact Role on Opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Validate Primary Contact Role on Opportunity</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Contact_Role</name>
+        <label>Get Contact Role</label>
+        <locationX>182</locationX>
+        <locationY>551</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Contact_Role_is_present</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>IsPrimary</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>OpportunityContactRole</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Trigger_Setting</name>
+        <label>Get Trigger Setting</label>
+        <locationX>380</locationX>
+        <locationY>311</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Is_Active</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Validate_Primary_Contact_Role_on_Opportu</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Trigger_Setting__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Check_Contact_Role_Checkbox_to_false</name>
+        <label>Update Check Contact Role Checkbox to false</label>
+        <locationX>314</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>CheckContactRole__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Check_Contact_Role_Checkbox_to_true</name>
+        <label>Update Check Contact Role Checkbox to true</label>
+        <locationX>50</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>CheckContactRole__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Trigger_Setting</targetReference>
+        </connector>
+        <filterFormula>AND(
+OR( 
+	AND(ISCHANGED({!$Record.StageName}), TEXT({!$Record.StageName}) &lt;&gt; &apos;Closed Lost&apos;,TEXT({!$Record.StageName}) &lt;&gt; &apos;Closed Won&apos;,ISPICKVAL({!$Record.Type}, &apos;New Business&apos;))
+	),
+{!$Record.RecordType.DeveloperName} &lt;&gt; &apos;Training opportunity&apos;,
+NOT({!$Permission.Bypass_Permission})
+)</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

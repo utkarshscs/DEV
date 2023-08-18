@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Define el número de días de deslizamiento del proyecto con respecto a los días de referencia iniciales. Un valor negativo significa que el proyecto se ha completado antes de lo previsto.</help>
+    <label></label>
+    <name>inspire1__Slippage__c</name>
+</CustomFieldTranslation>

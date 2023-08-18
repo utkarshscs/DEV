@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Item_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Name of the Checklist Item.</description>
+    <externalId>false</externalId>
+    <label>Item Name</label>
+    <length>2048</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Creation_of_Invoice_Line</fullName>
+    <active>true</active>
+    <description>Prevent creation of invoice line if price book is different from opportunity</description>
+    <errorConditionFormula>AND(
+	ISNEW(),
+        NOT(ISBLANK(fw1__Invoice__c)),
+	NOT(ISBLANK(fw1__Invoice__r.fw1__Opportunity__c)),
+	NOT(ISBLANK(fw1__Price_Book__c)),
+	fw1__Invoice__r.fw1__Opportunity__r.Pricebook2Id &lt;&gt; fw1__Price_Book__c,
+	OR(
+		fw1__Invoice__r.fw1__Opportunity__r.Record_Type_Name__c &lt;&gt; &apos;Bundle_Opportunity&apos;,
+		AND(
+			fw1__Invoice__r.fw1__Opportunity__r.Record_Type_Name__c = &apos;Bundle_Opportunity&apos;,
+			NOT(ISBLANK(fw1__Invoice__r.fw1__Opportunity__r.Programc__c))
+		)
+	)	
+)</errorConditionFormula>
+    <errorMessage>Selected pricebook is different from the opportunity pricebook</errorMessage>
+</ValidationRule>

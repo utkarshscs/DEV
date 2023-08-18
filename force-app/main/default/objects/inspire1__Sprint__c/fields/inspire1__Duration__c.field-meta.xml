@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Duration__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines duration of Sprint or timebox.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Define duration of Sprint or timebox.</inlineHelpText>
+    <label>Duration</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 Week</fullName>
+                <default>false</default>
+                <label>1 Week</label>
+            </value>
+            <value>
+                <fullName>2 Weeks</fullName>
+                <default>false</default>
+                <label>2 Weeks</label>
+            </value>
+            <value>
+                <fullName>3 Weeks</fullName>
+                <default>false</default>
+                <label>3 Weeks</label>
+            </value>
+            <value>
+                <fullName>4 Weeks</fullName>
+                <default>false</default>
+                <label>4 Weeks</label>
+            </value>
+            <value>
+                <fullName>Custom</fullName>
+                <default>false</default>
+                <label>Custom</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

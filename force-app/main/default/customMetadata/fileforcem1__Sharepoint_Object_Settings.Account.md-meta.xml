@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Account</label>
+    <protected>false</protected>
+    <values>
+        <field>fileforcem1__Allow_initial_folder_creation__c</field>
+        <value xsi:type="xsd:string">True</value>
+    </values>
+    <values>
+        <field>fileforcem1__Community_Settings__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>fileforcem1__Custom_Flow_Actions__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>fileforcem1__Disable_File_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>fileforcem1__Disable_Folder_Delete__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>fileforcem1__Disable_Rename__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>fileforcem1__Document_Library_Id__c</field>
+        <value xsi:type="xsd:string">b!vKbGSUB0WEida4VFiuoy7jDtTifZcQhNtsaBn7pvVdy2ApwPWZy1S6ma7RSe04ov</value>
+    </values>
+    <values>
+        <field>fileforcem1__Folder_Custom_Field_Default_Value__c</field>
+        <value xsi:type="xsd:string">SalesforceId:[Id]</value>
+    </values>
+    <values>
+        <field>fileforcem1__Folder_Name_Field_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>fileforcem1__Folder_Name_Field__c</field>
+        <value xsi:type="xsd:string">Name</value>
+    </values>
+    <values>
+        <field>fileforcem1__Initial_Folder_Structure__c</field>
+        <value xsi:type="xsd:string">{&quot;Folders&quot;:[{&quot;Name&quot;:&quot;Opportunities&quot;}]}</value>
+    </values>
+    <values>
+        <field>fileforcem1__Named_Credential__c</field>
+        <value xsi:type="xsd:string">sFilesConnection</value>
+    </values>
+    <values>
+        <field>fileforcem1__Permissions__c</field>
+        <value xsi:type="xsd:string">CreateFolders,RenameFolders,DeleteFolders,UploadFiles,RenameFiles,DownloadFiles,DeleteFiles,OpenSharePoint,SetupRecord,SetupSubfolders,AutoSetup</value>
+    </values>
+    <values>
+        <field>fileforcem1__Root_Folder_Id__c</field>
+        <value xsi:type="xsd:string">01ZEWS4TY7XK3KSWZHQVC2ZYJJNB5PNQSH</value>
+    </values>
+    <values>
+        <field>fileforcem1__Run_Custom_Security_Per_Line__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>fileforcem1__Salesforce_Object_Id_Field__c</field>
+        <value xsi:type="xsd:string">SalesforceId</value>
+    </values>
+    <values>
+        <field>fileforcem1__Salesforce_Object__c</field>
+        <value xsi:type="xsd:string">Account</value>
+    </values>
+    <values>
+        <field>fileforcem1__Security_Method_Field__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>fileforcem1__SharePoint_Custom_Columns__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>fileforcem1__SharePoint_Folder_Id_Override__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>fileforcem1__Sharepoint_Folder_Id_Field__c</field>
+        <value xsi:type="xsd:string">SharePoint_Folder_Id__c</value>
+    </values>
+    <values>
+        <field>fileforcem1__Site_Id__c</field>
+        <value xsi:type="xsd:string">scsglobalservices.sharepoint.com,49c6a6bc-7440-4858-9d6b-85458aea32ee,274eed30-71d9-4d08-b6c6-819fba6f55dc</value>
+    </values>
+    <values>
+        <field>fileforcem1__Upload_Url_Parameters__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

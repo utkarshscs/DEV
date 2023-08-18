@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Stop_Watch_Custom_Fields</fullName>
+    <description>Add fields to display in Stop Watch lightning component.</description>
+    <displayedFields>
+        <field>inspire1__Work_Description__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Stop Watch Custom Fields</label>
+</FieldSet>

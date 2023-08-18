@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Refer_SCS_Scheme_Number__c</name>
+    <picklistValues>
+        <masterLabel>SCS Certification Number</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheme Certification Number</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

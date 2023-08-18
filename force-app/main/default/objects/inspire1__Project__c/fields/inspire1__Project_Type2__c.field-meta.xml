@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Project_Type2__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines the type of project methodology to use.  This will determine the components and functionality available to users.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Defines the type of project methodology to use.  This will determine the user experience and functionality available to users.</inlineHelpText>
+    <label>Project Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>inspire1__Project_Type</valueSetName>
+    </valueSet>
+</CustomField>

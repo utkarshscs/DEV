@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Grupo de proyecto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Grupo de proyecto</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Grupo de proyecto Number</nameFieldLabel>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>inspire1__Prevent_User_and_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>inspire1__User_or_Contact_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

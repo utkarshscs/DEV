@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Master_Decision</name>
+        <label>Master Decision</label>
+        <locationX>446</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_QB_and_nest_not_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Program_QB_Class_Id__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Program_Nest_Unit_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_QB_Class_Id_and_Nest_Id_On_Invoice</targetReference>
+            </connector>
+            <label>Is QB and nest not Blank ?</label>
+        </rules>
+        <rules>
+            <name>Is_QB_Blank_and_Nest_Not_blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Program_QB_Class_Id__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Program_Nest_Unit_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Nest_Id_On_Invoice</targetReference>
+            </connector>
+            <label>Is QB Blank and Nest Not blank</label>
+        </rules>
+        <rules>
+            <name>Is_QB_not_blank_and_Nest_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Program_QB_Class_Id__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Program_Nest_Unit_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_QB_Class_Id_On_Invoice</targetReference>
+            </connector>
+            <label>Is QB not blank and Nest Blank</label>
+        </rules>
+    </decisions>
+    <description>removed : from name</description>
+    <environments>Default</environments>
+    <interviewLabel>Invoice Line -: Update QB Class Id On Bundle Invoice {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Invoice Line - Update QB Class Id On Bundle Invoice</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Nest_Id_On_Invoice</name>
+        <label>Update Nest Id On Invoice</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Bundle_Nest_Unit_ID__c</field>
+            <value>
+                <elementReference>$Record.Program_Nest_Unit_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.fw1__Invoice__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_QB_Class_Id_and_Nest_Id_On_Invoice</name>
+        <label>Update QB Class Id and Nest Id On Invoice</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Bundle_Nest_Unit_ID__c</field>
+            <value>
+                <elementReference>$Record.Program_Nest_Unit_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Bundle_QB_Class_Id__c</field>
+            <value>
+                <elementReference>$Record.Program_QB_Class_Id__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.fw1__Invoice__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_QB_Class_Id_On_Invoice</name>
+        <label>Update QB Class Id On Invoice</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Bundle_QB_Class_Id__c</field>
+            <value>
+                <elementReference>$Record.Program_QB_Class_Id__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.fw1__Invoice__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Master_Decision</targetReference>
+        </connector>
+        <filterFormula>AND( {!$Record.fw1__Invoice__r.fw1__Opportunity__r.RecordType.DeveloperName} = &apos;Bundle_Opportunity&apos; , 
+ISBLANK( {!$Record.fw1__Invoice__r.fw1__Opportunity__r.Programc__c} ) ,
+OR(ISBLANK( {!$Record.fw1__Invoice__r.Bundle_QB_Class_Id__c}),ISBLANK( {!$Record.fw1__Invoice__r.Bundle_Nest_Unit_ID__c}))
+)</filterFormula>
+        <object>fw1__Invoice_Line__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

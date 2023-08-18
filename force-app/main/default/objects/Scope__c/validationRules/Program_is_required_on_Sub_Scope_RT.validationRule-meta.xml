@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_is_required_on_Sub_Scope_RT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISNEW() ,  RecordType.DeveloperName = &apos;Sub_Scope&apos;,   ISBLANK(Program__c) )</errorConditionFormula>
+    <errorMessage>Program cannot be blank.</errorMessage>
+</ValidationRule>

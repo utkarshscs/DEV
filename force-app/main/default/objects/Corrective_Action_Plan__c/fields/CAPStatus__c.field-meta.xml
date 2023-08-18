@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAPStatus__c</fullName>
+    <description>This field will also work NC Status</description>
+    <externalId>false</externalId>
+    <label>CAP Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <label>No Response</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Pending Customer</fullName>
+                <default>false</default>
+                <label>Pending Customer</label>
+            </value>
+            <value>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+                <label>Resolved</label>
+            </value>
+            <value>
+                <fullName>Unresolved</fullName>
+                <default>false</default>
+                <label>Unresolved</label>
+            </value>
+            <value>
+                <fullName>New Information Requested</fullName>
+                <default>false</default>
+                <label>New Information Requested</label>
+            </value>
+            <value>
+                <fullName>Closed on Contingency</fullName>
+                <default>false</default>
+                <label>Closed on Contingency</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

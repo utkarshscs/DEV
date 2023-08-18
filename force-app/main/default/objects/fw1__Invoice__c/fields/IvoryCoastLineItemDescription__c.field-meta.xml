@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IvoryCoastLineItemDescription__c</fullName>
+    <externalId>false</externalId>
+    <label>Ivory Coast Line Item Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rainforest Alliance Grower Group – Global audit cost</fullName>
+                <default>false</default>
+                <label>Rainforest Alliance Grower Group – Global audit cost</label>
+            </value>
+            <value>
+                <fullName>Groupe de producteur Rainforest Alliance – Frais d’audit global</fullName>
+                <default>false</default>
+                <label>Groupe de producteur Rainforest Alliance – Frais d’audit global</label>
+            </value>
+            <value>
+                <fullName>Rainforest Alliance Supply chain – Global audit cost</fullName>
+                <default>false</default>
+                <label>Rainforest Alliance Supply chain – Global audit cost</label>
+            </value>
+            <value>
+                <fullName>Chaîne d’approvisionnement Rainforest Alliance – Frais d’audit global</fullName>
+                <default>false</default>
+                <label>Chaîne d’approvisionnement Rainforest Alliance – Frais d’audit global</label>
+            </value>
+            <value>
+                <fullName>FTUSA – APS: Global audit cost</fullName>
+                <default>false</default>
+                <label>FTUSA – APS: Global audit cost</label>
+            </value>
+            <value>
+                <fullName>FTUSA – APS: Frais d’audit global</fullName>
+                <default>false</default>
+                <label>FTUSA – APS: Frais d’audit global</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

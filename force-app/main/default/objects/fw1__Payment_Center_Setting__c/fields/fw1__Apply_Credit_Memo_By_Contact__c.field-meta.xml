@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Apply_Credit_Memo_By_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>For users who use contacts as their primary customers (as opposed to accounts), use this flag to apply credit memos by contact.</description>
+    <externalId>false</externalId>
+    <label>Apply Credit Memo By Contact</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Enable_More_Payment_Methods__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>You can add (or remove) more payment options. Go to Setup | Objects | Payment | Additional Payment Method, more information here: http://kulturra.com/knowledge-base/add-payment-method/.
+
+eCheck (or ACH) is enabled at the processor level</inlineHelpText>
+    <label>More Payment Methods</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

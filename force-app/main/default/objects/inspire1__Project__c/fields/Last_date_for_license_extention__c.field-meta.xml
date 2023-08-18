@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_date_for_license_extention__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>IF SUBMIT FOR EXT, Update Cert Exp Date</inlineHelpText>
+    <label>Last date for license extention</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

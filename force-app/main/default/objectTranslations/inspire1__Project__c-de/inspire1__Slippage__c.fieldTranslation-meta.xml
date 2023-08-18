@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Beschreibt die Anzahl der Tage, um die sich das Projekt gegenüber der Baseline verschoben hat.  Ein negativer Wert bedeutet dass Projekt wurde frühzeitig beendet.&quot;</help>
+    <label></label>
+    <name>inspire1__Slippage__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Beschreibt das tatsächliche Startdatum des Projektes. Dies wird durch das Startdatum der ersten Aufgabe angezeigt.</help>
+    <label></label>
+    <name>inspire1__Actual_Start_Date__c</name>
+</CustomFieldTranslation>

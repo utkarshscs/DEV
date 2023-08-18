@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Site_Of_System_User_Certified_As__c</name>
+    <picklistValues>
+        <masterLabel>Collecting Point</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Point of Origin</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trader with Storage</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouse and Storage Facilities</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

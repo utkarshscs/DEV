@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Do_Not_Apply_Partial_Payments_To_Lines__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Do Not Apply Partial Payments To Invoice Lines</inlineHelpText>
+    <label>Do Not Apply Partial Payments To Lines</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

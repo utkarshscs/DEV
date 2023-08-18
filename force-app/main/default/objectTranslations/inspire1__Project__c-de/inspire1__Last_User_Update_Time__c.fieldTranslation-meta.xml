@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Gibt das Datum/Uhrzeit an, zu dem der letzte Benutzer eine Aktualisierung des Projekts vorgenommen hat.&quot;</help>
+    <label></label>
+    <name>inspire1__Last_User_Update_Time__c</name>
+</CustomFieldTranslation>

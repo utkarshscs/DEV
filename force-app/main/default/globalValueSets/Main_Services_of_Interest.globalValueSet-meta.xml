@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advanced Technical Programs</fullName>
+        <default>false</default>
+        <label>Advanced Technical Programs</label>
+    </customValue>
+    <customValue>
+        <fullName>Alliance for Responsible Mining</fullName>
+        <default>false</default>
+        <label>Alliance for Responsible Mining</label>
+    </customValue>
+    <customValue>
+        <fullName>American Tree Farm System</fullName>
+        <default>false</default>
+        <label>American Tree Farm System</label>
+    </customValue>
+    <customValue>
+        <fullName>ASC Aquaculture</fullName>
+        <default>false</default>
+        <label>ASC Aquaculture</label>
+    </customValue>
+    <customValue>
+        <fullName>ASC Aquaculture Production</fullName>
+        <default>false</default>
+        <label>ASC Aquaculture Production</label>
+    </customValue>
+    <customValue>
+        <fullName>Assure Certified</fullName>
+        <default>false</default>
+        <label>Assure Certified</label>
+    </customValue>
+    <customValue>
+        <fullName>Assure Certified Private Label</fullName>
+        <default>false</default>
+        <label>Assure Certified Private Label</label>
+    </customValue>
+    <customValue>
+        <fullName>Bee Better Certified</fullName>
+        <default>false</default>
+        <label>Bee Better Certified</label>
+    </customValue>
+    <customValue>
+        <fullName>Better Cotton Initiative (BCI)</fullName>
+        <default>false</default>
+        <label>Better Cotton Initiative (BCI)</label>
+    </customValue>
+    <customValue>
+        <fullName>BIFMA level</fullName>
+        <default>false</default>
+        <label>BIFMA level</label>
+    </customValue>
+    <customValue>
+        <fullName>Biodegradable</fullName>
+        <default>false</default>
+        <label>Biodegradable</label>
+    </customValue>
+    <customValue>
+        <fullName>Biofuels</fullName>
+        <default>false</default>
+        <label>Biofuels</label>
+    </customValue>
+    <customValue>
+        <fullName>Bonsucro</fullName>
+        <default>false</default>
+        <label>Bonsucro</label>
+    </customValue>
+    <customValue>
+        <fullName>Bonsucro Chain of Custody Certification</fullName>
+        <default>false</default>
+        <label>Bonsucro Chain of Custody Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Bonsucro EU Chain of Custody Certification</fullName>
+        <default>false</default>
+        <label>Bonsucro EU Chain of Custody Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Bonsucro EU Production Certification</fullName>
+        <default>false</default>
+        <label>Bonsucro EU Production Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Bonsucro Production Certification</fullName>
+        <default>false</default>
+        <label>Bonsucro Production Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Bonsucro Smallholder Certification</fullName>
+        <default>false</default>
+        <label>Bonsucro Smallholder Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>BRCGS</fullName>
+        <default>false</default>
+        <label>BRCGS</label>
+    </customValue>
+    <customValue>
+        <fullName>cal COMPlint</fullName>
+        <default>false</default>
+        <label>cal COMPlint</label>
+    </customValue>
+    <customValue>
+        <fullName>CanopyStyle</fullName>
+        <default>false</default>
+        <label>CanopyStyle</label>
+    </customValue>
+    <customValue>
+        <fullName>Carbon Footprint Verification</fullName>
+        <default>false</default>
+        <label>Carbon Footprint Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>Carbon Neutral</fullName>
+        <default>false</default>
+        <label>Carbon Neutral</label>
+    </customValue>
+    <customValue>
+        <fullName>Carbon Offset Verification</fullName>
+        <default>false</default>
+        <label>Carbon Offset Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>Carbon Offset Verification - Forestry</fullName>
+        <default>false</default>
+        <label>Carbon Offset Verification - Forestry</label>
+    </customValue>
+    <customValue>
+        <fullName>Carbon Offset Verification - Other</fullName>
+        <default>false</default>
+        <label>Carbon Offset Verification - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>CDP Consulting</fullName>
+        <default>false</default>
+        <label>CDP Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Clearview</fullName>
+        <default>false</default>
+        <label>Clearview</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting</fullName>
+        <default>false</default>
+        <label>Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Footprint Calculation</fullName>
+        <default>false</default>
+        <label>Corporate Footprint Calculation</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Sustainability</fullName>
+        <default>false</default>
+        <label>Corporate Sustainability</label>
+    </customValue>
+    <customValue>
+        <fullName>Costco GMP</fullName>
+        <default>false</default>
+        <label>Costco GMP</label>
+    </customValue>
+    <customValue>
+        <fullName>CSS Consulting</fullName>
+        <default>false</default>
+        <label>CSS Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom Services</fullName>
+        <default>false</default>
+        <label>Custom Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy and Animal Welfare</fullName>
+        <default>false</default>
+        <label>Dairy and Animal Welfare</label>
+    </customValue>
+    <customValue>
+        <fullName>Diamond Producer accreditation</fullName>
+        <default>false</default>
+        <label>Diamond Producer accreditation</label>
+    </customValue>
+    <customValue>
+        <fullName>Diamond Retailer Accreditation</fullName>
+        <default>false</default>
+        <label>Diamond Retailer Accreditation</label>
+    </customValue>
+    <customValue>
+        <fullName>Diamond Supplier Certification</fullName>
+        <default>false</default>
+        <label>Diamond Supplier Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>EcoEnclose REMOVE</fullName>
+        <default>false</default>
+        <label>EcoEnclose REMOVE</label>
+    </customValue>
+    <customValue>
+        <fullName>ECS</fullName>
+        <default>false</default>
+        <label>ECS</label>
+    </customValue>
+    <customValue>
+        <fullName>ECS Archive</fullName>
+        <default>false</default>
+        <label>ECS Archive</label>
+    </customValue>
+    <customValue>
+        <fullName>ECS Other REMOVE</fullName>
+        <default>false</default>
+        <label>ECS Other REMOVE</label>
+    </customValue>
+    <customValue>
+        <fullName>ECV - System Allocation</fullName>
+        <default>false</default>
+        <label>ECV - System Allocation</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental Claims Validation</fullName>
+        <default>false</default>
+        <label>Environmental Claims Validation</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmentally Preferable Product (EPP)</fullName>
+        <default>false</default>
+        <label>Environmentally Preferable Product (EPP)</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental Product Declarations (EPD)</fullName>
+        <default>false</default>
+        <label>Environmental Product Declarations (EPD)</label>
+    </customValue>
+    <customValue>
+        <fullName>EPD</fullName>
+        <default>false</default>
+        <label>EPD</label>
+    </customValue>
+    <customValue>
+        <fullName>Equitable Food Initiative (EFI)</fullName>
+        <default>false</default>
+        <label>Equitable Food Initiative (EFI)</label>
+    </customValue>
+    <customValue>
+        <fullName>ESG Certification, Food</fullName>
+        <default>false</default>
+        <label>ESG Certification, Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Facts (NSF336)</fullName>
+        <default>false</default>
+        <label>Facts (NSF336)</label>
+    </customValue>
+    <customValue>
+        <fullName>Fairmined Gold</fullName>
+        <default>false</default>
+        <label>Fairmined Gold</label>
+    </customValue>
+    <customValue>
+        <fullName>Fair Trade USA</fullName>
+        <default>false</default>
+        <label>Fair Trade USA</label>
+    </customValue>
+    <customValue>
+        <fullName>FEMB Level</fullName>
+        <default>false</default>
+        <label>FEMB Level</label>
+    </customValue>
+    <customValue>
+        <fullName>Flooring</fullName>
+        <default>false</default>
+        <label>Flooring</label>
+    </customValue>
+    <customValue>
+        <fullName>Floorscore</fullName>
+        <default>false</default>
+        <label>Floorscore</label>
+    </customValue>
+    <customValue>
+        <fullName>FloorScore Private Label</fullName>
+        <default>false</default>
+        <label>FloorScore Private Label</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Safety</fullName>
+        <default>false</default>
+        <label>Food Safety</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Safety Ag</fullName>
+        <default>false</default>
+        <label>Food Safety Ag</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Safety Consulting</fullName>
+        <default>false</default>
+        <label>Food Safety Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Safety Facility</fullName>
+        <default>false</default>
+        <label>Food Safety Facility</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Safety Training</fullName>
+        <default>false</default>
+        <label>Food Safety Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Forest Management</fullName>
+        <default>false</default>
+        <label>Forest Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Forest Management Consulting Services</fullName>
+        <default>false</default>
+        <label>Forest Management Consulting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Forest Products Chain of Custody</fullName>
+        <default>false</default>
+        <label>Forest Products Chain of Custody</label>
+    </customValue>
+    <customValue>
+        <fullName>Formaldehyde Emissions Regulations (CARB/EPA Rule)</fullName>
+        <default>false</default>
+        <label>Formaldehyde Emissions Regulations (CARB/EPA Rule)</label>
+    </customValue>
+    <customValue>
+        <fullName>FSC Chain of Custody</fullName>
+        <default>false</default>
+        <label>FSC Chain of Custody</label>
+    </customValue>
+    <customValue>
+        <fullName>FSC Forest Management (FSC-FM)</fullName>
+        <default>false</default>
+        <label>FSC Forest Management (FSC-FM)</label>
+    </customValue>
+    <customValue>
+        <fullName>FSSC 22000</fullName>
+        <default>false</default>
+        <label>FSSC 22000</label>
+    </customValue>
+    <customValue>
+        <fullName>GAP</fullName>
+        <default>false</default>
+        <label>GAP</label>
+    </customValue>
+    <customValue>
+        <fullName>GLOBALG.A.P.</fullName>
+        <default>false</default>
+        <label>GLOBALG.A.P.</label>
+    </customValue>
+    <customValue>
+        <fullName>Gluten-Free</fullName>
+        <default>false</default>
+        <label>Gluten-Free</label>
+    </customValue>
+    <customValue>
+        <fullName>GMP/GDP</fullName>
+        <default>false</default>
+        <label>GMP/GDP</label>
+    </customValue>
+    <customValue>
+        <fullName>GMP/GDP - AG</fullName>
+        <default>false</default>
+        <label>GMP/GDP - AG</label>
+    </customValue>
+    <customValue>
+        <fullName>GMP AG</fullName>
+        <default>false</default>
+        <label>GMP AG</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Retail</fullName>
+        <default>false</default>
+        <label>Green Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Retail/Green Ecommerce</fullName>
+        <default>false</default>
+        <label>Green Retail/Green Ecommerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Squared</fullName>
+        <default>false</default>
+        <label>Green Squared</label>
+    </customValue>
+    <customValue>
+        <fullName>HACCP Verification</fullName>
+        <default>false</default>
+        <label>HACCP Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>HPD Flooring</fullName>
+        <default>false</default>
+        <label>HPD Flooring</label>
+    </customValue>
+    <customValue>
+        <fullName>IAQ - Building Materials (IAQ-BM)</fullName>
+        <default>false</default>
+        <label>IAQ - Building Materials (IAQ-BM)</label>
+    </customValue>
+    <customValue>
+        <fullName>IAQ - Furniture (IAQ-FURN)</fullName>
+        <default>false</default>
+        <label>IAQ - Furniture (IAQ-FURN)</label>
+    </customValue>
+    <customValue>
+        <fullName>Indoor Advantage (IAQ)</fullName>
+        <default>false</default>
+        <label>Indoor Advantage (IAQ)</label>
+    </customValue>
+    <customValue>
+        <fullName>IRMA</fullName>
+        <default>false</default>
+        <label>IRMA</label>
+    </customValue>
+    <customValue>
+        <fullName>ISCC</fullName>
+        <default>false</default>
+        <label>ISCC</label>
+    </customValue>
+    <customValue>
+        <fullName>ISCC CORSIA</fullName>
+        <default>false</default>
+        <label>ISCC CORSIA</label>
+    </customValue>
+    <customValue>
+        <fullName>ISCC EU</fullName>
+        <default>false</default>
+        <label>ISCC EU</label>
+    </customValue>
+    <customValue>
+        <fullName>ISCC PLUS</fullName>
+        <default>false</default>
+        <label>ISCC PLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>ISO 14001/45001 Manufacturing</fullName>
+        <default>false</default>
+        <label>ISO 14001/45001 Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>ISO 22000 Certification</fullName>
+        <default>false</default>
+        <label>ISO 22000 Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Jewelry &amp; Metals</fullName>
+        <default>false</default>
+        <label>Jewelry &amp; Metals</label>
+    </customValue>
+    <customValue>
+        <fullName>Jewelry &amp; Minerals</fullName>
+        <default>false</default>
+        <label>Jewelry &amp; Minerals</label>
+    </customValue>
+    <customValue>
+        <fullName>LBMA and LPPM</fullName>
+        <default>false</default>
+        <label>LBMA and LPPM</label>
+    </customValue>
+    <customValue>
+        <fullName>LCA Consulting</fullName>
+        <default>false</default>
+        <label>LCA Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Lead Safe Paint</fullName>
+        <default>false</default>
+        <label>Lead Safe Paint</label>
+    </customValue>
+    <customValue>
+        <fullName>Legal Harvest Verification</fullName>
+        <default>false</default>
+        <label>Legal Harvest Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Cycle Assessment (LCA)</fullName>
+        <default>false</default>
+        <label>Life Cycle Assessment (LCA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Cycle Services</fullName>
+        <default>false</default>
+        <label>Life Cycle Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Living Product Challenge (LPC) (Remove)</fullName>
+        <default>false</default>
+        <label>Living Product Challenge (LPC) (Remove)</label>
+    </customValue>
+    <customValue>
+        <fullName>London Bullion Market Association</fullName>
+        <default>false</default>
+        <label>London Bullion Market Association</label>
+    </customValue>
+    <customValue>
+        <fullName>London Platinum and Palladium Market Association</fullName>
+        <default>false</default>
+        <label>London Platinum and Palladium Market Association</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Carbon Fuel Standard (LCFS)</fullName>
+        <default>false</default>
+        <label>Low Carbon Fuel Standard (LCFS)</label>
+    </customValue>
+    <customValue>
+        <fullName>LPC Declare</fullName>
+        <default>false</default>
+        <label>LPC Declare</label>
+    </customValue>
+    <customValue>
+        <fullName>Mandatory Reporting Requirements(MCR)</fullName>
+        <default>false</default>
+        <label>Mandatory Reporting Requirements(MCR)</label>
+    </customValue>
+    <customValue>
+        <fullName>Materiality</fullName>
+        <default>false</default>
+        <label>Materiality</label>
+    </customValue>
+    <customValue>
+        <fullName>Materials</fullName>
+        <default>false</default>
+        <label>Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Materials Ingredient Declarations (HPD)</fullName>
+        <default>false</default>
+        <label>Materials Ingredient Declarations (HPD)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mining</fullName>
+        <default>false</default>
+        <label>Mining</label>
+    </customValue>
+    <customValue>
+        <fullName>MSC Chain of Custody</fullName>
+        <default>false</default>
+        <label>MSC Chain of Custody</label>
+    </customValue>
+    <customValue>
+        <fullName>MSC Fisheries</fullName>
+        <default>false</default>
+        <label>MSC Fisheries</label>
+    </customValue>
+    <customValue>
+        <fullName>NAF/NAUF</fullName>
+        <default>false</default>
+        <label>NAF/NAUF</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-GMO</fullName>
+        <default>false</default>
+        <label>Non-GMO</label>
+    </customValue>
+    <customValue>
+        <fullName>NR</fullName>
+        <default>false</default>
+        <label>NR</label>
+    </customValue>
+    <customValue>
+        <fullName>NSF/ANSI 140</fullName>
+        <default>false</default>
+        <label>NSF/ANSI 140</label>
+    </customValue>
+    <customValue>
+        <fullName>NSF/ANSI 332</fullName>
+        <default>false</default>
+        <label>NSF/ANSI 332</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>PEFC Chain of Custody</fullName>
+        <default>false</default>
+        <label>PEFC Chain of Custody</label>
+    </customValue>
+    <customValue>
+        <fullName>Pesticide Residue Free</fullName>
+        <default>false</default>
+        <label>Pesticide Residue Free</label>
+    </customValue>
+    <customValue>
+        <fullName>Pesticide Testing</fullName>
+        <default>false</default>
+        <label>Pesticide Testing</label>
+    </customValue>
+    <customValue>
+        <fullName>Plant-Based</fullName>
+        <default>false</default>
+        <label>Plant-Based</label>
+    </customValue>
+    <customValue>
+        <fullName>PrimusGFS</fullName>
+        <default>false</default>
+        <label>PrimusGFS</label>
+    </customValue>
+    <customValue>
+        <fullName>Primus Standard</fullName>
+        <default>false</default>
+        <label>Primus Standard</label>
+    </customValue>
+    <customValue>
+        <fullName>Primus Standard/ GMP-AG/ GAP</fullName>
+        <default>false</default>
+        <label>Primus Standard/ GMP-AG/ GAP</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Category Rule (PCR)</fullName>
+        <default>false</default>
+        <label>Product Category Rule (PCR)</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Footprint Calculation</fullName>
+        <default>false</default>
+        <label>Product Footprint Calculation</label>
+    </customValue>
+    <customValue>
+        <fullName>Rainforest Alliance (UTZ)</fullName>
+        <default>false</default>
+        <label>Rainforest Alliance (UTZ)</label>
+    </customValue>
+    <customValue>
+        <fullName>Recycled Content</fullName>
+        <default>false</default>
+        <label>Recycled Content</label>
+    </customValue>
+    <customValue>
+        <fullName>Regenerative Organic</fullName>
+        <default>false</default>
+        <label>Regenerative Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>REPLENISH Verification</fullName>
+        <default>false</default>
+        <label>REPLENISH Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>Report Assurance</fullName>
+        <default>false</default>
+        <label>Report Assurance</label>
+    </customValue>
+    <customValue>
+        <fullName>Research &amp; Development</fullName>
+        <default>false</default>
+        <label>Research &amp; Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Jewellery Council (RJC)</fullName>
+        <default>false</default>
+        <label>Responsible Jewellery Council (RJC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Minerals Assurance Process (RMAP)</fullName>
+        <default>false</default>
+        <label>Responsible Minerals Assurance Process (RMAP)</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Minerals Initiative</fullName>
+        <default>false</default>
+        <label>Responsible Minerals Initiative</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Source Supply Chain</fullName>
+        <default>false</default>
+        <label>Responsible Source Supply Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Sourcing</fullName>
+        <default>false</default>
+        <label>Responsible Sourcing</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Sourcing Strategies</fullName>
+        <default>false</default>
+        <label>Responsible Sourcing Strategies</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Water Certification</fullName>
+        <default>false</default>
+        <label>Responsible Water Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Water Practices</fullName>
+        <default>false</default>
+        <label>Responsible Water Practices</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Wood Certification</fullName>
+        <default>false</default>
+        <label>Responsible Wood Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Wood Chain of Custody</fullName>
+        <default>false</default>
+        <label>Responsible Wood Chain of Custody</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Wool (change to Responsible Animal Fiber)</fullName>
+        <default>false</default>
+        <label>Responsible Wool (change to Responsible Animal Fiber)</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsibly Managed Peatlands</fullName>
+        <default>false</default>
+        <label>Responsibly Managed Peatlands</label>
+    </customValue>
+    <customValue>
+        <fullName>RSB</fullName>
+        <default>false</default>
+        <label>RSB</label>
+    </customValue>
+    <customValue>
+        <fullName>RSB Combination Audit (Multiple RSB Systems)</fullName>
+        <default>false</default>
+        <label>RSB Combination Audit (Multiple RSB Systems)</label>
+    </customValue>
+    <customValue>
+        <fullName>RSB CORSIA</fullName>
+        <default>false</default>
+        <label>RSB CORSIA</label>
+    </customValue>
+    <customValue>
+        <fullName>RSB EU-RED</fullName>
+        <default>false</default>
+        <label>RSB EU-RED</label>
+    </customValue>
+    <customValue>
+        <fullName>RSB Global</fullName>
+        <default>false</default>
+        <label>RSB Global</label>
+    </customValue>
+    <customValue>
+        <fullName>RSB Japan Fit</fullName>
+        <default>false</default>
+        <label>RSB Japan Fit</label>
+    </customValue>
+    <customValue>
+        <fullName>RSB Smallholder Standard</fullName>
+        <default>false</default>
+        <label>RSB Smallholder Standard</label>
+    </customValue>
+    <customValue>
+        <fullName>RSPO P&amp;C</fullName>
+        <default>false</default>
+        <label>RSPO P&amp;C</label>
+    </customValue>
+    <customValue>
+        <fullName>RSPO Supply Chain</fullName>
+        <default>false</default>
+        <label>RSPO Supply Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>SAI FSA</fullName>
+        <default>false</default>
+        <label>SAI FSA</label>
+    </customValue>
+    <customValue>
+        <fullName>Salvaged Wood and Fiber Verification</fullName>
+        <default>false</default>
+        <label>Salvaged Wood and Fiber Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>Science Based Targets Consulting</fullName>
+        <default>false</default>
+        <label>Science Based Targets Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>SCS Consulting</fullName>
+        <default>false</default>
+        <label>SCS Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>SCS Recycled Content (Metals)</fullName>
+        <default>false</default>
+        <label>SCS Recycled Content (Metals)</label>
+    </customValue>
+    <customValue>
+        <fullName>SCS Recycled Content and Responsible Source (Metals or Gemstones)</fullName>
+        <default>false</default>
+        <label>SCS Recycled Content and Responsible Source (Metals or Gemstones)</label>
+    </customValue>
+    <customValue>
+        <fullName>SCS Responsible Source (Metals or Gemstones)</fullName>
+        <default>false</default>
+        <label>SCS Responsible Source (Metals or Gemstones)</label>
+    </customValue>
+    <customValue>
+        <fullName>SCS Responsible Source Gemstones</fullName>
+        <default>false</default>
+        <label>SCS Responsible Source Gemstones</label>
+    </customValue>
+    <customValue>
+        <fullName>SCS Responsible Source Metals</fullName>
+        <default>false</default>
+        <label>SCS Responsible Source Metals</label>
+    </customValue>
+    <customValue>
+        <fullName>Seafood</fullName>
+        <default>false</default>
+        <label>Seafood</label>
+    </customValue>
+    <customValue>
+        <fullName>Seafood Chain of Custody</fullName>
+        <default>false</default>
+        <label>Seafood Chain of Custody</label>
+    </customValue>
+    <customValue>
+        <fullName>Seafood CoC (MSC/ASC)</fullName>
+        <default>false</default>
+        <label>Seafood CoC (MSC/ASC)</label>
+    </customValue>
+    <customValue>
+        <fullName>SFI Certified Sourcing</fullName>
+        <default>false</default>
+        <label>SFI Certified Sourcing</label>
+    </customValue>
+    <customValue>
+        <fullName>SFI Chain of Custody</fullName>
+        <default>false</default>
+        <label>SFI Chain of Custody</label>
+    </customValue>
+    <customValue>
+        <fullName>SFI Fiber Sourcing</fullName>
+        <default>false</default>
+        <label>SFI Fiber Sourcing</label>
+    </customValue>
+    <customValue>
+        <fullName>SFI Forest Management (SFI-FM)</fullName>
+        <default>false</default>
+        <label>SFI Forest Management (SFI-FM)</label>
+    </customValue>
+    <customValue>
+        <fullName>Signet</fullName>
+        <default>false</default>
+        <label>Signet</label>
+    </customValue>
+    <customValue>
+        <fullName>Signet Responsible Sourcing Protocol (SRSP)</fullName>
+        <default>false</default>
+        <label>Signet Responsible Sourcing Protocol (SRSP)</label>
+    </customValue>
+    <customValue>
+        <fullName>SMETA</fullName>
+        <default>false</default>
+        <label>SMETA</label>
+    </customValue>
+    <customValue>
+        <fullName>Soil Carbon Initiative (SCI)</fullName>
+        <default>false</default>
+        <label>Soil Carbon Initiative (SCI)</label>
+    </customValue>
+    <customValue>
+        <fullName>SQF</fullName>
+        <default>false</default>
+        <label>SQF</label>
+    </customValue>
+    <customValue>
+        <fullName>Starbucks C.A.F.E. Practices</fullName>
+        <default>false</default>
+        <label>Starbucks C.A.F.E. Practices</label>
+    </customValue>
+    <customValue>
+        <fullName>Supply Chain Consulting REMOVE</fullName>
+        <default>false</default>
+        <label>Supply Chain Consulting REMOVE</label>
+    </customValue>
+    <customValue>
+        <fullName>Sustainability Consulting</fullName>
+        <default>false</default>
+        <label>Sustainability Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Sustainability Rated Diamonds</fullName>
+        <default>false</default>
+        <label>Sustainability Rated Diamonds</label>
+    </customValue>
+    <customValue>
+        <fullName>Sustainable Agriculture</fullName>
+        <default>false</default>
+        <label>Sustainable Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Sustainable Biomass Program (SBP)</fullName>
+        <default>false</default>
+        <label>Sustainable Biomass Program (SBP)</label>
+    </customValue>
+    <customValue>
+        <fullName>Sustainable Diamond</fullName>
+        <default>false</default>
+        <label>Sustainable Diamond</label>
+    </customValue>
+    <customValue>
+        <fullName>Sustainably Grown</fullName>
+        <default>false</default>
+        <label>Sustainably Grown</label>
+    </customValue>
+    <customValue>
+        <fullName>SVLK Timber Legality</fullName>
+        <default>false</default>
+        <label>SVLK Timber Legality</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Advisory Services</fullName>
+        <default>false</default>
+        <label>Technical Advisory Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Textile Exchange</fullName>
+        <default>false</default>
+        <label>Textile Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>The Climate Registry (TCR)</fullName>
+        <default>false</default>
+        <label>The Climate Registry (TCR)</label>
+    </customValue>
+    <customValue>
+        <fullName>USDA Organic</fullName>
+        <default>false</default>
+        <label>USDA Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Veriflora</fullName>
+        <default>false</default>
+        <label>Veriflora</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Certification (AWS)</fullName>
+        <default>false</default>
+        <label>Water Certification (AWS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Verification</fullName>
+        <default>false</default>
+        <label>Water Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>WAVE Verification</fullName>
+        <default>false</default>
+        <label>WAVE Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>Zero Waste</fullName>
+        <default>false</default>
+        <label>Zero Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>RSPO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>RSPO</label>
+    </customValue>
+    <customValue>
+        <fullName>Sustainably Assessment</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sustainably Assessment</label>
+    </customValue>
+    <customValue>
+        <fullName>Harmonized GAP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Harmonized GAP</label>
+    </customValue>
+    <customValue>
+        <fullName>Indoor Air Quality</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Indoor Air Quality</label>
+    </customValue>
+    <customValue>
+        <fullName>Responsible Wool</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Responsible Wool</label>
+    </customValue>
+    <customValue>
+        <fullName>Roundtable on Sustainable Palm Oil</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Roundtable on Sustainable Palm Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>GMP/GDP Ag</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GMP/GDP Ag</label>
+    </customValue>
+    <customValue>
+        <fullName>Seafood CoC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Seafood CoC</label>
+    </customValue>
+    <customValue>
+        <fullName>Organic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Roundtable on Sustainable Palm Oil (RSPO)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Roundtable on Sustainable Palm Oil (RSPO)</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Safety Training and Consulting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Food Safety Training and Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Bee Better Certification</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bee Better Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>calCOMPlint</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>calCOMPlint</label>
+    </customValue>
+    <customValue>
+        <fullName>EFI/SMETA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EFI/SMETA</label>
+    </customValue>
+    <customValue>
+        <fullName>ESG Consulting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ESG Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>GHG Verification</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GHG Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>Recycling Program</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Recycling Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Regenerative Organic Certification</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Regenerative Organic Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>CARB</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CARB</label>
+    </customValue>
+    <masterLabel>Main Services of Interest</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

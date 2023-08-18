@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Acre</label>
+    <protected>false</protected>
+    <values>
+        <field>Acre__c</field>
+        <value xsi:type="xsd:double">2.471</value>
+    </values>
+    <values>
+        <field>Hectare__c</field>
+        <value xsi:type="xsd:double">0.404686011</value>
+    </values>
+</CustomMetadata>

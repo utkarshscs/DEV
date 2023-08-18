@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Disable_Triggers_for_Data_Migration__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Disables system triggers so limits are not hit for data migrations.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Disables system triggers so limits are not hit for data migrations.</inlineHelpText>
+    <label>Disable Triggers for Data Migration</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( fw1__Is_Voided__c, 
+    $Label.fw1__Voided, 
+    IF( fw1__Installments_Reconfiguration_Needed__c , 
+        $Label.fw1__Reconfigure_Installments, 
+        IF( fw1__Is_Overdue__c, 
+            $Label.fw1__Overdue, 
+            fw1__Status_Sys__c
+        ) 
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

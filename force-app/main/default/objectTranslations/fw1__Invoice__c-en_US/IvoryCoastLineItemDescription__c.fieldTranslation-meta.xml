@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>IvoryCoastLineItemDescription__c</name>
+    <picklistValues>
+        <masterLabel>Chaîne d’approvisionnement Rainforest Alliance – Frais d’audit global</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FTUSA – APS: Frais d’audit global</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FTUSA – APS: Global audit cost</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Groupe de producteur Rainforest Alliance – Frais d’audit global</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rainforest Alliance Grower Group – Global audit cost</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rainforest Alliance Supply chain – Global audit cost</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

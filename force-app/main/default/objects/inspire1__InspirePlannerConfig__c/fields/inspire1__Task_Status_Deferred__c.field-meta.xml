@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Task_Status_Deferred__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The inputted value will replace standard Deferred value and inherit behavior of Deferred.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Input a single status value that will replace the standard Deferred status.</inlineHelpText>
+    <label>Task Status Deferred</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Last_User_Update_Time__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Identifies the date/time when last user updated the project.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Identifies the date/time when last user made an update to the project.</inlineHelpText>
+    <label>Last User Update Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

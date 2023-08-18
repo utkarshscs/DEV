@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site_Of_System_User_Certified_As__c</fullName>
+    <externalId>false</externalId>
+    <label>Site Of System User Certified As</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Point of Origin</fullName>
+                <default>false</default>
+                <label>Point of Origin</label>
+            </value>
+            <value>
+                <fullName>Collecting Point</fullName>
+                <default>false</default>
+                <label>Collecting Point</label>
+            </value>
+            <value>
+                <fullName>Trader with Storage</fullName>
+                <default>false</default>
+                <label>Trader with Storage</label>
+            </value>
+            <value>
+                <fullName>Warehouse and Storage Facilities</fullName>
+                <default>false</default>
+                <label>Warehouse and Storage Facilities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

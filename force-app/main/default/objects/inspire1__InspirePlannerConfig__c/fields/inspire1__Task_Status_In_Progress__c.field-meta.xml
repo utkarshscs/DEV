@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Task_Status_In_Progress__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The inputted value will replace standard In Progress value and inherit behavior of In Progress.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Input a single status value that will replace the standard In Progress status.</inlineHelpText>
+    <label>Task Status In Progress</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

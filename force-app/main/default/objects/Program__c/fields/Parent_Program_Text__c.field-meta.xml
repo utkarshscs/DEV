@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Program_Text__c</fullName>
+    <description>DO NOT DELETE without reviewing Sharing Rules for Program object. Text version of look-up field. This value is populated via a Workflow and then used in Sharing rules.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For internal IT use only</inlineHelpText>
+    <label>Parent Program Text</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

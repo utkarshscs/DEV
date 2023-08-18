@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Número total de horas registradas por el miembro del equipo para el proyecto.</help>
+    <label></label>
+    <name>inspire1__Total_Actual_Effort__c</name>
+</CustomFieldTranslation>

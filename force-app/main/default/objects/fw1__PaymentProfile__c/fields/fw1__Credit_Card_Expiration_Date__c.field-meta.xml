@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Credit_Card_Expiration_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(fw1__ExpiryYear__c)) &amp;&amp; NOT(ISBLANK(TEXT(fw1__ExpiryMonth__c))) &amp;&amp; NOT(fw1__ExpiryYear__c == &apos;Year&apos;) &amp;&amp; NOT(TEXT(fw1__ExpiryMonth__c) == &apos;Month&apos;),
+DATE(
+     CASE(MONTH(DATEVALUE(fw1__ExpiryYear__c + &apos;-&apos; + TEXT(fw1__ExpiryMonth__c) + &apos;-01&apos;)), 12, YEAR(DATEVALUE(fw1__ExpiryYear__c + &apos;-&apos; + TEXT(fw1__ExpiryMonth__c) + &apos;-01&apos;)) + 1, YEAR(DATEVALUE(fw1__ExpiryYear__c + &apos;-&apos; + TEXT(fw1__ExpiryMonth__c) + &apos;-01&apos;))),
+     CASE(MONTH(DATEVALUE(fw1__ExpiryYear__c + &apos;-&apos; + TEXT(fw1__ExpiryMonth__c) + &apos;-01&apos;)), 12, 1, MONTH(DATEVALUE(fw1__ExpiryYear__c + &apos;-&apos; + TEXT(fw1__ExpiryMonth__c) + &apos;-01&apos;)) +1),
+     1
+) - 1,
+NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Credit Card Expiration Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_of_license_on_PT__c</fullName>
+    <externalId>false</externalId>
+    <label>Status of license on PT</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>License Approved</fullName>
+                <default>false</default>
+                <label>License Approved</label>
+            </value>
+            <value>
+                <fullName>License Denied</fullName>
+                <default>false</default>
+                <label>License Denied</label>
+            </value>
+            <value>
+                <fullName>License Extended</fullName>
+                <default>false</default>
+                <label>License Extended</label>
+            </value>
+            <value>
+                <fullName>License Review On-Going</fullName>
+                <default>false</default>
+                <label>License Review On-Going</label>
+            </value>
+            <value>
+                <fullName>License Submitted</fullName>
+                <default>false</default>
+                <label>License Submitted</label>
+            </value>
+            <value>
+                <fullName>License Suspended</fullName>
+                <default>false</default>
+                <label>License Suspended</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Role__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines the role the team member is performing. Used to auto assign tasks when Role is defined on Project Task.</description>
+    <externalId>false</externalId>
+    <label>Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>inspire1__Role</valueSetName>
+    </valueSet>
+</CustomField>

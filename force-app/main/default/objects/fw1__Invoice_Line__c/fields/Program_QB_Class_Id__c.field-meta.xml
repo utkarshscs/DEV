@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_QB_Class_Id__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(fw1__Invoice__r.fw1__Entity__r.Name = &apos;SCS Consulting&apos;,ISBLANK(fw1__Invoice__r.fw2__Opportunity__r.Programc__c)),
+fw2__Opportunity_Product__r.Program__r.Consulting_QB_Class_Id__c,
+IF(AND(fw1__Invoice__r.fw1__Entity__r.Name = &apos;Ivory Coast&apos;,ISBLANK(fw1__Invoice__r.fw2__Opportunity__r.Programc__c)),
+fw2__Opportunity_Product__r.Program__r.Ivory_Coast_QB_Class_Id__c,
+IF(AND(ISBLANK(fw1__Invoice__r.fw2__Opportunity__r.Programc__c),NOT(ISBLANK(fw2__Opportunity_Product__r.Program__c))),
+fw2__Opportunity_Product__r.Program__r.QB_Class_Id__c,
+IF(fw1__Invoice__r.fw1__Entity__r.Name = &apos;SCS Consulting&apos;,fw1__Invoice__r.fw2__Opportunity__r.Programc__r.Consulting_QB_Class_Id__c ,
+IF (fw1__Invoice__r.fw1__Entity__r.Name = &apos;Ivory Coast&apos;,fw1__Invoice__r.fw1__Opportunity__r.Programc__r.Ivory_Coast_QB_Class_Id__c ,
+fw1__Invoice__r.fw1__Opportunity__r.Programc__r.QB_Class_Id__c)))))</formula>
+    <label>Program QB Class Id</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

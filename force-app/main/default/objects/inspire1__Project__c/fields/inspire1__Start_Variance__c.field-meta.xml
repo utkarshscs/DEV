@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Start_Variance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Start Variance field contains the amount of time that represents the difference between a baseline start date of the project and its currently scheduled start date.
+
+Start Variance = Start Date - Baseline Start Date</description>
+    <externalId>false</externalId>
+    <formula>inspire1__Actual_Start_Date__c - inspire1__Baseline_Start_Date__c</formula>
+    <inlineHelpText>Start Variance = Start Date - Baseline Start Date
+
+The Start Variance field contains the amount of time that represents the difference between a baseline start date of the project and its currently scheduled start date.</inlineHelpText>
+    <label>Start Variance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

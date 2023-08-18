@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entity_is_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT(RecordType.DeveloperName = &apos;Bundle_Opportunity&apos;),
+ISPICKVAL(StageName,&quot;Closed Won&quot;), 
+ISBLANK(fw2__Entity__c),
+NOT(ISPICKVAL(LeadSource, &quot;Cvent&quot;)),
+NOT($Permission.Bypass_Permission ),
+NOT( Record_Type_Name__c = &apos;SCS_Standard&apos; ) 
+)</errorConditionFormula>
+    <errorDisplayField>fw2__Entity__c</errorDisplayField>
+    <errorMessage>Entity must be selected before setting the Stage to Closed Won</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fileforcem1__Security_Method_Field__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Custom Column in Sharepoint Document Library that contains a List of custom Methods to validate access to a file</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If a value is provided, security will enforce that a user can only see a SharePoint file or folder if the Salesforce User Session passes the custom validation class.</inlineHelpText>
+    <label>Security Method Field</label>
+    <length>50</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Total_Actual_Effort__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Total number of hours logged by team member for project. Sum of Time Entries logged.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total number of hours logged by team member for project.</inlineHelpText>
+    <label>Total Actual Effort</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

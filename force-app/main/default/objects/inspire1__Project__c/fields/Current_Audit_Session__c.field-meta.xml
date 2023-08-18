@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Audit_Session__c</fullName>
+    <externalId>false</externalId>
+    <label>Current Audit Cycle</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IC 1</fullName>
+                <default>false</default>
+                <label>IC 1</label>
+            </value>
+            <value>
+                <fullName>Mock</fullName>
+                <default>false</default>
+                <label>Mock</label>
+            </value>
+            <value>
+                <fullName>ASA 1</fullName>
+                <default>false</default>
+                <label>ASA 1</label>
+            </value>
+            <value>
+                <fullName>ASA 2</fullName>
+                <default>false</default>
+                <label>ASA 2</label>
+            </value>
+            <value>
+                <fullName>ASA 3</fullName>
+                <default>false</default>
+                <label>ASA 3</label>
+            </value>
+            <value>
+                <fullName>ASA 4</fullName>
+                <default>false</default>
+                <label>ASA 4</label>
+            </value>
+            <value>
+                <fullName>ASA 11</fullName>
+                <default>false</default>
+                <label>ASA 11</label>
+            </value>
+            <value>
+                <fullName>ASA 12</fullName>
+                <default>false</default>
+                <label>ASA 12</label>
+            </value>
+            <value>
+                <fullName>ASA 13</fullName>
+                <default>false</default>
+                <label>ASA 13</label>
+            </value>
+            <value>
+                <fullName>ASA 14</fullName>
+                <default>false</default>
+                <label>ASA 14</label>
+            </value>
+            <value>
+                <fullName>ASA 21</fullName>
+                <default>false</default>
+                <label>ASA 21</label>
+            </value>
+            <value>
+                <fullName>ASA 22</fullName>
+                <default>false</default>
+                <label>ASA 22</label>
+            </value>
+            <value>
+                <fullName>ASA 23</fullName>
+                <default>false</default>
+                <label>ASA 23</label>
+            </value>
+            <value>
+                <fullName>ASA 24</fullName>
+                <default>false</default>
+                <label>ASA 24</label>
+            </value>
+            <value>
+                <fullName>ASA 31</fullName>
+                <default>false</default>
+                <label>ASA 31</label>
+            </value>
+            <value>
+                <fullName>ASA 32</fullName>
+                <default>false</default>
+                <label>ASA 32</label>
+            </value>
+            <value>
+                <fullName>ASA 33</fullName>
+                <default>false</default>
+                <label>ASA 33</label>
+            </value>
+            <value>
+                <fullName>ASA 34</fullName>
+                <default>false</default>
+                <label>ASA 34</label>
+            </value>
+            <value>
+                <fullName>ASA 41</fullName>
+                <default>false</default>
+                <label>ASA 41</label>
+            </value>
+            <value>
+                <fullName>ASA 42</fullName>
+                <default>false</default>
+                <label>ASA 42</label>
+            </value>
+            <value>
+                <fullName>ASA 43</fullName>
+                <default>false</default>
+                <label>ASA 43</label>
+            </value>
+            <value>
+                <fullName>ASA 44</fullName>
+                <default>false</default>
+                <label>ASA 44</label>
+            </value>
+            <value>
+                <fullName>ASA 51</fullName>
+                <default>false</default>
+                <label>ASA 51</label>
+            </value>
+            <value>
+                <fullName>ASA 52</fullName>
+                <default>false</default>
+                <label>ASA 52</label>
+            </value>
+            <value>
+                <fullName>ASA 53</fullName>
+                <default>false</default>
+                <label>ASA 53</label>
+            </value>
+            <value>
+                <fullName>ASA 54</fullName>
+                <default>false</default>
+                <label>ASA 54</label>
+            </value>
+            <value>
+                <fullName>ASA 61</fullName>
+                <default>false</default>
+                <label>ASA 61</label>
+            </value>
+            <value>
+                <fullName>ASA 62</fullName>
+                <default>false</default>
+                <label>ASA 62</label>
+            </value>
+            <value>
+                <fullName>ASA 63</fullName>
+                <default>false</default>
+                <label>ASA 63</label>
+            </value>
+            <value>
+                <fullName>ASA 64</fullName>
+                <default>false</default>
+                <label>ASA 64</label>
+            </value>
+            <value>
+                <fullName>ReCERT 1</fullName>
+                <default>false</default>
+                <label>ReCERT 1</label>
+            </value>
+            <value>
+                <fullName>ReCERT 2</fullName>
+                <default>false</default>
+                <label>ReCERT 2</label>
+            </value>
+            <value>
+                <fullName>ReCERT 3</fullName>
+                <default>false</default>
+                <label>ReCERT 3</label>
+            </value>
+            <value>
+                <fullName>ReCERT 4</fullName>
+                <default>false</default>
+                <label>ReCERT 4</label>
+            </value>
+            <value>
+                <fullName>ReCERT 5</fullName>
+                <default>false</default>
+                <label>ReCERT 5</label>
+            </value>
+            <value>
+                <fullName>ReCERT 6</fullName>
+                <default>false</default>
+                <label>ReCERT 6</label>
+            </value>
+            <value>
+                <fullName>Special Audit</fullName>
+                <default>false</default>
+                <label>Special Audit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Project_Task__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Related Project Task that Checklist Item belongs to.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Related Project Task that Checklist Item belongs to.</inlineHelpText>
+    <label>Project Task</label>
+    <referenceTo>inspire1__Project_Tasks__c</referenceTo>
+    <relationshipLabel>Checklist Items</relationshipLabel>
+    <relationshipName>Checklist_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

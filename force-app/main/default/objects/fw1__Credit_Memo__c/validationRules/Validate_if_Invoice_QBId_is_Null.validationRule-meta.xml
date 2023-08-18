@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_if_Invoice_QBId_is_Null</fullName>
+    <active>false</active>
+    <description>Allow creation of Credit Memo if Invoice Quick Books Id is not null</description>
+    <errorConditionFormula>AND(ISNEW(),
+ISBLANK( fw1__Generated_From__r.Invoice_Quickbooks_ID__c ))</errorConditionFormula>
+    <errorMessage>Please send Invoice to Customer before creating Credit Memo.</errorMessage>
+</ValidationRule>

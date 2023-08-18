@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+                <label>Agriculture</label>
+            </value>
+            <value>
+                <fullName>Mining</fullName>
+                <default>false</default>
+                <label>Mining</label>
+            </value>
+            <value>
+                <fullName>Chain of Custody</fullName>
+                <default>false</default>
+                <label>Chain of Custody</label>
+            </value>
+            <value>
+                <fullName>Life Cycle</fullName>
+                <default>false</default>
+                <label>Life Cycle</label>
+            </value>
+            <value>
+                <fullName>Climate</fullName>
+                <default>false</default>
+                <label>Climate</label>
+            </value>
+            <value>
+                <fullName>Certification</fullName>
+                <default>false</default>
+                <label>Certification</label>
+            </value>
+            <value>
+                <fullName>Forestry</fullName>
+                <default>false</default>
+                <label>Forestry</label>
+            </value>
+            <value>
+                <fullName>Seafood</fullName>
+                <default>false</default>
+                <label>Seafood</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Textile</fullName>
+                <default>false</default>
+                <label>Textile</label>
+            </value>
+            <value>
+                <fullName>Food Safety</fullName>
+                <default>false</default>
+                <label>Food Safety</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

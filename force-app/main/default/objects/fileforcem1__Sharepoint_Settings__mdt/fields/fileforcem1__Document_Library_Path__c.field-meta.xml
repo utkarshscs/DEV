@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fileforcem1__Document_Library_Path__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The path of document library in sharepoint, e.g., &quot;sites/Docs/Shared Documents&quot;.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>To find this path, navigate to your SharePoint Document Library and copy the path after the domain and the backslash. e.g.,&quot;sites/Docs/Shared Documents&quot;</inlineHelpText>
+    <label>Document Library Path</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

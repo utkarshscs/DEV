@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Class 5</label>
+    <protected>false</protected>
+    <values>
+        <field>Fixed_Number__c</field>
+        <value xsi:type="xsd:double">1000000.0</value>
+    </values>
+    <values>
+        <field>Maximum_Turnover__c</field>
+        <value xsi:type="xsd:double">5.0E8</value>
+    </values>
+    <values>
+        <field>Minimum_Turnover__c</field>
+        <value xsi:type="xsd:double">1.0E8</value>
+    </values>
+    <values>
+        <field>Processor_Base_USD__c</field>
+        <value xsi:type="xsd:double">5192.0</value>
+    </values>
+    <values>
+        <field>Processor_Variable_USD__c</field>
+        <value xsi:type="xsd:double">18.61</value>
+    </values>
+    <values>
+        <field>Trader_Base_USD__c</field>
+        <value xsi:type="xsd:double">1560.0</value>
+    </values>
+    <values>
+        <field>Trader_Variable_USD__c</field>
+        <value xsi:type="xsd:double">5.58</value>
+    </values>
+</CustomMetadata>

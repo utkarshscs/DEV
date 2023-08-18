@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>Master_Decision</name>
+        <label>Master Decision</label>
+        <locationX>314</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Program_Goal</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Program_Goal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Programc__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Program_Id</targetReference>
+            </connector>
+            <label>Is Program Goal</label>
+        </rules>
+        <rules>
+            <name>Is_User_Goal</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>User_Goal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.User__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_User_Id</targetReference>
+            </connector>
+            <label>Is User Goal</label>
+        </rules>
+    </decisions>
+    <description>[24-01-2023] 
+[31-01-2023 : removed record type id and user or program id field]</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>varProgramGoalName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Programc__c}+&apos;-&apos;+TEXT({!$Record.Year__c})+&apos;-&apos;+TEXT({!$Record.Quarter__c})+&apos;-&apos;+{!$Record.RecordTypeId}</expression>
+    </formulas>
+    <formulas>
+        <name>varUserGoalName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.User__c}+&apos;-&apos;+{!$Record.Programc__c}+&apos;-&apos;+TEXT({!$Record.Year__c})+&apos;-&apos;+TEXT({!$Record.Quarter__c})+&apos;-&apos;+{!$Record.RecordTypeId}</expression>
+    </formulas>
+    <interviewLabel>Goal - Update User OR Program Id {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Goal - Update User OR Program Id</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Program_Id</name>
+        <label>Update Program Id</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Unique_Name__c</field>
+            <value>
+                <elementReference>varProgramGoalName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_User_Id</name>
+        <label>Update User Id</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Unique_Name__c</field>
+            <value>
+                <elementReference>varUserGoalName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Master_Decision</targetReference>
+        </connector>
+        <object>Goal__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

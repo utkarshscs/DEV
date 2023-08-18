@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standards__c</fullName>
+    <externalId>false</externalId>
+    <label>Standards</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SG 001</fullName>
+                <default>false</default>
+                <label>SG 001</label>
+            </value>
+            <value>
+                <fullName>LCSEA 002</fullName>
+                <default>false</default>
+                <label>LCSEA 002</label>
+            </value>
+            <value>
+                <fullName>RFM 003</fullName>
+                <default>false</default>
+                <label>RFM 003</label>
+            </value>
+            <value>
+                <fullName>Jewelry 007</fullName>
+                <default>false</default>
+                <label>Jewelry 007</label>
+            </value>
+            <value>
+                <fullName>Diamonds 007</fullName>
+                <default>false</default>
+                <label>Diamonds 007</label>
+            </value>
+            <value>
+                <fullName>Gold 007</fullName>
+                <default>false</default>
+                <label>Gold 007</label>
+            </value>
+            <value>
+                <fullName>LCACN 108</fullName>
+                <default>false</default>
+                <label>LCACN 108</label>
+            </value>
+            <value>
+                <fullName>ZW 110</fullName>
+                <default>false</default>
+                <label>ZW 110</label>
+            </value>
+            <value>
+                <fullName>Starbucks Dairy</fullName>
+                <default>false</default>
+                <label>Starbucks Dairy</label>
+            </value>
+            <value>
+                <fullName>WAVE</fullName>
+                <default>false</default>
+                <label>WAVE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

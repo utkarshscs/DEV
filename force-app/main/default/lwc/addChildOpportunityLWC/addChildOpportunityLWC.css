@@ -1,0 +1,45 @@
+lightning-button.button {
+	--sds-c-button-brand-color-background: #789904;
+    --sds-c-button-text-color: #f4f7f9;
+}
+
+.colWidth1{
+    width: 200px;
+    margin-right: 15px;
+}   
+
+.colWidth2{
+    width: 150px;
+}
+
+.footer{
+    position: fixed; 
+    bottom: 6%; 
+    /*right: 50vw;*/
+    width: 100%;
+}
+
+.saveBtn{
+    height: 35px;
+    width: 95px;
+    font-size: 16px;
+    background-color: #789904;
+    color: #f4f7f9;
+}
+
+.cancleBtn{
+    height: 35px;
+    width: 95px;
+    font-size: 16px;
+}
+
+.fixTableHead{
+      overflow-y: auto;
+      height: 60vh;
+    }
+
+.fixTableHead thead th {
+    height: 30px;
+    position: sticky;
+    top: 0;
+}

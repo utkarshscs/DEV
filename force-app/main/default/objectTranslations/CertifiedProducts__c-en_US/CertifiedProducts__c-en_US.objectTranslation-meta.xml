@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Certified Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Certified Products</value>
+    </caseValues>
+    <layouts>
+        <layout>FLC</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FSMA Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Farm Assurance Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Gluten Free Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non GMO Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Organic Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Organic</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PHA Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PHU Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PMU Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pesticide Residue Free Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Plant Based Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Production Group Members</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RSPO PC Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RSPO SC GM Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SAI FSA Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SQF Products</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>FLC</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>FSMA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Fairtrade_USA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Farm_Assurance</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Gluten_Free</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Non_GMO</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Organic</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>PHA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>PHU</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>PMU</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Pesticide_Residue_Free</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Plant_Based</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Production_Group_Members</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>RSPO_SC_GM</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SAI_FSA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SQF</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

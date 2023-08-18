@@ -1,0 +1,516 @@
+<template>
+	<template if:true={showSpinner}>
+		<lightning-spinner alternative-text="Loading"></lightning-spinner>
+	</template>
+	<lightning-card>
+		<div class="slds-cell-wrap" style="padding-left: 10px">
+			<lightning-breadcrumbs>
+				<lightning-breadcrumb style="margin-top: -12px; margin-bottom: 10px;" label={backToOppty}
+					href={opptyPageUrl} onclick={handleNavigateOpportunity}>
+				</lightning-breadcrumb>
+			</lightning-breadcrumbs>
+			<lightning-icon class="slds-float_left slds-m-right_x-small" icon-name="standard:opportunity" size="small">
+			</lightning-icon>
+			<span style="font-size: 20px;"><b>{parentOpptyName}</b></span>
+			<lightning-button class="slds-float_right slds-m-right_x-small button" variant="brand"
+				label="Add Child Opportunity" onclick={handleAddOpptyRow} disabled={disableButton}>
+			</lightning-button>
+		</div>
+		<div class="slds-cell-wrap fixTableHead" style="padding-left: 10px; width: 100%;">
+			<lightning-record-edit-form object-api-name="Opportunity" record-type-id={filteredRecTypeId}>
+				<template if:true={showTable}>
+					<table
+						class="slds-table slds-table_bordered slds-table_striped slds-m-top_small slds-table--header-fixed">
+						<thead>
+							<tr class="slds-line-height_reset slds-text-title_bold">
+								<th class="slds-text-align_center" scope="col"></th>
+								<th class="slds-text-align_center" scope="col" style="width: 17%;">Opportunity
+									Name<span style="color:red">*</span></th>
+								<th class="slds-text-align_center" scope="col" style="width: 12%;">Account
+									Name<span style="color:red">*</span></th>
+								<th class="slds-text-align_center" scope="col" style="width: 9%;">
+									Stage<span style="color:red">*</span>
+								</th>
+								<th class="slds-text-align_center" scope="col" style="width: 9%;">Close
+									Date<span style="color:red">*</span>
+								</th>
+								<th class="" scope="col" colspan="2" style="width: 10%;">
+									<span style="margin-right: 100px;margin-left: 70px;">Program<span style="color:red">*</span></span><span>Engagement Type<span style="color:red">*</span></span>
+								</th>
+								<th class="slds-text-align_center" scope="col">Language<span style="color:red">*</span>
+								</th>
+								<th class="slds-text-align_center" scope="col" style="width: 9%;">Total Amount</th>
+								<th class="slds-text-align_center" scope="col" style="width: 14%;">
+									Pricebook<span style="color:red">*</span>
+								</th>
+								<th class="slds-text-align_center" scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<template for:each={opptyWithOlis} for:item="oppWithOlis" for:index="index">
+								<tr class="slds-hint-parent" key={oppWithOlis.Id}>
+									<td>
+										<template if:false={oppWithOlis.isChecked}>
+											<div class="slds-cell-wrap">
+												<lightning-button-icon icon-name="utility:chevronright" id={index}
+													alternative-text="Expand" data-index={index}
+													data-id={oppWithOlis.Id} variant="bare" onclick={handleShowOli}>
+												</lightning-button-icon>
+											</div>
+										</template>
+										<template if:true={oppWithOlis.isChecked}>
+											<div class="slds-cell-wrap">
+												<lightning-button-icon icon-name="utility:chevrondown" id={index}
+													alternative-text="Collapse" data-index={index}
+													data-id={oppWithOlis.Id} variant="bare" onclick={handleHideOli}>
+												</lightning-button-icon>
+											</div>
+										</template>
+									</td>
+									<td style="width: 17%;">
+										<div class="slds-cell-wrap">
+											<lightning-input-field field-name="Name" class="validate" data-index={index}
+												data-id={oppWithOlis.Id} variant="label-hidden" value={oppWithOlis.Name}
+												onchange={handleName} required>
+											</lightning-input-field>
+										</div>
+									</td>
+									<td style="width: 12%;">
+										<div class="slds-cell-wrap">
+											<lightning-input-field field-name="AccountId" class="validate"
+												data-index={index} data-id={oppWithOlis.Id} variant="label-hidden"
+												value={oppWithOlis.AccountId} onchange={handleAccount} required>
+											</lightning-input-field>
+										</div>
+									</td>
+									<td style="width: 9%;">
+										<div class="slds-cell-wrap">
+											<lightning-input-field field-name="StageName" class="validate"
+												data-index={index} data-id={oppWithOlis.Id} variant="label-hidden"
+												value={oppWithOlis.StageName} onchange={handleStage} required>
+											</lightning-input-field>
+										</div>
+									</td>
+									<td style="width: 9%;">
+										<div class="slds-cell-wrap">
+											<lightning-input-field field-name="CloseDate" class="validate"
+												data-index={index} data-id={oppWithOlis.Id} variant="label-hidden"
+												value={oppWithOlis.CloseDate} onchange={handleCloseDate} required>
+											</lightning-input-field>
+										</div>
+									</td>
+									<td colspan="2" style="width: 10%;">
+										<lightning-record-edit-form object-api-name="Opportunity">
+											<div class="slds-cell-wrap" style="display: flex;">
+												<lightning-input-field field-name="Program_List__c" data-index={index}
+													data-id={oppWithOlis.Id} variant="label-hidden"
+													onchange={handleProgramList} value={oppWithOlis.Program_List__c}
+													class="colWidth1 validate"
+													disabled={oppWithOlis.HasOpportunityLineItem} required>
+												</lightning-input-field>
+												<lightning-input-field field-name="Engagement_Type__c"
+													data-index={index} data-id={oppWithOlis.Id} variant="label-hidden"
+													value={oppWithOlis.Engagement_Type__c}
+													onchange={handleEngagementType} class="colWidth2 validate" required>
+												</lightning-input-field>
+											</div>
+										</lightning-record-edit-form>
+									</td>
+									<td>
+										<div class="slds-cell-wrap">
+											<lightning-input-field field-name="Language__c" class="validate"
+												data-index={index} data-id={oppWithOlis.Id} variant="label-hidden"
+												value={oppWithOlis.Language__c} onchange={handleLanguage} required>
+											</lightning-input-field>
+										</div>
+									</td>
+									<td style="width: 9%;">
+										<div class="slds-cell-wrap">
+											<lightning-input-field field-name="TotalAmount__c" class="validate"
+												data-index={index} data-id={oppWithOlis.Id} variant="label-hidden"
+												value={oppWithOlis.TotalAmount__c} disabled>
+											</lightning-input-field>
+										</div>
+									</td>
+									<td style="width: 14%;">
+										<div class="slds-cell-wrap">
+											<lightning-combobox name="pricebook" class="validate"
+												data-id={oppWithOlis.Id} value={oppWithOlis.Pricebook2Id}
+												options={oppWithOlis.pricebookOptions} variant="label-hidden"
+												data-index={index} placeholder="-Select-" data-pricebookid={index}
+												onchange={handlePricebookId}
+												disabled={oppWithOlis.HasOpportunityLineItem} required>
+											</lightning-combobox>
+										</div>
+									</td>
+									<td>
+										<div class="slds-cell-wrap" style="white-space: nowrap">
+											<lightning-icon class="slds-float_left slds-m-right_xx-small"
+												icon-name="action:remove" size="xx-small" alternative-text="Remove"
+												data-index={index} data-id={oppWithOlis.Id}
+												data-element={oppWithOlis.Name} title="Remove" variant="bare"
+												onclick={handleDeleteOppty}>
+											</lightning-icon>
+											<template if:true={oppWithOlis.Id}>
+												<lightning-icon icon-name="action:preview" size="xx-small"
+													alternative-text="View" data-index={index} data-id={oppWithOlis.Id}
+													title="View Record" variant="bare" onclick={handleViewOpportunity}>
+												</lightning-icon>
+											</template>
+										</div>
+									</td>
+								</tr>
+								<template if:true={oppWithOlis.isChecked}>
+									<template if:true={oppWithOlis.Id}>
+										<tr class="slds-line-height_reset" key={oppWithOlis.Id}>
+											<td class="" scope="col"></td>
+											<td>
+												<div class="slds-cell-wrap" style="white-space: nowrap">
+													<lightning-button class="slds-m-right_x-small button"
+														data-id={oppWithOlis.Id} data-index={index} variant="brand"
+														label="Add Product" onclick={handleAddOLIRow}>
+													</lightning-button>
+													<lightning-button class="slds-m-right_x-small button"
+														data-id={oppWithOlis.Id} data-program={oppWithOlis.Programc__c}
+														data-index={index} variant="brand" label="Add Sub Scope"
+														onclick={handleAddSubScopeRow}>
+													</lightning-button>
+													<lightning-button class="button" data-id={oppWithOlis.Id}
+														data-program={oppWithOlis.Programc__c} data-index={index}
+														variant="brand" label="Add Standard Covered"
+														onclick={handleAddStandard}>
+													</lightning-button>
+												</div>
+											</td>
+										</tr>
+									</template>
+
+									<template if:true={oppWithOlis.Id}>
+										<tr class="slds-line-height_reset slds-text-title_bold" key={oppWithOlis.Id}>
+											<td class="" scope="col"></td>
+											<td class="slds-text-align_center" scope="col">Product
+												Name<span style="color:red">*</span></td>
+											<td class="slds-text-align_center" scope="col">
+												Quantity<span style="color:red">*</span></td>
+											<td class="slds-text-align_center" scope="col">
+												Sales Price<span style="color:red">*</span></td>
+											<td class="slds-text-align_center" scope="col">
+												Discount %
+												<!--span style="color:red">*</span-->
+											</td>
+											<td class="slds-text-align_center" scope="col">
+												Discount Amount
+											</td>
+											<td class="slds-text-align_center" scope="col">Line
+												Description
+												<!--span style="color:red">*</span-->
+											</td>
+										</tr>
+										<template for:each={oppWithOlis.OpportunityLineItems} for:item="oli"
+											for:index="index2">
+											<tr key={oli.Id}>
+												<td></td>
+												<td>
+													<template if:false={oli.Id}>
+														<c-custom-lookup-child-oppty-l-w-c icon-name="standard:product"
+															data-index={index2} data-element={index}
+															data-class="validated" s-object-api-name="pricebookentry"
+															label="" pricebook={oppWithOlis.Pricebook2Id}
+															onlookupupdate={handleProduct2Id}
+															placeholder="Search Product..." required>
+														</c-custom-lookup-child-oppty-l-w-c>
+													</template>
+													<template if:true={oli.Id}>
+														<c-custom-lookup-child-oppty-l-w-c icon-name="standard:product"
+															data-index={index2} data-element={index}
+															data-class="validated" s-object-api-name="pricebookentry"
+															label="" default-record-id={oli.Product2Id}
+															pricebook={oppWithOlis.Pricebook2Id}
+															onlookupupdate={handleProduct2Id}
+															placeholder="Search Product..." required>
+														</c-custom-lookup-child-oppty-l-w-c>
+													</template>
+												</td>
+												<td>
+													<lightning-record-edit-form object-api-name="OpportunityLineItem">
+														<lightning-input-field field-name="Quantity" class="validate"
+															data-index={index2} data-element={index} data-id={oli.Id}
+															variant="label-hidden" value={oli.Quantity}
+															onchange={handleQuantity} required>
+														</lightning-input-field>
+													</lightning-record-edit-form>
+												</td>
+												<td>
+													<lightning-record-edit-form object-api-name="OpportunityLineItem">
+														<lightning-input-field field-name="UnitPrice" class="validate"
+															data-index={index2} data-element={index} data-id={oli.Id}
+															variant="label-hidden" value={oli.UnitPrice}
+															onchange={handleUnitPrice} required>
+														</lightning-input-field>
+													</lightning-record-edit-form>
+												</td>
+												<td>
+													<lightning-record-edit-form object-api-name="OpportunityLineItem">
+														<lightning-input-field field-name="Discount" class=""
+															data-index={index2} data-element={index} data-id={oli.Id}
+															variant="label-hidden" value={oli.Discount}
+															onchange={handleDiscount}>
+														</lightning-input-field>
+													</lightning-record-edit-form>
+												</td>
+												<td>
+													<lightning-record-edit-form object-api-name="OpportunityLineItem">
+														<lightning-input-field field-name="Discount_Amount__c" class=""
+															data-index={index2} data-element={index} data-id={oli.Id}
+															variant="label-hidden" value={oli.Discount_Amount__c}
+															onchange={handleDiscountAmount}>
+														</lightning-input-field>
+													</lightning-record-edit-form>
+												</td>
+												<td>
+													<lightning-record-edit-form object-api-name="OpportunityLineItem">
+														<lightning-input-field field-name="Description" class="validate"
+															data-index={index2} data-element={index} data-id={oli.Id}
+															variant="label-hidden" value={oli.Description}
+															onchange={handleDescription}>
+														</lightning-input-field>
+													</lightning-record-edit-form>
+												</td>
+												<td>
+													<div class="slds-cell-wrap" style="white-space: nowrap">
+														<lightning-icon class="slds-float_left slds-m-right_xx-small"
+															icon-name="action:delete" data-element={index}
+															size="xx-small" alternative-text="Delete"
+															data-index={index2} data-id={oli.Id} title="Delete"
+															variant="bare" onclick={handleDeleteOli}>
+														</lightning-icon>
+														<template if:true={oli.Id}>
+															<lightning-icon icon-name="action:preview" size="xx-small"
+																alternative-text="View" data-index={index2}
+																data-id={oli.Id} title="View Record" variant="bare"
+																onclick={handleViewOLI}>
+															</lightning-icon>
+														</template>
+													</div>
+												</td>
+											</tr>
+										</template>
+
+										<template if:true={oppWithOlis.Standard_Covered__r}>
+											<template if:true={oppWithOlis.HasStandardCovered}>
+												<tr class="slds-line-height_reset slds-text-title_bold"
+													key={oppWithOlis.Id}>
+													<td class="" scope="col"></td>
+													<td class="slds-text-align_center" scope="col">
+														Standard<span style="color:red">*</span></td>
+													<td class="slds-text-align_center" scope="col">
+														Name</td>
+												</tr>
+											</template>
+											<template for:each={oppWithOlis.Standard_Covered__r} for:item="standard"
+												for:index="index4">
+												<tr key={standard.Id}>
+													<td></td>
+													<td>
+														<div class="slds-cell-wrap">
+															<lightning-record-edit-form
+																object-api-name="Standard_Covered__c">
+																<lightning-input-field field-name="Standard__c"
+																	class="validate" data-index={index4}
+																	data-element={index} data-id={standard.Id}
+																	variant="label-hidden" value={standard.Standard__c}
+																	onchange={handleStandard} required>
+																</lightning-input-field>
+															</lightning-record-edit-form>
+														</div>
+													</td>
+													<td>
+														<div class="slds-cell-wrap">
+															<lightning-record-edit-form
+																object-api-name="Standard_Covered__c">
+																<lightning-input-field field-name="Name"
+																	class="validate" data-index={index4}
+																	data-element={index} data-id={standard.Id}
+																	variant="label-hidden" value={standard.Name}
+																	disabled>
+																</lightning-input-field>
+															</lightning-record-edit-form>
+														</div>
+													</td>
+													<td>
+														<div class="slds-cell-wrap" style="white-space: nowrap">
+															<lightning-icon
+																class="slds-float_left slds-m-right_xx-small"
+																icon-name="action:delete" data-element={index}
+																size="xx-small" alternative-text="Delete"
+																data-index={index3} data-id={standard.Id} title="Delete"
+																variant="bare" onclick={handleDeleteStandard}>
+															</lightning-icon>
+															<template if:true={standard.Id}>
+																<lightning-icon icon-name="action:preview"
+																	size="xx-small" alternative-text="View"
+																	data-index={index3} data-id={standard.Id}
+																	title="View Record" variant="bare"
+																	onclick={handleViewStandard}>
+																</lightning-icon>
+															</template>
+														</div>
+													</td>
+												</tr>
+											</template>
+										</template>
+
+										<template if:true={oppWithOlis.Scope__r}>
+											<template if:true={oppWithOlis.HasSubScope}>
+												<tr class="slds-line-height_reset slds-text-title_bold"
+													key={oppWithOlis.Id}>
+													<td class="" scope="col"></td>
+													<td class="slds-text-align_center" scope="col">Sub
+														Scope<span style="color:red">*</span></td>
+													<td class="slds-text-align_center" scope="col">Name</td>
+												</tr>
+											</template>
+											<template if:true={oppWithOlis.HasSubScopeOptions}>
+												<template for:each={oppWithOlis.Scope__r} for:item="scope"
+													for:index="index3">
+													<tr key={scope.Id}>
+														<td></td>
+														<td>
+															<div class="slds-cell-wrap">
+																<lightning-combobox name="subscope" class="validate"
+																	data-id={scope.Id} value={scope.Sub_Scope__c}
+																	data-program={oppWithOlis.Programc__c}
+																	options={oppWithOlis.subScopeOptions}
+																	variant="label-hidden" data-index={index3}
+																	data-element={index} placeholder="-Select-"
+																	onchange={handleSubScope} required>
+																</lightning-combobox>
+															</div>
+														</td>
+														<td>
+															<lightning-record-edit-form object-api-name="Scope__c">
+																<lightning-input-field field-name="Name"
+																	class="validate" data-index={index3}
+																	data-element={index} data-id={scope.Id}
+																	variant="label-hidden" value={scope.Name} disabled>
+																</lightning-input-field>
+															</lightning-record-edit-form>
+														</td>
+														<td>
+															<div class="slds-cell-wrap" style="white-space: nowrap">
+																<lightning-icon
+																	class="slds-float_left slds-m-right_xx-small"
+																	icon-name="action:delete" data-element={index}
+																	size="xx-small" alternative-text="Delete"
+																	data-index={index3} data-id={scope.Id}
+																	title="Delete" variant="bare"
+																	onclick={handleDeleteSubScope}>
+																</lightning-icon>
+																<template if:true={scope.Id}>
+																	<lightning-icon icon-name="action:preview"
+																		size="xx-small" alternative-text="View"
+																		data-index={index3} data-id={scope.Id}
+																		title="View Record" variant="bare"
+																		onclick={handleViewSubScope}>
+																	</lightning-icon>
+																</template>
+															</div>
+														</td>
+													</tr>
+												</template>
+											</template>
+											<template if:false={oppWithOlis.HasSubScopeOptions}>
+												<tr key={oppWithOlis.Id}>
+													<td></td>
+													<td style="color:red; text-align:center">{subScopeErrorMsg}</td>
+												</tr>
+											</template>
+										</template>
+
+									</template>
+								</template>
+							</template>
+						</tbody>
+					</table>
+				</template>
+				<template if:false={showTable}>
+					<p style="text-align:center; padding-top: 100px;font-size: 20px;color: brown;">{noChildOpptyMsg}</p>
+				</template>
+			</lightning-record-edit-form>
+		</div>
+
+	</lightning-card>
+
+	<template if:true={showTable}>
+		<div class="slds-grid slds-grid_align-center footer slds-box slds-theme slds-theme_shade">
+			<button class="slds-button slds-button_neutral slds-text-align_right cancleBtn" onclick={closeAction}>Back</button>
+			<button class="slds-button slds-m-left_x-small slds-button_destructive saveBtn" onclick={handleSaveOppty}>Save</button>
+		</div>
+	</template>
+
+	<template if:true={isShowModal}>
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+			<lightning-record-edit-form object-api-name="Opportunity" record-id={recordIdtoDel}
+				onsuccess={handleSuccess} onerror={handleError} onsubmit={onSubmitHandler}>
+				<div class="slds-modal__container slds-m-top_xx-large">
+					<!-- modal header start -->
+					<header class="slds-modal__header">
+						<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+						<lightning-icon icon-name="utility:close"
+						alternative-text="close"
+						variant="inverse"
+						size="small" ></lightning-icon>
+						<span class="slds-assistive-text">Close</span>
+					</button>
+						<div class="slds-text-heading_small">{selectedOpptyName}
+						</div>
+					</header>
+
+					<!-- modal body start -->
+					<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+						<lightning-card title="Opportunity" icon-name="standard:opportunity">
+							<div class="demo-only demo-only--sizing slds-grid slds-wrap slds-box slds-box_x-small">
+								<div class="slds-size_1-of-2">
+									<lightning-input-field field-name="Billing_Contact__c" required>
+									</lightning-input-field>
+								</div>
+								<div class="slds-size_1-of-2">
+									<lightning-input-field field-name="CampaignId" required></lightning-input-field>
+								</div>
+								<div class="slds-size_1-of-2">
+									<lightning-input-field field-name="StageName" onchange={handleStageName} required>
+									</lightning-input-field>
+								</div>
+								<div class="slds-size_1-of-2">
+									<lightning-input-field field-name="LeadSource" required></lightning-input-field>
+								</div>
+								<template if:true={showLossReason}>
+									<div class="slds-size_1-of-2">
+										<lightning-input-field field-name="Loss_Reason__c" required>
+										</lightning-input-field>
+									</div>
+								</template>
+								<div class="slds-size_1-of-2" style="display: none">
+									<lightning-input-field field-name="Bundle_Opportunity__c" value="">
+									</lightning-input-field>
+								</div>
+							</div>
+						</lightning-card>
+					</div>
+
+					<!-- modal footer start-->
+					<footer class="slds-modal__footer">
+						<lightning-button class="slds-button" variant="neutral" label="Cancel" onclick={closeModal}>
+						</lightning-button>
+						<lightning-button class="slds-button" variant="brand" label="Save" type="submit">
+						</lightning-button>
+					</footer>
+
+				</div>
+			</lightning-record-edit-form>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+	<!-- modal end -->
+</template>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Site_Program_Filters__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+	(ProgramName__c  &lt;&gt;  &quot;RSPO Supply Chain&quot;),
+	(ProgramName__c &lt;&gt;  &quot;Fair Trade USA&quot;),
+	(ProgramName__c &lt;&gt; &quot;Equitable Food Initiative (EFI)&quot;),
+	(ProgramName__c &lt;&gt;  &quot;RSPO P&amp;C&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;SAI FSA&quot;),
+	(ProgramName__c &lt;&gt;  &quot;Responsibly Managed Peatlands&quot;),
+	(ProgramName__c &lt;&gt; &quot;Veriflora&quot;),
+	(ProgramName__c &lt;&gt;  &quot;Sustainably Grown&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;Bonsucro Chain of Custody Certification&quot;),
+	(ProgramName__c &lt;&gt;  &quot;Bonsucro EU Chain of Custody Certification&quot;),
+	(ProgramName__c &lt;&gt; &quot;Bonsucro Production Certification&quot;),
+	(ProgramName__c &lt;&gt;  &quot;Bonsucro EU Production Certification&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;Bonsucro Smallholder Certification&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;ISCC PLUS&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;ISCC EU&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;ISCC CORSIA&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;ASC Aquaculture&quot;),
+        (ProgramName__c  &lt;&gt;  &quot;Zero Waste Project Certification&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;Zero Waste Event Certification&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;Zero Waste Facility Certification&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;MSC Chain of Custody&quot;),
+        (ProgramName__c  &lt;&gt;  &quot;RSB CORSIA&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;RSB SAF Book-and-Claim&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;RSB Global Fuels&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;RSB EU-RED&quot;),
+        (ProgramName__c  &lt;&gt;  &quot;RSB Global Advanced Products&quot;),
+	(ProgramName__c  &lt;&gt;  &quot;RSB Smallholder Standard&quot;),
+        (ProgramName__c  &lt;&gt;  &quot;RSB Japan Fit&quot;)
+)</formula>
+    <label>Add Site Program Filters</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

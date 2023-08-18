@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supply_chain_model__c</fullName>
+    <externalId>false</externalId>
+    <label>Supply Chain Model</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Identity Preserved</fullName>
+                <default>false</default>
+                <label>Identity Preserved</label>
+            </value>
+            <value>
+                <fullName>Segregated</fullName>
+                <default>false</default>
+                <label>Segregated</label>
+            </value>
+            <value>
+                <fullName>Mass Balance</fullName>
+                <default>false</default>
+                <label>Mass Balance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SF_INTEGRATION</fullName>
+    <columns>MasterLabel</columns>
+    <columns>SF_Field_API_Name__c</columns>
+    <columns>External_Field_API_Name__c</columns>
+    <columns>SF_Object_Name__c</columns>
+    <columns>External_Object_Name__c</columns>
+    <columns>External_Field_Data_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>SF INTEGRATION</label>
+</ListView>

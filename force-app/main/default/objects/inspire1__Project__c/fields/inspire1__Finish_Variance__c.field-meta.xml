@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Finish_Variance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Finish Variance field contains the amount of time that represents the difference between a baseline finish date of the project and its currently scheduled finish date.  
+
+Finish Variance = Finish Date - Baseline Finish Date</description>
+    <externalId>false</externalId>
+    <formula>inspire1__Actual_Finish_Date__c -  inspire1__Baseline_Finish_Date__c</formula>
+    <inlineHelpText>Finish Variance = Finish Date - Baseline Finish Date
+
+The Finish Variance field contains the amount of time that represents the difference between a baseline finish date of the project and its currently scheduled finish date.</inlineHelpText>
+    <label>Finish Variance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

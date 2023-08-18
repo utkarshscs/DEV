@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program</fullName>
+    <active>true</active>
+    <description>Use only for Program specific scope (Do not use for Opportunity)</description>
+    <label>Program</label>
+    <picklistValues>
+        <picklist>Engagement_Type__c</picklist>
+        <values>
+            <fullName>1st Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2nd Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4th Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACDR only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AIM Initial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AIM Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Action Plan Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annual Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any additional Projects with Existing Clients</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closure of Findings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint Resolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conformance Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMS Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Due Diligence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Each Additional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expansion of Scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expedited Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FIP Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSA Farm Management Group Claims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSA Option 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSA Option 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSA Option 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSA Stand-Alone Farm Claims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSC Annual Administration Fee %28AAF%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAP Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial - 2 Pillar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial - 4 Pillar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial 3-year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial rush</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Methodology Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midterm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-site Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEFC Notification Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Periodic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Assessment Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-assessment %28doc%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reverification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scope Adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scope Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scope Expansion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TER Initial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TER Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third-Party Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Re-Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transition Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unannounced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validation and Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Entity__c</picklist>
+        <values>
+            <fullName>Advanced Technical Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food and Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natural Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research and Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Request_Sent_To_FSC</name>
+        <label>Request Sent To FSC</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <actionName>SCS_FSCIntegration</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Final_Screen</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>ocIds</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>varOutput</assignToReference>
+            <name>output</name>
+        </outputParameters>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <description>This screen flow use to sync data with fsc
+Added success screen</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>varResult</name>
+        <dataType>String</dataType>
+        <expression>IF({!varOutput} = &apos;201&apos; ,&apos;Data Sync request sent to forest stewardship council successfully.&apos;, &apos;Data Sync request sent to forest stewardship council has been failed.&apos;)</expression>
+    </formulas>
+    <interviewLabel>Data Sync With FSC {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Data Sync With FSC</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Final_Screen</name>
+        <label>Final Screen</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SuccessMessage</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; font-family: sans-serif;&quot;&gt;{!varResult}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Close</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Request_Sent_To_FSC</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Flow.CurrentRecord</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>varOutput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

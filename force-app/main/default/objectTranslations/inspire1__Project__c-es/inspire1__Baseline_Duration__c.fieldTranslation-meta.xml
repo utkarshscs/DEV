@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Define el número de días necesarios para completar el proyecto en función de las fechas de inicio y finalización de referencia.</help>
+    <label></label>
+    <name>inspire1__Baseline_Duration__c</name>
+</CustomFieldTranslation>

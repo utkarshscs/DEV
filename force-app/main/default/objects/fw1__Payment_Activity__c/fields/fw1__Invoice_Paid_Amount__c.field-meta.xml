@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Invoice_Paid_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( fw1__Applied_To_Invoice__c, 
+    IF( fw1__Payment__r.fw1__Invoice__c != null, 
+        fw1__Payment__r.fw1__Total_Paid_Amount__c, 
+        IF( fw1__Payment__r.fw1__Total_Paid_Amount__c = 0, 
+            0, 
+            fw1__Amount__c
+        ) 
+    ), 
+    0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Invoice Paid Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

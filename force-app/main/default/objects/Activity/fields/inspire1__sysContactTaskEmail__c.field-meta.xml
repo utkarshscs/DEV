@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__sysContactTaskEmail__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Reference to Inspire Planner custom setting which defines if email notification should be sent to Contact for new task assignment.</description>
+    <externalId>false</externalId>
+    <formula>$Setup.inspire1__InspirePlannerConfig__c.inspire1__Enable_Contact_Task_Assignment_Email__c</formula>
+    <inlineHelpText>Reference to Inspire Planner custom setting which defines if email notification should be sent to Contact for new task assignment.</inlineHelpText>
+    <label>_sysContactTaskEmail</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Account_RecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account RecordType</shortDescription>
+        <value>Customer</value>
+    </labels>
+    <labels>
+        <fullName>Account_Root_FolderId_SC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Root FolderId SC</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>Account_Root_FolderId_SGS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Root FolderId SGS</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>Account_Root_FolderId_SIC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Root FolderId SIC</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>Account_Root_FolderId_SS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Root FolderId SS</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>All_OppCert_SharePoint_FolderName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All OppCert SharePoint FolderName</shortDescription>
+        <value>All Opportunity Certificates</value>
+    </labels>
+    <labels>
+        <fullName>All_Opportunities_SharePoint_FolderName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All Opportunities SharePoint FolderName</shortDescription>
+        <value>All Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>All_Projects_SharePoint_FolderName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All Projects SharePoint FolderName</shortDescription>
+        <value>All Projects</value>
+    </labels>
+    <labels>
+        <fullName>BundleRecordTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BundleRecordTypeId</shortDescription>
+        <value>0128a000000tifEAAQ</value>
+    </labels>
+    <labels>
+        <fullName>ContentVersionIdForDeployment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContentVersionIdForDeployment</shortDescription>
+        <value>0688a00000HgfekAAB</value>
+    </labels>
+    <labels>
+        <fullName>Create_Folder_Batch_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Folder Batch Query</shortDescription>
+        <value>SELECT Id, Name, SharePoint_Folder_Id__c, SharePoint_Folder_URL__c, Opportunity__c, Opportunity__r.RecordType.DeveloperName, Opportunity__r.fileforcem1__Sharepoint_Folder_Id__c, Opportunity__r.Account.AllOCSCSharePointFolderId__c, Opportunity__r.Account.AllOCSGSSharePointFolderId__c, Opportunity__r.Account.AllOCSICSharePointFolderId__c, Opportunity__r.Account.AllOCSSSharePointFolderId__c, Opportunity__r.Account.SharePoint_Folder_Id__c, Opportunity__r.Account.SC_SharePoint_Folder_Id__c, Opportunity__r.Account.SS_SharePoint_Folder_Id__c, Opportunity__r.Account.SIC_SharePoint_Folder_Id__c FROM Opportunity_Certificate__c WHERE HasFile__c =true AND SharePoint_Folder_Id__c = null AND Opportunity__c != null</value>
+    </labels>
+    <labels>
+        <fullName>DMSIntegrationUserId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DMSIntegrationUserId</shortDescription>
+        <value>0058a00000KvQ25AAF</value>
+    </labels>
+    <labels>
+        <fullName>Docebo_UserId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Docebo_UserId</shortDescription>
+        <value>0058a00000MeXwGAAV</value>
+    </labels>
+    <labels>
+        <fullName>Entity_Ivory_Coast</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Entity Ivory Coast</shortDescription>
+        <value>a1g8a000002FamWAAS</value>
+    </labels>
+    <labels>
+        <fullName>Entity_SCS_Consulting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Entity SCS Consulting</shortDescription>
+        <value>a1g8a000002FamgAAC</value>
+    </labels>
+    <labels>
+        <fullName>Entity_SCS_Global</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Entity SCS Global</shortDescription>
+        <value>a1g74000000OsS1AAK</value>
+    </labels>
+    <labels>
+        <fullName>Fair_Trade_USA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fair Trade USA</shortDescription>
+        <value>Fair Trade USA</value>
+    </labels>
+    <labels>
+        <fullName>File_Upload_Batch_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File Upload Batch Query</shortDescription>
+        <value>SELECT Id, Name, fileforcem1__Sharepoint_Folder_Id__c FROM Opportunity WHERE fileforcem1__Sharepoint_Folder_Id__c != null</value>
+    </labels>
+    <labels>
+        <fullName>FnA_DMS_USER_Id</fullName>
+        <categories>Vivek user id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FnA_DMS_USER_Id</shortDescription>
+        <value>0058a00000KvJ8rAAF</value>
+    </labels>
+    <labels>
+        <fullName>FnA_Program_Goal_Record_Type_Id</fullName>
+        <categories>This custom label user to store program goal record type id of goal object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FnA_Program Goal Record Type Id</shortDescription>
+        <value>0128a000000tifCAAQ</value>
+    </labels>
+    <labels>
+        <fullName>FnA_User_Goal_Record_Type_Id</fullName>
+        <categories>Store user goal record type id of goal object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FnA_User Goal Record Type Id</shortDescription>
+        <value>0128a000000tig7AAA</value>
+    </labels>
+    <labels>
+        <fullName>GMP_GDP_Program</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GMP/GDP Program</shortDescription>
+        <value>GMP/GDP</value>
+    </labels>
+    <labels>
+        <fullName>HubSpot_UserId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HubSpot UserId</shortDescription>
+        <value>0058a00000Kuh9e</value>
+    </labels>
+    <labels>
+        <fullName>Jira_Issue_Type_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Jira Issue Type Id</shortDescription>
+        <value>10101</value>
+    </labels>
+    <labels>
+        <fullName>Jira_Project_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Jira Project Id</shortDescription>
+        <value>10370</value>
+    </labels>
+    <labels>
+        <fullName>Lock_Out_Invoice_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lock_Out_Invoice_Fields</shortDescription>
+        <value>Account_Quickbooks_ID__c;Id;Name;Program_ID__c;Program_Nest_Unit_ID__c;Program__c;fw1__Account__c;fw1__Credit_Card_Failure_Reason__c;fw1__Description__c;fw1__Invoice_Date__c;fw1__Terms__c</value>
+    </labels>
+    <labels>
+        <fullName>Lock_Out_Invoice_Line_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lock_Out_Invoice_Line_Fields</shortDescription>
+        <value>Name;Revenue_Type__c;fw1__Amount__c;fw1__Invoice__c;fw1__Item_Description__c;fw1__Net_Amount__c;fw1__Quantity__c;fw1__Unit_Price__c</value>
+    </labels>
+    <labels>
+        <fullName>NoChildOpptyMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoChildOpptyMsg</shortDescription>
+        <value>You do not have any child opportunity(s). Please click on &quot;Add Child Opportunity&quot; button to create.</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_RT_SCS_Consulting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity RT SCS Consulting</shortDescription>
+        <value>SCS_Consulting,Training_Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_RT_SCS_Global_Services</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity RT SCS Global Services</shortDescription>
+        <value>Bundle_Opportunity,ECS,Food_and_Agriculture,Natural_Resources,Research_and_Development</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_RT_SCS_Ivory_Coast</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity_RT_SCS_Ivory_Coast</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_RT_SCS_Standard</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity RT SCS Standard</shortDescription>
+        <value>SCS_Standard</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_RecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity_RecordType</shortDescription>
+        <value>ECS,Food_and_Agriculture,Natural_Resources,Research_and_Development,Bundle_Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>OpptyFolderMissingErrorOC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpptyFolderMissingErrorOC</shortDescription>
+        <value>Please create opportunity folder first and then create opportunity certificate folder.</value>
+    </labels>
+    <labels>
+        <fullName>OpptyFolderMissingErrorProject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpptyFolderMissingErrorProject</shortDescription>
+        <value>Please create opportunity folder first and then create project folder.</value>
+    </labels>
+    <labels>
+        <fullName>PCR_Roles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PCR Roles</shortDescription>
+        <value>Primary;Secondary;Approved;Billing</value>
+    </labels>
+    <labels>
+        <fullName>ProgramScopeRTId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProgramScopeRTId</shortDescription>
+        <value>0128a000000tifMAAQ</value>
+    </labels>
+    <labels>
+        <fullName>Project_Missing_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Missing Error</shortDescription>
+        <value>Project not found. Please create Project.</value>
+    </labels>
+    <labels>
+        <fullName>Project_Root_FolderId_without_Acc_Opp_SC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Root FolderId without Acc/Opp SC</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>Project_Root_FolderId_without_Acc_Opp_SGS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Root FolderId without Acc/Opp SGS</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>Project_Root_FolderId_without_Acc_Opp_SIC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Root FolderId without Acc/Opp SIC</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>Project_Root_FolderId_without_Acc_Opp_SS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Root FolderId without Acc/Opp SS</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>RSPOprogramID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RSPOprogramID</shortDescription>
+        <value>a258a000004Z13eAAC</value>
+    </labels>
+    <labels>
+        <fullName>RenewalOpportunityErrorMessageForCloseDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RenewalOpportunityErrorMessageForCloseDate</shortDescription>
+        <value>Close date for renewal opportunity should be greater than close date for previous closed opportunity</value>
+    </labels>
+    <labels>
+        <fullName>SCS_ADMIN_USER_Id</fullName>
+        <categories>Add Admin user id to avoid SF Sync</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCS_ADMIN_USER_Id</shortDescription>
+        <value>0058a00000Kuh9jAAB</value>
+    </labels>
+    <labels>
+        <fullName>SCS_CVENT_Training_Pricebook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCS_CVENT_Training_Pricebook</shortDescription>
+        <value>01s8a0000034WAAAA2</value>
+    </labels>
+    <labels>
+        <fullName>SCS_CVENT_Training_Product</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCS_CVENT_Training_Product</shortDescription>
+        <value>01t8a000007hc4nAAA</value>
+    </labels>
+    <labels>
+        <fullName>SCS_CVENT_USER_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCS_CVENT_USER_Id</shortDescription>
+        <value>0058a00000Kuh9jAAB</value>
+    </labels>
+    <labels>
+        <fullName>SCS_Consulting_SharePoint_FolderName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCS Consulting SharePoint FolderName</shortDescription>
+        <value>SCS Consulting</value>
+    </labels>
+    <labels>
+        <fullName>SCS_Entity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCS_Entity</shortDescription>
+        <value>SCS Standard</value>
+    </labels>
+    <labels>
+        <fullName>SCS_Global_Services_SharePoint_FolderName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCS Global Services SharePoint FolderName</shortDescription>
+        <value>SCS Global Services</value>
+    </labels>
+    <labels>
+        <fullName>SCS_Roles</fullName>
+        <categories>Account Contact Relationship Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCS_Roles</shortDescription>
+        <value>Stakeholder</value>
+    </labels>
+    <labels>
+        <fullName>SCS_Standard_SharePoint_FolderName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SCS Standard SharePoint FolderName</shortDescription>
+        <value>SCS Standard</value>
+    </labels>
+    <labels>
+        <fullName>Sales_User_Profile_Id</fullName>
+        <categories>Use in  flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales User Profile Id</shortDescription>
+        <value>00e8a000001ruJh</value>
+    </labels>
+    <labels>
+        <fullName>SubScopeErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SubScopeErrorMessage</shortDescription>
+        <value>There is no subscope related to the selected program.</value>
+    </labels>
+    <labels>
+        <fullName>SubScopeRecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SubScopeRecordType</shortDescription>
+        <value>Sub_Scope</value>
+    </labels>
+    <labels>
+        <fullName>System_Integrator_For_Test</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System Integrator For Test</shortDescription>
+        <value>System Integrator</value>
+    </labels>
+    <labels>
+        <fullName>TemplateFolderId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TemplateFolderId</shortDescription>
+        <value>00D5C0000008wfiUAA</value>
+    </labels>
+    <labels>
+        <fullName>UserListForSOQL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserListForSOQL</shortDescription>
+        <value>0058a00000KvQ25AAF</value>
+    </labels>
+    <labels>
+        <fullName>Web_Integrator</fullName>
+        <categories>Web Integrator User Id For Data Sync</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Web Integrator</shortDescription>
+        <value>0058a00000Kuh9ZAAR</value>
+    </labels>
+    <labels>
+        <fullName>Web_Integrator_15_Digit</fullName>
+        <categories>This custom label user in master invoice number flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Web Integrator_15_Digit</shortDescription>
+        <value>0058a00000Kuh9ZAAR</value>
+    </labels>
+    <labels>
+        <fullName>YearList</fullName>
+        <categories>sfilesbatchtocreatefolders</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YearList</shortDescription>
+        <value>2023</value>
+    </labels>
+    <labels>
+        <fullName>lblCventIntegratorID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lblCventIntegratorID</shortDescription>
+        <value>0058a00000LK62VAAT</value>
+    </labels>
+    <labels>
+        <fullName>lblDefaultHSCampaign</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lblDefaultHSCampaign</shortDescription>
+        <value>7018a000001ksBdAAI</value>
+    </labels>
+    <labels>
+        <fullName>lblDefaultOppType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lblDefaultOppType</shortDescription>
+        <value>0128a000000tifLAAQ</value>
+    </labels>
+    <labels>
+        <fullName>lblHubSpotDefaultProg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lblHubSpotDefaultProg</shortDescription>
+        <value>a258a000004Z132AAC</value>
+    </labels>
+    <labels>
+        <fullName>lblHubSpotLeadRecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lblHubSpotLeadRecordType</shortDescription>
+        <value>0128a000000tifDAAQ</value>
+    </labels>
+    <labels>
+        <fullName>lblHubSpotUser</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lblHubSpotUser</shortDescription>
+        <value>0058a00000Kuh9eAAB</value>
+    </labels>
+    <labels>
+        <fullName>lblRecentCampaign</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lblRecentCampaign</shortDescription>
+        <value>7015C000000hS2o</value>
+    </labels>
+</CustomLabels>

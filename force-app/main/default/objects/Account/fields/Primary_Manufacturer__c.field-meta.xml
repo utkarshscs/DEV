@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Manufacturer__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Manufacturer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chips</fullName>
+                <default>false</default>
+                <label>Chips</label>
+            </value>
+            <value>
+                <fullName>Logger - chips/processing</fullName>
+                <default>false</default>
+                <label>Logger - chips/processing</label>
+            </value>
+            <value>
+                <fullName>Papermill</fullName>
+                <default>false</default>
+                <label>Papermill</label>
+            </value>
+            <value>
+                <fullName>Pellets</fullName>
+                <default>false</default>
+                <label>Pellets</label>
+            </value>
+            <value>
+                <fullName>Sawmill</fullName>
+                <default>false</default>
+                <label>Sawmill</label>
+            </value>
+            <value>
+                <fullName>Veneer</fullName>
+                <default>false</default>
+                <label>Veneer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

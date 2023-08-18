@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Number__c</fullName>
+    <description>Use this field to show master invoice number as a hyperlink.</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot; &amp; Id , Master_Invoice_Number__c ,&quot;_self&quot;)</formula>
+    <inlineHelpText>Use this field to show master invoice number as a hyperlink.</inlineHelpText>
+    <label>Master Invoice No.</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

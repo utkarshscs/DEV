@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>Replace Comma With Space</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>varIvoryConvertedAmount</name>
+        <dataType>String</dataType>
+        <expression>/* Under 1 K */
+IF({!$Record.TotalConvertedAmount__c} &lt; 1000, TEXT({!$Record.TotalConvertedAmount__c}),
+
+/* Under 1 M */
+IF({!$Record.TotalConvertedAmount__c} &lt; 1000000, 
+TEXT(FLOOR({!$Record.TotalConvertedAmount__c} /1000)) &amp; &apos; &apos;&amp; RIGHT(TEXT({!$Record.TotalConvertedAmount__c}), LEN(TEXT({!$Record.TotalConvertedAmount__c})) - LEN(TEXT(FLOOR({!$Record.TotalConvertedAmount__c}/1000)))),
+
+/* Under 1 B */
+IF({!$Record.TotalConvertedAmount__c} &lt; 1000000000, TEXT(FLOOR({!$Record.TotalConvertedAmount__c} /1000000))
+&amp; &apos; &apos;
+&amp; MID(TEXT({!$Record.TotalConvertedAmount__c}), 1 + LEN(TEXT(FLOOR({!$Record.TotalConvertedAmount__c} /1000000))),3)
+&amp; &apos; &apos;
+&amp; RIGHT(TEXT({!$Record.TotalConvertedAmount__c}), LEN(TEXT({!$Record.TotalConvertedAmount__c})) - LEN(TEXT(FLOOR({!$Record.TotalConvertedAmount__c} /1000)))),
+/* 1 B &amp; up */
+IF({!$Record.TotalConvertedAmount__c} &gt;= 1000000000, &quot;#TooHigh!&quot;, NULL))))</expression>
+    </formulas>
+    <formulas>
+        <name>varIvoryConvertedProfessionalFees</name>
+        <dataType>String</dataType>
+        <expression>/* Under 1 K */
+IF({!$Record.TotalConvertedProfessionalFees__c} &lt; 1000, TEXT({!$Record.TotalConvertedProfessionalFees__c}),
+
+/* Under 1 M */
+IF({!$Record.TotalConvertedProfessionalFees__c} &lt; 1000000, 
+TEXT(FLOOR({!$Record.TotalConvertedProfessionalFees__c} /1000)) &amp; &apos; &apos;&amp; RIGHT(TEXT({!$Record.TotalConvertedProfessionalFees__c}), LEN(TEXT({!$Record.TotalConvertedProfessionalFees__c})) - LEN(TEXT(FLOOR({!$Record.TotalConvertedProfessionalFees__c}/1000)))),
+
+/* Under 1 B */
+IF({!$Record.TotalConvertedProfessionalFees__c} &lt; 1000000000, TEXT(FLOOR({!$Record.TotalConvertedProfessionalFees__c} /1000000))
+&amp; &apos; &apos;
+&amp; MID(TEXT({!$Record.TotalConvertedProfessionalFees__c}), 1 + LEN(TEXT(FLOOR({!$Record.TotalConvertedProfessionalFees__c} /1000000))),3)
+&amp; &apos; &apos;
+&amp; RIGHT(TEXT({!$Record.TotalConvertedProfessionalFees__c}), LEN(TEXT({!$Record.TotalConvertedProfessionalFees__c})) - LEN(TEXT(FLOOR({!$Record.TotalConvertedProfessionalFees__c} /1000)))),
+/* 1 B &amp; up */
+IF({!$Record.TotalConvertedProfessionalFees__c} &gt;= 1000000000, &quot;#TooHigh!&quot;, NULL))))</expression>
+    </formulas>
+    <formulas>
+        <name>varIvoryConvertedReimbursement</name>
+        <dataType>String</dataType>
+        <expression>/* Under 1 K */
+IF({!$Record.TotalConvertedReimbursementExpenses__c} &lt; 1000, TEXT({!$Record.TotalConvertedReimbursementExpenses__c}),
+
+/* Under 1 M */
+IF({!$Record.TotalConvertedReimbursementExpenses__c} &lt; 1000000, 
+TEXT(FLOOR({!$Record.TotalConvertedReimbursementExpenses__c} /1000)) &amp; &apos; &apos;&amp; RIGHT(TEXT({!$Record.TotalConvertedReimbursementExpenses__c}), LEN(TEXT({!$Record.TotalConvertedReimbursementExpenses__c})) - LEN(TEXT(FLOOR({!$Record.TotalConvertedReimbursementExpenses__c}/1000)))),
+
+/* Under 1 B */
+IF({!$Record.TotalConvertedReimbursementExpenses__c} &lt; 1000000000, TEXT(FLOOR({!$Record.TotalConvertedReimbursementExpenses__c} /1000000))
+&amp; &apos; &apos;
+&amp; MID(TEXT({!$Record.TotalConvertedReimbursementExpenses__c}), 1 + LEN(TEXT(FLOOR({!$Record.TotalConvertedReimbursementExpenses__c} /1000000))),3)
+&amp; &apos; &apos;
+&amp; RIGHT(TEXT({!$Record.TotalConvertedReimbursementExpenses__c}), LEN(TEXT({!$Record.TotalConvertedReimbursementExpenses__c})) - LEN(TEXT(FLOOR({!$Record.TotalConvertedReimbursementExpenses__c} /1000)))),
+/* 1 B &amp; up */
+IF({!$Record.TotalConvertedReimbursementExpenses__c} &gt;= 1000000000, &quot;#TooHigh!&quot;, NULL))))</expression>
+    </formulas>
+    <interviewLabel>Invoice - Replace Comma With Space {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Invoice - Replace Comma With Space</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Ivory_Converted_Amount</name>
+        <label>Update Ivory Converted Amount</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>TotalConvertedAmount__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TotalConvertedProfessionalFees__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TotalConvertedReimbursementExpenses__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>IvoryConvertedAmount__c</field>
+            <value>
+                <elementReference>varIvoryConvertedAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>IvoryConvertedProfessionalFees__c</field>
+            <value>
+                <elementReference>varIvoryConvertedProfessionalFees</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>IvoryConvertedReimbursement__c</field>
+            <value>
+                <elementReference>varIvoryConvertedReimbursement</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Ivory_Converted_Amount</targetReference>
+        </connector>
+        <object>fw1__Invoice__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Display_Profile_By_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Display payment profiles by contact in payment pages. If no contact is provided, then display by account.</description>
+    <externalId>false</externalId>
+    <label>Display Profile By Contact</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

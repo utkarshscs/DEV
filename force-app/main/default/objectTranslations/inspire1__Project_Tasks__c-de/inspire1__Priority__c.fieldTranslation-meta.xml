@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>inspire1__Priority__c</name>
+    <picklistValues>
+        <masterLabel>High</masterLabel>
+        <translation>hoch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low</masterLabel>
+        <translation>gering</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Normal</masterLabel>
+        <translation>normal</translation>
+    </picklistValues>
+</CustomFieldTranslation>

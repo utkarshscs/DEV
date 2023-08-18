@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Resource_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines if assigned resource is a User or Contact.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  NOT(ISBLANK(WhoId)),&quot;Contact&quot;,
+  IF(ISBLANK(Owner:User.Email), &quot;Queue&quot;,
+  &quot;User&quot;)
+)</formula>
+    <label>Resource Type</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

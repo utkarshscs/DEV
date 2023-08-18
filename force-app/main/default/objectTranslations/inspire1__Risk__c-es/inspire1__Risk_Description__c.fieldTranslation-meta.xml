@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Escribe un breve resumen del riesgo o problema.</help>
+    <label></label>
+    <name>inspire1__Risk_Description__c</name>
+</CustomFieldTranslation>

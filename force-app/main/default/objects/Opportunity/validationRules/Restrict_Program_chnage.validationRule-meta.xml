@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Program_chnage</fullName>
+    <active>true</active>
+    <description>user can not remove/change the Program value once products are available on that opportunity record.</description>
+    <errorConditionFormula>AND( HasOpportunityLineItem , ISCHANGED( Programc__c ) ,
+NOT( $Permission.Bypass_Permission ),
+OR( Record_Type_Name__c = &apos;ECS&apos; , Record_Type_Name__c = &apos;Natural_Resources&apos; , Record_Type_Name__c = &apos;Food_and_Agriculture&apos; , Record_Type_Name__c = &apos;Research_and_Development&apos; )
+)</errorConditionFormula>
+    <errorMessage>This opportunity has associated products. Please remove all the associated products first to change the Program.</errorMessage>
+</ValidationRule>

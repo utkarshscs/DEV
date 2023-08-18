@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Zoom__c</fullName>
+    <defaultValue>10</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Captures the Gantt zoom setting defined by user.</description>
+    <externalId>false</externalId>
+    <label>Zoom</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Total_Lines_Taxable_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Total Lines Taxable Amount</label>
+    <summarizedField>fw1__Recurring_Invoice_Line__c.fw1__Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>fw1__Recurring_Invoice_Line__c.fw1__Taxable__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>fw1__Recurring_Invoice_Line__c.fw1__Sales_Tax__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </summaryFilterItems>
+    <summaryForeignKey>fw1__Recurring_Invoice_Line__c.fw1__Recurring_Invoice__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

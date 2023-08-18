@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuickBooks_Synched_On__c</fullName>
+    <description>date/time when quickbooks id populated for account</description>
+    <externalId>false</externalId>
+    <label>QuickBooks Synched On</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certificate__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Certificate</label>
+    <lookupFilter>
+        <active>false</active>
+        <booleanFilter>1</booleanFilter>
+        <filterItems>
+            <field>Certificate__c.Account__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Customer__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Certificate__c</referenceTo>
+    <relationshipLabel>Opportunity Certificates</relationshipLabel>
+    <relationshipName>Opportunity_Certificates</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

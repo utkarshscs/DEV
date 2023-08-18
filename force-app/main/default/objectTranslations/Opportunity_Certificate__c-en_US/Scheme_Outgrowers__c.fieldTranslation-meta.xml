@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Scheme_Outgrowers__c</name>
+    <picklistValues>
+        <masterLabel>Outgrowers</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outgrowers/ISH</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheme Small Holders</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

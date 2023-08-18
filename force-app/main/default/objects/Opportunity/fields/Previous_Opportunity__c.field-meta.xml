@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previous_Opportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Previous Opportunity</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>Opportunity.RecordType.DeveloperName</field>
+            <operation>notEqual</operation>
+            <value>Bundle_Opportunity</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Opportunities (Previous Opportunity)</relationshipLabel>
+    <relationshipName>PreviousOpportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

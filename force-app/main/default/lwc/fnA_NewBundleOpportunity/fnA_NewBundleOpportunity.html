@@ -1,0 +1,62 @@
+<template>
+	<!--lightning-quick-action-panel header="New Bundle Opportunity"-->
+	<lightning-modal-header class="header" label="New Bundle Opportunity"></lightning-modal-header>
+	<template if:true={loaded}>
+		<lightning-spinner alternative-text="Loading"></lightning-spinner>
+	</template>
+	<lightning-record-edit-form object-api-name={objectApiName} record-type-id={recTypeId} onsuccess={handleSuccess}
+		onerror={handleError} onsubmit={onSubmitHandler}>
+		<lightning-card title="Opportunity" icon-name="standard:opportunity">
+			<div class="demo-only demo-only--sizing slds-grid slds-wrap slds-box slds-box_x-small">
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="Name"></lightning-input-field>
+				</div>
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="CloseDate"></lightning-input-field>
+				</div>
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="StageName"></lightning-input-field>
+				</div>
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="Type"></lightning-input-field>
+				</div>
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="Programc__c"></lightning-input-field>
+				</div>
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="AccountId" value={recordId}></lightning-input-field>
+				</div>
+				<!--div class="slds-size_1-of-2">
+					<lightning-input-field field-name="Bill_To_Company__c"></lightning-input-field>
+				</div>
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="Billing_Contact__c"></lightning-input-field>
+				</div-->
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="LeadSource" value="Website" required></lightning-input-field>
+				</div>
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="Entity__c" value="ECS" required></lightning-input-field>
+				</div>
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="Language__c"></lightning-input-field>
+				</div>
+				<div class="slds-size_1-of-2">
+					<lightning-input-field field-name="RecordTypeId" disabled="true"></lightning-input-field>
+				</div>
+			</div>
+		</lightning-card>
+		<footer class="slds-modal__footer">
+			<template if:true={showCancelButton}>
+				<lightning-button class="slds-button" variant="neutral" label="Cancel" onclick={closeAction}>
+				</lightning-button>
+			</template>
+			<template if:false={showCancelButton}>
+				<lightning-button class="slds-button" variant="neutral" label="Back" onclick={handleBackAction}>
+				</lightning-button>
+			</template>
+			<lightning-button class="slds-button" variant="brand" label="Save" type="submit"></lightning-button>
+		</footer>
+	</lightning-record-edit-form>
+	<!--/lightning-quick-action-panel-->
+</template>

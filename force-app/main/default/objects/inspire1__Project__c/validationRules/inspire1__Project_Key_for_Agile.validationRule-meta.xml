@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Project_Key_for_Agile</fullName>
+    <active>true</active>
+    <description>Requires Project Key to be populated for Agile project type.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( inspire1__Project_Type2__c, &quot;Agile&quot;),
+  ISBLANK ( inspire1__Project_Key__c )
+  )</errorConditionFormula>
+    <errorDisplayField>inspire1__Project_Key__c</errorDisplayField>
+    <errorMessage>You must set a Project Key for Agile projects.  Please input a unique Project Key and save again.</errorMessage>
+</ValidationRule>

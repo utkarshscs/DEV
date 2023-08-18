@@ -1,0 +1,134 @@
+/************************************************************************************************************************************************
+Apex Class Name : sFilesCreateOpptyFolder
+Version         : 1.0
+Created Date    : 
+Test Class		: sFilesCreateOpptyFolderTest
+Modification Log:
+-------------------------------------------------------------------------------------------------------------------------------------------------
+* Developer                                 Date                                Description
+* -----------------------------------------------------------------------------------------------------------------------------------------------
+Sohit Tripathi                          19/01/2023                            Initial version
+//Query for all opportunities
+//String query = 'SELECT Id, Name, RecordType.DeveloperName, AccountId,fileforcem1__Sharepoint_Folder_Id__c, SharePoint_Folder_URL__c, Account.OpportunityFolderSharePointId__c, Account.SCOpportunityFolderSharePointId__c, Account.SGSOpportunityFolderSharePointId__c, Account.SSOpportunityFolderSharePointId__c, Account.SharePoint_Folder_Id__c, Account.SS_SharePoint_Folder_Id__c, Account.SC_SharePoint_Folder_Id__c, Account.SIC_SharePoint_Folder_Id__c, Account.SIC_SharePoint_Folder_URL__c FROM Opportunity WHERE Account.RecordType.DeveloperName IN:accountRTList AND fileforcem1__Sharepoint_Folder_Id__c = null AND Year__c IN:yearList and CreatedById NOT IN:userList AND Recordtype.developername IN:opptyRTList ORDER BY CreatedDate ASC';
+//Query for those opportunities which has files
+//String query = 'SELECT Id, Name, RecordType.DeveloperName, AccountId,fileforcem1__Sharepoint_Folder_Id__c, SharePoint_Folder_URL__c, Account.OpportunityFolderSharePointId__c, Account.SCOpportunityFolderSharePointId__c, Account.SGSOpportunityFolderSharePointId__c, Account.SSOpportunityFolderSharePointId__c, Account.SharePoint_Folder_Id__c, Account.SS_SharePoint_Folder_Id__c, Account.SC_SharePoint_Folder_Id__c, Account.SIC_SharePoint_Folder_Id__c, Account.SIC_SharePoint_Folder_URL__c, Account.SICOpportunityFolderSharePointId__c FROM Opportunity WHERE Account.RecordType.DeveloperName IN:accountRTList AND fileforcem1__Sharepoint_Folder_Id__c = null AND RecordType.DeveloperName IN:opptyRTList AND HasFile__c = True';
+**************************************************************************************************************************************************/
+global class sFilesCreateOpptyFolder implements Database.Batchable<SObject>,Database.AllowsCallouts, Database.Stateful{
+    
+    global database.querylocator start(database.batchableContext bc){
+        List<String> accountRTList = Label.Account_RecordType.contains(',')?Label.Account_RecordType.split(',') : new List<String>{Label.Account_RecordType};
+            List<String> userList = Label.UserListForSOQL.contains(',')?Label.UserListForSOQL.split(',') : new List<String>{Label.UserListForSOQL};
+                List<String> opptyRTList = Label.Opportunity_RecordType.contains(',')?Label.Opportunity_RecordType.split(',') : new List<String>{Label.Opportunity_RecordType};
+                    
+                    List<String> yearList = Label.YearList.contains(',')?Label.YearList.split(',') : new List<String>{Label.YearList};
+                        String query;
+        if(!Test.isRunningTest()){
+            query = Label.Create_Folder_Batch_Query;
+        }else{
+            query = 'SELECT Id, Name, RecordType.DeveloperName, AccountId,fileforcem1__Sharepoint_Folder_Id__c, SharePoint_Folder_URL__c, Account.OpportunityFolderSharePointId__c, Account.SCOpportunityFolderSharePointId__c, Account.SGSOpportunityFolderSharePointId__c, Account.SSOpportunityFolderSharePointId__c, Account.SharePoint_Folder_Id__c, Account.SS_SharePoint_Folder_Id__c, Account.SC_SharePoint_Folder_Id__c, Account.SIC_SharePoint_Folder_Id__c, Account.SIC_SharePoint_Folder_URL__c, Account.SICOpportunityFolderSharePointId__c FROM Opportunity WHERE fileforcem1__Sharepoint_Folder_Id__c = null ORDER BY CreatedDate ASC LIMIT 3';
+        }
+        return Database.getQueryLocator(query);
+    }
+    
+    global void execute(database.batchableContext bc, List<Opportunity> opptyList){
+        List<Opportunity> opptyListToUpdate = new List<Opportunity>();
+        List<Integration_Log__c>  integrationLogs = new List<Integration_Log__c>();
+        List<String> sgsOpptyRTList = Label.Opportunity_RT_SCS_Global_Services.contains(',')?Label.Opportunity_RT_SCS_Global_Services.split(',') : new List<String>{Label.Opportunity_RT_SCS_Global_Services};
+            //Getting Opportunity's SCS Consulting RecordType from Custom Label
+            List<String> scOpptyRTList = Label.Opportunity_RT_SCS_Consulting.contains(',')?Label.Opportunity_RT_SCS_Consulting.split(',') : new List<String>{Label.Opportunity_RT_SCS_Consulting};
+                //Getting Opportunity's SCS Standard RecordType from Custom Label
+                List<String> ssOpptyRTList = Label.Opportunity_RT_SCS_Standard.contains(',')?Label.Opportunity_RT_SCS_Standard.split(',') : new List<String>{Label.Opportunity_RT_SCS_Standard};
+                    //Getting Opportunity's SCS Ivory Coast Entity from Custom Label
+                    List<String> sicOpptyRTList = Label.Opportunity_RT_SCS_Ivory_Coast.contains(',')?Label.Opportunity_RT_SCS_Ivory_Coast.split(',') : new List<String>{Label.Opportunity_RT_SCS_Ivory_Coast};
+                        
+                        for(Opportunity opp : opptyList){
+                            fileforcem1.SharePointFileInfo opptyFolder;
+                            Map<string,string> fields = new Map<string,string>();
+                            String oppName = '';
+                            oppName = opp.Name;
+                            oppName = oppName.replaceAll('[^a-zA-Z0-9\\s+]', '_');
+                            oppName = oppName.removeEnd('_');
+                            System.debug('oppName ======> '+oppName);
+                            try{
+                                if(sgsOpptyRTList.contains(String.valueOf(opp.RecordType.DeveloperName)) && String.isNotBlank(opp.Account.SGSOpportunityFolderSharePointId__c)){
+                                    opptyFolder = createFolder(opp.Account.SGSOpportunityFolderSharePointId__c, oppName, null);
+                                }
+                                else if(scOpptyRTList.contains(String.valueOf(opp.RecordType.DeveloperName)) && String.isNotBlank(opp.Account.SCOpportunityFolderSharePointId__c)){
+                                    opptyFolder = createFolder(opp.Account.SCOpportunityFolderSharePointId__c, oppName, null);
+                                }
+                                else if(ssOpptyRTList.contains(String.valueOf(opp.RecordType.DeveloperName)) && String.isNotBlank(opp.Account.SSOpportunityFolderSharePointId__c)){
+                                    opptyFolder = createFolder(opp.Account.SSOpportunityFolderSharePointId__c, oppName, null);
+                                }
+                                else if(sicOpptyRTList.contains(String.valueOf(opp.RecordType.DeveloperName)) && String.isNotBlank(opp.Account.SICOpportunityFolderSharePointId__c)){
+                                    opptyFolder = createFolder(opp.Account.SICOpportunityFolderSharePointId__c, oppName, null);
+                                }
+                                
+                                fields.put('SalesforceId',opp.Id);
+                                if(opptyFolder != null && fields != null){
+                                    createFolder(opptyFolder.Id, '' ,fields);
+                                }
+                                
+                                opp.fileforcem1__Sharepoint_Folder_Id__c = opptyFolder != null ? opptyFolder.Id : null;
+                                opp.SharePoint_Folder_URL__c = opptyFolder != null ? opptyFolder.OpenUrl : null;
+                                opptyListToUpdate.add(opp);
+                            }
+                            catch (Exception e){
+                                Integration_Log__c log = new Integration_Log__c(Opportunity__c = opp.Id, Integration_Status__c = 'API Exception', JSON_Body__c = String.valueOf(e), Error_Message__c = e.getMessage());
+                                integrationLogs.add(log);
+                            }
+                        }
+        
+        if(opptyListToUpdate != null && !opptyListToUpdate.isEmpty()){
+            
+            List<Database.SaveResult> dsrs = Database.Update(opptyListToUpdate, false);
+            Integer index = 0;
+            for(Database.SaveResult dsr : dsrs){
+                if(!dsr.isSuccess()){
+                    String errMsg = dsr.getErrors()[0].getMessage();
+                    
+                    Integration_Log__c log = new Integration_Log__c(Opportunity__c = opptyListToUpdate[index].Id, Integration_Status__c = 'DML Exception', Error_Message__c = errMsg);
+                    integrationLogs.add(log);
+                }
+                index++;
+            }
+        }
+        
+        //Capturing Exception logs
+        if(integrationLogs != null && !integrationLogs.isEmpty()){
+            insert integrationLogs;
+        }
+    }
+    
+    public static fileforcem1.SharePointFileInfo createFolder(String rootFolderId, String folderName, Map<string,string> fields){
+        fileforcem1.SharePointFileInfo folder;
+        fileforcem1__SharePoint_Settings__mdt orgSettings = [SELECT fileforcem1__Named_Credential__c,fileforcem1__Document_Library_Id__c,fileforcem1__Site_Id__c FROM fileforcem1__SharePoint_Settings__mdt WHERE Developername = 'Default' limit 1];
+        fileforcem1__SharePoint_Object_Settings__mdt objectSettings = [SELECT fileforcem1__Root_Folder_Id__c,fileforcem1__Site_Id__c,fileforcem1__Document_Library_Id__c FROM fileforcem1__SharePoint_Object_Settings__mdt WHERE MasterLabel ='Account' LIMIT 1 ];
+        
+        fileforcem1.ClientApi apiClient = new fileforcem1.ClientApi();
+        apiClient.namedCredentialName = orgSettings.fileforcem1__Named_Credential__c;
+        apiClient.sharepointSiteId = objectSettings.fileforcem1__Site_Id__c;
+        apiClient.documentLibraryId = objectSettings.fileforcem1__Document_Library_Id__c;
+        fileforcem1.SharePointFileInfo projectFolder;
+        fileforcem1.SharePointFileInfo projectChildFolder;
+        
+        if(!Test.isRunningTest()){
+            if(fields == null && String.isNotBlank(rootFolderId) && String.isNotBlank(folderName)){
+                folder = apiClient.createFolder(rootFolderId, folderName);
+            }
+            else{
+                folder = apiClient.updateCustomFields(rootFolderId,fields);
+            }
+        }
+        else{
+            String jsonString1 = '{"ApiActionStatus":null,"CreatedBy":null, "CreatedDateTime":null, "CustomFields":null, "Description":null, "DisplayName":null, "DriveFolderId":null, "Format":null, "FormattedLastModified":null, "Id":"01ZEWS4T24FTSQMPOYZND3Z4VEGORXFNLU", "Index":null, "ModifiedBy":null, "Name":"007AAbb", "NameWithoutExt":"007AAbb", "NextLink":null, "OpenUrl":"https://scsglobalservices.sharepoint.com/Shared%20Documents/Salesforce%20sFiles/SANDBOX/QA/007AAbb", "ParentId":"01ZEWS4T7GSH5FJ4YC7NDIRHROT7HKKVF7", "ParentPath":"Salesforce%20sFiles%2FSANDBOX%2FQA", "RootLevel":null, "SalesforceId":null, "SecurityFields":null, "SharepointGuid":null, "SharepointListId":null, "Size":"0 bytes", "Type":"Folder", "Url":"/Shared%20Documents/Salesforce%20sFiles/SANDBOX/QA/007AAbb", "items":null}';
+            folder = (fileforcem1.SharePointFileInfo)JSON.deserialize(jsonString1, fileforcem1.SharePointFileInfo.class);
+        }
+        return folder;
+    }
+    
+    global void finish(database.batchableContext bc){
+        
+    }
+    
+    
+}

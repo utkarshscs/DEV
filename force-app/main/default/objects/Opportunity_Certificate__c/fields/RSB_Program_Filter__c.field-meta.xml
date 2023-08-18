@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RSB_Program_Filter__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+(ProgramName__c &lt;&gt; &quot;RSB CORSIA&quot;),
+(ProgramName__c &lt;&gt; &quot;RSB SAF Book-and-Claim&quot;),
+(ProgramName__c &lt;&gt; &quot;RSB Global Fuels&quot;),
+(ProgramName__c &lt;&gt; &quot;RSB EU-RED&quot;),
+(ProgramName__c &lt;&gt; &quot;RSB Global Advanced Products&quot;),
+(ProgramName__c &lt;&gt; &quot;RSB Smallholder Standard&quot;),
+(ProgramName__c &lt;&gt; &quot;RSB Japan Fit&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>RSB Program Filter</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

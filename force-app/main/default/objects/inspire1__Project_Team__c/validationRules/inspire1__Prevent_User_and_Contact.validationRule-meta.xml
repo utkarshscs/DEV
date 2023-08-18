@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Prevent_User_and_Contact</fullName>
+    <active>true</active>
+    <description>Prevents user from populating both user and contact at the same time.</description>
+    <errorConditionFormula>OR(
+AND(
+  NOT(ISBLANK( inspire1__Contact__c )),
+  NOT(ISBLANK( inspire1__User__c )),
+  NOT(ISBLANK( inspire1__Queue_Name__c ))
+),
+
+AND(
+  NOT(ISBLANK( inspire1__Contact__c )),
+  NOT(ISBLANK( inspire1__User__c ))
+),
+AND(
+  NOT(ISBLANK( inspire1__User__c )),
+  NOT(ISBLANK( inspire1__Queue_Name__c ))
+),
+AND(
+  NOT(ISBLANK( inspire1__Contact__c )),
+  NOT(ISBLANK( inspire1__Queue_Name__c ))
+)
+
+)</errorConditionFormula>
+    <errorMessage>You can only select one resource, either User, Contact or Queue.  Please update your record and try again.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Profile_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF((fw1__ExpiryYear__c &lt;&gt; null &amp;&amp; fw1__First_Name__c &lt;&gt; null &amp;&amp; fw1__Last_Name__c &lt;&gt; null), 
+   &apos;Credit Card&apos;,
+   IF(fw1__Name_On_Account__c &lt;&gt; null, 
+      &apos;eCheck&apos;, 
+      IF(fw1__Token__c &lt;&gt; null, fw1__Token_Payment_Method__c, &apos; &apos;) ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Profile Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

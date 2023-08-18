@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Update_Check</name>
+        <label>Update Check</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Date</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isUpdatable</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Actual_Start_Date</targetReference>
+            </connector>
+            <label>Update Date</label>
+        </rules>
+    </decisions>
+    <description>This flow updates the actual Start date. 
+Created as per of Hypercare issue. 
+To track the date when the project starts i.e. when status is changed to in progress</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Update Actual Start Date If :
+record is created with status In progress
+OR
+Status is updated to in progress</description>
+        <name>isUpdatable</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+	OR(
+		ISNEW(),
+		ISCHANGED({!$Record.inspire1__Status__c})
+	),
+	ISPICKVAL({!$Record.inspire1__Status__c}, &apos;In Progress&apos;)
+)</expression>
+    </formulas>
+    <interviewLabel>Update Actual Start Date {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Actual Start Date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Update the Actual Start Date with today</description>
+        <name>Update_Actual_Start_Date</name>
+        <label>Update Actual Start Date</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Actual_Start_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Check</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>inspire1__Status__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>inspire1__Project_Tasks__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

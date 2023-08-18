@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Der Kosten-Leistungs Index misst den Wert der geleisteten Arbeit im Verhältnis zu den tatsächlichen Kosten. Ein Kosten-Leistungs Index-Wert &lt;1,0 bedeutet, dass die Kosten höher waren als veranschlagt. Ein Kosten-Leistungs Index-Wert &gt;1,0 bedeutet, dass die Kosten geringer waren als veranschlagt.  Berechnung: Erreichter Wert / Tatsächliche Kosten&quot;</help>
+    <label></label>
+    <name>inspire1__Cost_Performance_Index_CPI__c</name>
+</CustomFieldTranslation>

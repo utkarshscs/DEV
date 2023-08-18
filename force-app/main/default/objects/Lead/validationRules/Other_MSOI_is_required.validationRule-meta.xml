@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_MSOI_is_required</fullName>
+    <active>true</active>
+    <description>Other MSOI is required when &quot;Main Service of Interest&quot; field is populated</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(Main_Services_of_Interest__c )), INCLUDES(Main_Services_of_Interest__c , &apos;Other&apos;),
+ISBLANK(Other_MSOI__c),
+NOT($Permission.Bypass_Permission)
+)</errorConditionFormula>
+    <errorMessage>Other MSOI is required when you select the &apos;Other&apos; in Main Services of Interest field.</errorMessage>
+</ValidationRule>

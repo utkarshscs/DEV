@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Project_Template__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Project template that is related to Opportunity</description>
+    <externalId>false</externalId>
+    <label>Project Template</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>You must select a project template.</errorMessage>
+        <filterItems>
+            <field>inspire1__Project__c.inspire1__Template__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>inspire1__Project__c</referenceTo>
+    <relationshipLabel>Project Template Mappings</relationshipLabel>
+    <relationshipName>Project_Template_Mappings1</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

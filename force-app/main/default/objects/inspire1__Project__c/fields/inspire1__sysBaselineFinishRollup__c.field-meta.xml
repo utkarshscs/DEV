@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__sysBaselineFinishRollup__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Rolls up Baseline Finish Date from Project Tasks.  Used to populate Project Baseline Finish Date.</description>
+    <externalId>false</externalId>
+    <label>sysBaselineFinishRollup</label>
+    <summarizedField>inspire1__Project_Tasks__c.inspire1__BaselineEndDate__c</summarizedField>
+    <summaryForeignKey>inspire1__Project_Tasks__c.inspire1__Project__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

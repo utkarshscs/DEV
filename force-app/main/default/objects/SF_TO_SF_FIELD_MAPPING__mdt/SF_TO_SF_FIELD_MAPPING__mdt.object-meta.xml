@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>SF_TO_SF_FIELD_MAPPING</label>
+    <pluralLabel>SF_TO_SF_FIELD_MAPPING</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

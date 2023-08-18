@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Verweist auf die benutzerdefinierten Einstellungen des Inspire Planners, um festzulegen, ob E-Mail-Benachrichtigungen an den Kontakt gesendet werden sollen, wenn eine neue Aufgabe zugewiesen wird.&quot;</help>
+    <label></label>
+    <name>inspire1__sysContactTaskEmail__c</name>
+</CustomFieldTranslation>

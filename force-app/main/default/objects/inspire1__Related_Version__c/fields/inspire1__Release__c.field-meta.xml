@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Release__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Release that User Story (Project Task) is related to.</description>
+    <externalId>false</externalId>
+    <label>Release</label>
+    <referenceTo>inspire1__Release__c</referenceTo>
+    <relationshipLabel>User Stories</relationshipLabel>
+    <relationshipName>Related_Version</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

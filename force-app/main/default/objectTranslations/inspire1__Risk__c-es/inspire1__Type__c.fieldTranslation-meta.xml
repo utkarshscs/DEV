@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;La diferencia es que un &quot;&quot;problema&quot;&quot; es algo que ya ha ocurrido y un &quot;&quot;riesgo&quot;&quot; es un problema potencial que puede o no ocurrir y puede afectar al proyecto de manera positiva o negativa.&quot;</help>
+    <label></label>
+    <name>inspire1__Type__c</name>
+    <picklistValues>
+        <masterLabel>Issue</masterLabel>
+        <translation>Problema</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risk</masterLabel>
+        <translation>Riesgo</translation>
+    </picklistValues>
+</CustomFieldTranslation>

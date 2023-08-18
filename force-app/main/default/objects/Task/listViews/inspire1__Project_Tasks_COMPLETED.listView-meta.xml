@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Project_Tasks_COMPLETED</fullName>
+    <columns>SUBJECT</columns>
+    <columns>inspire1__Parent_Task__c</columns>
+    <columns>WHAT_NAME</columns>
+    <columns>inspire1__Custom_Start_Date__c</columns>
+    <columns>DUE_DATE</columns>
+    <columns>WHO_NAME</columns>
+    <columns>PRIORITY</columns>
+    <columns>STATUS</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>inspire1__Inspire_Task__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>STATUS</field>
+        <operation>equals</operation>
+        <value>Completed,Deferred</value>
+    </filters>
+    <label>Project Tasks - COMPLETED</label>
+</ListView>

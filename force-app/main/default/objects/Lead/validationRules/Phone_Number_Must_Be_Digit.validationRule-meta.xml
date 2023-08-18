@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Number_Must_Be_Digit</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( 
+	NOT(ISBLANK(Phone)), 
+	NOT( 
+		OR( 
+			REGEX(Phone, &quot;[0-9 ]+&quot;), 
+			REGEX(Phone, &quot;^[+]?[0-9-() ]*$&quot;)
+		) 
+	),
+	NOT($Permission.Bypass_Permission)
+)</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Phone number must be digit.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Is_Paid__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( AND(fw1__Total_Invoice_Amount__c &gt; 0,
+        ROUND(fw1__Total_Invoice_Amount__c , 2 )= ROUND(fw1__Total_Paid_Amount__c , 2 ) ,
+        fw1__Balance_Due__c = 0),
+        True,
+        False
+        )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Paid</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

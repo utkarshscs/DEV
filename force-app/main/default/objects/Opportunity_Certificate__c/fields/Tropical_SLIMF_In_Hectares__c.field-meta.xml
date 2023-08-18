@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tropical_SLIMF_In_Hectares__c</fullName>
+    <description>FSC</description>
+    <externalId>false</externalId>
+    <formula>Tropical_SLIMF_Acres__c  /  $CustomMetadata.FSC_Area_Configuration__mdt.Acer.Acre__c</formula>
+    <label>Tropical-SLIMF (In Hectares)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

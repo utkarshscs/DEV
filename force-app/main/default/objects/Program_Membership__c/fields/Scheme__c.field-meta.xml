@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scheme__c</fullName>
+    <externalId>false</externalId>
+    <label>Scheme</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ISH</fullName>
+                <default>false</default>
+                <label>ISH</label>
+            </value>
+            <value>
+                <fullName>NPP</fullName>
+                <default>false</default>
+                <label>NPP</label>
+            </value>
+            <value>
+                <fullName>P&amp;C - POM</fullName>
+                <default>false</default>
+                <label>P&amp;C - POM</label>
+            </value>
+            <value>
+                <fullName>SCC - Independent Mill</fullName>
+                <default>false</default>
+                <label>SCC - Independent Mill</label>
+            </value>
+            <value>
+                <fullName>SCC - Other</fullName>
+                <default>false</default>
+                <label>SCC - Other</label>
+            </value>
+            <value>
+                <fullName>SCC - PKC</fullName>
+                <default>false</default>
+                <label>SCC - PKC</label>
+            </value>
+            <value>
+                <fullName>SCC - PKC/Refinery</fullName>
+                <default>false</default>
+                <label>SCC - PKC/Refinery</label>
+            </value>
+            <value>
+                <fullName>SCC - Port</fullName>
+                <default>false</default>
+                <label>SCC - Port</label>
+            </value>
+            <value>
+                <fullName>SCC - Product Man</fullName>
+                <default>false</default>
+                <label>SCC - Product Man</label>
+            </value>
+            <value>
+                <fullName>SCC - Refinery</fullName>
+                <default>false</default>
+                <label>SCC - Refinery</label>
+            </value>
+            <value>
+                <fullName>IFA</fullName>
+                <default>false</default>
+                <label>IFA</label>
+            </value>
+            <value>
+                <fullName>IFA + HO</fullName>
+                <default>false</default>
+                <label>IFA + HO</label>
+            </value>
+            <value>
+                <fullName>IFA + CC</fullName>
+                <default>false</default>
+                <label>IFA + CC</label>
+            </value>
+            <value>
+                <fullName>HPSS</fullName>
+                <default>false</default>
+                <label>HPSS</label>
+            </value>
+            <value>
+                <fullName>PHA</fullName>
+                <default>false</default>
+                <label>PHA</label>
+            </value>
+            <value>
+                <fullName>Spring</fullName>
+                <default>false</default>
+                <label>Spring</label>
+            </value>
+            <value>
+                <fullName>GRASP</fullName>
+                <default>false</default>
+                <label>GRASP</label>
+            </value>
+            <value>
+                <fullName>FSMA</fullName>
+                <default>false</default>
+                <label>FSMA</label>
+            </value>
+            <value>
+                <fullName>TNM</fullName>
+                <default>false</default>
+                <label>TNM</label>
+            </value>
+            <value>
+                <fullName>Costco</fullName>
+                <default>false</default>
+                <label>Costco</label>
+            </value>
+            <value>
+                <fullName>QMS</fullName>
+                <default>false</default>
+                <label>QMS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

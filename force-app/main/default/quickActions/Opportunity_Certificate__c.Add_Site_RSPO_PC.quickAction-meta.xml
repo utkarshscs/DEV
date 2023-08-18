@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>Account__c</field>
+        <formula>Opportunity_Certificate__c.Customer__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>OpportunityCertificate__c</field>
+        <formula>Opportunity_Certificate__c.Id</formula>
+    </fieldOverrides>
+    <label>Add Site(P&amp;C)</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>CustomerSite__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Account__c</field>
+                <uiBehavior>Readonly</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SiteType__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <successMessage>Site added Successfully</successMessage>
+    <targetObject>Certified_Sites__c</targetObject>
+    <targetParentField>OpportunityCertificate__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

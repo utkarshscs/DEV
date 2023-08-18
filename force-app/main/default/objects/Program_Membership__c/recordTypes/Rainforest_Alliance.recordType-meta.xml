@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rainforest_Alliance</fullName>
+    <active>true</active>
+    <label>Rainforest Alliance</label>
+    <picklistValues>
+        <picklist>CertificateHolderType__c</picklist>
+        <values>
+            <fullName>Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Site</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClientStatus__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred Out</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CurrentAuditCycle__c</picklist>
+        <values>
+            <fullName>ASA 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 32</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 33</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 34</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 41</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 42</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 43</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 44</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 51</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 52</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 53</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 54</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 61</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 62</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 63</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASA 64</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IC 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ReCERT 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ReCERT 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ReCERT 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ReCERT 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ReCERT 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ReCERT 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Audit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LicenseStatus__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Membership_Type_Note_piclklist__c</picklist>
+        <values>
+            <fullName>Ordinary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Chain Associate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Membership_Type__c</picklist>
+        <values>
+            <fullName>Bonsucro Membership Id</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSC COC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fairtrade Client ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PalmTrace ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RA Id</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMETA sedex id</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Scheme__c</picklist>
+        <values>
+            <fullName>ISH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P%26C - POM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCC - Independent Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCC - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCC - PKC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCC - PKC%2FRefinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCC - Port</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCC - Product Man</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCC - Refinery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferring Out</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Traceability__c</picklist>
+        <values>
+            <fullName>IP %26 MB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP %26 MB %26 S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP %26 MB %26 SG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP %26 S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP %26 SG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identity Preserved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identity Preserved%2C Mass Balance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mass Balance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA%2C Mass Balance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

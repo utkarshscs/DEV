@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>inspire1__Status__c</name>
+    <picklistValues>
+        <masterLabel>Development</masterLabel>
+        <translation>Entwicklung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning</masterLabel>
+        <translation>Planung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Productization</masterLabel>
+        <translation>Produktfähig machen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Released</masterLabel>
+        <translation>Veröffentlicht</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Testing</masterLabel>
+        <translation>Testen</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Zeigt an, dass es sich bei dem Projekt um eine Vorlage handelt und wird als Option im Feld Projektvorlage angezeigt.&quot;</help>
+    <label></label>
+    <name>inspire1__Template__c</name>
+</CustomFieldTranslation>

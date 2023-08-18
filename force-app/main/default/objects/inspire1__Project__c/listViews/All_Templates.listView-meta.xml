@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Templates</fullName>
+    <columns>NAME</columns>
+    <columns>inspire1__Template__c</columns>
+    <columns>Program__c</columns>
+    <columns>inspire1__Description__c</columns>
+    <columns>inspire1__Total_Tasks_Rollup__c</columns>
+    <columns>inspire1__Owner_Name__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>inspire1__Template__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>All Templates</label>
+</ListView>

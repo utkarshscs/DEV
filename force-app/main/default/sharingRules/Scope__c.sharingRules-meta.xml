@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Give_R_W_access_for_Web_Integrator</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>for migrated opportunity give edit access to all Sales Rep</description>
+        <label>Give R/W access for Web Integrator</label>
+        <sharedTo>
+            <roleAndSubordinates>VP_Sales</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>equals</operation>
+            <value>0058a00000Kuh9ZAAR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

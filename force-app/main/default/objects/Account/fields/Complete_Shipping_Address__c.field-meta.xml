@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complete_Shipping_Address__c</fullName>
+    <externalId>false</externalId>
+    <formula>ShippingStreet &amp; IF(NOT(ISBLANK(ShippingStreet)), BR(),&apos;&apos;) &amp;
+ ShippingCity  &amp; &apos;, &apos; &amp; ShippingState &amp; &apos;  &apos; &amp;  ShippingPostalCode &amp; IF(OR(NOT(ISBLANK(ShippingCity)), NOT(ISBLANK(ShippingState)), NOT(ISBLANK(ShippingPostalCode))), BR(),&apos;&apos;) &amp;
+ ShippingCountry</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Complete Shipping Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

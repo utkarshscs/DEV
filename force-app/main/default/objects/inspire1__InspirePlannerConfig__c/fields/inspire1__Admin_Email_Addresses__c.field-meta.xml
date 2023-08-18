@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Admin_Email_Addresses__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Beacon notification emails. Input multiple email addresses separated by ;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Input email addresses to receive Inspire Planner admin notifications Multiple emails can be inputted separated by semi-colon (;).</inlineHelpText>
+    <label>Admin Notification Email Address</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

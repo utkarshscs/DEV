@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Activity__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Activity</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Brokers/Traders with physical possession</fullName>
+                <default>false</default>
+                <label>Brokers/Traders with physical possession</label>
+            </value>
+            <value>
+                <fullName>Brokers/Traders without physical possession</fullName>
+                <default>false</default>
+                <label>Brokers/Traders without physical possession</label>
+            </value>
+            <value>
+                <fullName>Distributor/Wholesaler</fullName>
+                <default>false</default>
+                <label>Distributor/Wholesaler</label>
+            </value>
+            <value>
+                <fullName>Gathering of non-wood products</fullName>
+                <default>false</default>
+                <label>Gathering of non-wood products</label>
+            </value>
+            <value>
+                <fullName>Logging</fullName>
+                <default>false</default>
+                <label>Logging</label>
+            </value>
+            <value>
+                <fullName>Primary Processor</fullName>
+                <default>false</default>
+                <label>Primary Processor</label>
+            </value>
+            <value>
+                <fullName>Printing and related service</fullName>
+                <default>false</default>
+                <label>Printing and related service</label>
+            </value>
+            <value>
+                <fullName>Publishing activities</fullName>
+                <default>false</default>
+                <label>Publishing activities</label>
+            </value>
+            <value>
+                <fullName>Retailers</fullName>
+                <default>false</default>
+                <label>Retailers</label>
+            </value>
+            <value>
+                <fullName>Secondary Processor</fullName>
+                <default>false</default>
+                <label>Secondary Processor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

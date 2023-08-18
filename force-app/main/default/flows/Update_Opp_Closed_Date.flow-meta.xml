@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Assigned_Closed_Date</name>
+        <label>Assigned Closed Date</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Closed_Date_Time__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.CloseDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Removed Bypass Permission. 
+Updated logic for Current Date time and Current Date change
+[I have modified the flow and on 09-06-2023, added on creation and updation]
+Added close won or close lost condition</description>
+    <environments>Default</environments>
+    <interviewLabel>Update Opp Closed Date {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity - Update Opportunity Closed Date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assigned_Closed_Date</targetReference>
+        </connector>
+        <filterFormula>AND (
+OR(  ISNEW() , ISCHANGED( {!$Record.StageName} ) ) ,
+OR(  ISPICKVAL(  {!$Record.StageName} ,  &quot;Closed Won&quot;) ,  ISPICKVAL(  {!$Record.StageName} ,  &quot;Closed Lost&quot;) )
+)</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

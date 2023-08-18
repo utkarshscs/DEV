@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_3__c</fullName>
+    <externalId>false</externalId>
+    <label>Level 3</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Level_2__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>W4.3.1 Treated glued laminated timber</fullName>
+                <default>false</default>
+                <label>W4.3.1 Treated glued laminated timber</label>
+            </value>
+            <value>
+                <fullName>W4.3.2 Treated finger jointed lumber</fullName>
+                <default>false</default>
+                <label>W4.3.2 Treated finger jointed lumber</label>
+            </value>
+            <value>
+                <fullName>W8.1.1 Laminboard</fullName>
+                <default>false</default>
+                <label>W8.1.1 Laminboard</label>
+            </value>
+            <value>
+                <fullName>W8.1.2 Veneer plywood</fullName>
+                <default>false</default>
+                <label>W8.1.2 Veneer plywood</label>
+            </value>
+            <value>
+                <fullName>W8.2.1 Melamineparticleboard</fullName>
+                <default>false</default>
+                <label>W8.2.1 Melamineparticleboard</label>
+            </value>
+            <value>
+                <fullName>W8.2.2 Veneered particleboard</fullName>
+                <default>false</default>
+                <label>W8.2.2 Veneered particleboard</label>
+            </value>
+            <value>
+                <fullName>W8.2.3 Oriented Strand Board(OSB)</fullName>
+                <default>false</default>
+                <label>W8.2.3 Oriented Strand Board(OSB)</label>
+            </value>
+            <value>
+                <fullName>W8.2.4 Smooth-surface panel</fullName>
+                <default>false</default>
+                <label>W8.2.4 Smooth-surface panel</label>
+            </value>
+            <value>
+                <fullName>W8.2.5 Wood cement particleboard</fullName>
+                <default>false</default>
+                <label>W8.2.5 Wood cement particleboard</label>
+            </value>
+            <value>
+                <fullName>W8.2.6 Plasterboard</fullName>
+                <default>false</default>
+                <label>W8.2.6 Plasterboard</label>
+            </value>
+            <value>
+                <fullName>W8.2.7 Strawboard</fullName>
+                <default>false</default>
+                <label>W8.2.7 Strawboard</label>
+            </value>
+            <value>
+                <fullName>W8.2.8 Graded particleboard</fullName>
+                <default>false</default>
+                <label>W8.2.8 Graded particleboard</label>
+            </value>
+            <value>
+                <fullName>W8.3.1 High-density fibreboard (HDF)</fullName>
+                <default>false</default>
+                <label>W8.3.1 High-density fibreboard (HDF)</label>
+            </value>
+            <value>
+                <fullName>W8.3.2 Medium-density fibreboard (MDF)</fullName>
+                <default>false</default>
+                <label>W8.3.2 Medium-density fibreboard (MDF)</label>
+            </value>
+            <value>
+                <fullName>W8.3.3 Softboard</fullName>
+                <default>false</default>
+                <label>W8.3.3 Softboard</label>
+            </value>
+            <value>
+                <fullName>W8.3.4 Medium-hard-fibreboard</fullName>
+                <default>false</default>
+                <label>W8.3.4 Medium-hard-fibreboard</label>
+            </value>
+            <value>
+                <fullName>W11.5.1 Laminate flooring</fullName>
+                <default>false</default>
+                <label>W11.5.1 Laminate flooring</label>
+            </value>
+            <value>
+                <fullName>W11.5.2 Parquet flooring</fullName>
+                <default>false</default>
+                <label>W11.5.2 Parquet flooring</label>
+            </value>
+            <value>
+                <fullName>W11.5.3 Plank flooring</fullName>
+                <default>false</default>
+                <label>W11.5.3 Plank flooring</label>
+            </value>
+            <value>
+                <fullName>W11.5.4 Wood-block flooring</fullName>
+                <default>false</default>
+                <label>W11.5.4 Wood-block flooring</label>
+            </value>
+            <value>
+                <fullName>W11.5.5 Engineered flooring</fullName>
+                <default>false</default>
+                <label>W11.5.5 Engineered flooring</label>
+            </value>
+            <value>
+                <fullName>W13.1.1 Garden tables</fullName>
+                <default>false</default>
+                <label>W13.1.1 Garden tables</label>
+            </value>
+            <value>
+                <fullName>W13.1.2 Gardenbenches</fullName>
+                <default>false</default>
+                <label>W13.1.2 Gardenbenches</label>
+            </value>
+            <value>
+                <fullName>W13.1.3 Garden chairs and stools</fullName>
+                <default>false</default>
+                <label>W13.1.3 Garden chairs and stools</label>
+            </value>
+            <value>
+                <fullName>W13.1.4 Hammocks and hammock frames</fullName>
+                <default>false</default>
+                <label>W13.1.4 Hammocks and hammock frames</label>
+            </value>
+            <value>
+                <fullName>W15.3.1 Bicycles</fullName>
+                <default>false</default>
+                <label>W15.3.1 Bicycles</label>
+            </value>
+            <value>
+                <fullName>W15.3.2 Bats, sticks, poles and paddles</fullName>
+                <default>false</default>
+                <label>W15.3.2 Bats, sticks, poles and paddles</label>
+            </value>
+            <value>
+                <fullName>W15.3.3 Boards and skis</fullName>
+                <default>false</default>
+                <label>W15.3.3 Boards and skis</label>
+            </value>
+            <value>
+                <fullName>W15.3.4 Other sporting goods</fullName>
+                <default>false</default>
+                <label>W15.3.4 Other sporting goods</label>
+            </value>
+            <value>
+                <fullName>P1.1.1 Groundwood</fullName>
+                <default>false</default>
+                <label>P1.1.1 Groundwood</label>
+            </value>
+            <value>
+                <fullName>P1.1.2 Refiner pulp</fullName>
+                <default>false</default>
+                <label>P1.1.2 Refiner pulp</label>
+            </value>
+            <value>
+                <fullName>P1.2.1 Groundwood</fullName>
+                <default>false</default>
+                <label>P1.2.1 Groundwood</label>
+            </value>
+            <value>
+                <fullName>P1.2.2 Refiner pulp</fullName>
+                <default>false</default>
+                <label>P1.2.2 Refiner pulp</label>
+            </value>
+            <value>
+                <fullName>P1.7.1 Specialty cellulose</fullName>
+                <default>false</default>
+                <label>P1.7.1 Specialty cellulose</label>
+            </value>
+            <value>
+                <fullName>P1.7.2 Cellulose derivatives</fullName>
+                <default>false</default>
+                <label>P1.7.2 Cellulose derivatives</label>
+            </value>
+            <value>
+                <fullName>P1.7.3 Regenerated cllulose film</fullName>
+                <default>false</default>
+                <label>P1.7.3 Regenerated cllulose film</label>
+            </value>
+            <value>
+                <fullName>P1.7.4 Rayon and other synthetic fibres</fullName>
+                <default>false</default>
+                <label>P1.7.4 Rayon and other synthetic fibres</label>
+            </value>
+            <value>
+                <fullName>P1.8.1 Recovered pulp, deinked</fullName>
+                <default>false</default>
+                <label>P1.8.1 Recovered pulp, deinked</label>
+            </value>
+            <value>
+                <fullName>P1.8.2 Recovered pulp, not deinked</fullName>
+                <default>false</default>
+                <label>P1.8.2 Recovered pulp, not deinked</label>
+            </value>
+            <value>
+                <fullName>P2.1.1 Coated paper</fullName>
+                <default>false</default>
+                <label>P2.1.1 Coated paper</label>
+            </value>
+            <value>
+                <fullName>P2.1.2 Uncoated paper</fullName>
+                <default>false</default>
+                <label>P2.1.2 Uncoated paper</label>
+            </value>
+            <value>
+                <fullName>P2.4.1 Impregnated papers</fullName>
+                <default>false</default>
+                <label>P2.4.1 Impregnated papers</label>
+            </value>
+            <value>
+                <fullName>P2.4.2 Photographic base papers</fullName>
+                <default>false</default>
+                <label>P2.4.2 Photographic base papers</label>
+            </value>
+            <value>
+                <fullName>P2.4.3 Thermographic papers</fullName>
+                <default>false</default>
+                <label>P2.4.3 Thermographic papers</label>
+            </value>
+            <value>
+                <fullName>P2.4.4 Translucent papers</fullName>
+                <default>false</default>
+                <label>P2.4.4 Translucent papers</label>
+            </value>
+            <value>
+                <fullName>P2.4.5 Self-copying and carbon papers</fullName>
+                <default>false</default>
+                <label>P2.4.5 Self-copying and carbon papers</label>
+            </value>
+            <value>
+                <fullName>P2.4.6 Cigarette papers</fullName>
+                <default>false</default>
+                <label>P2.4.6 Cigarette papers</label>
+            </value>
+            <value>
+                <fullName>P2.4.7 Filter papers</fullName>
+                <default>false</default>
+                <label>P2.4.7 Filter papers</label>
+            </value>
+            <value>
+                <fullName>P2.4.8 Crepe papers</fullName>
+                <default>false</default>
+                <label>P2.4.8 Crepe papers</label>
+            </value>
+            <value>
+                <fullName>P2.4.9 Embossed and perforated paper</fullName>
+                <default>false</default>
+                <label>P2.4.9 Embossed and perforated paper</label>
+            </value>
+            <value>
+                <fullName>P2.4.10 Composite papers</fullName>
+                <default>false</default>
+                <label>P2.4.10 Composite papers</label>
+            </value>
+            <value>
+                <fullName>P2.4.11 Wallpaper base</fullName>
+                <default>false</default>
+                <label>P2.4.11 Wallpaper base</label>
+            </value>
+            <value>
+                <fullName>P2.4.12 Security paper</fullName>
+                <default>false</default>
+                <label>P2.4.12 Security paper</label>
+            </value>
+            <value>
+                <fullName>P3.4.1 High-pressure laminates</fullName>
+                <default>false</default>
+                <label>P3.4.1 High-pressure laminates</label>
+            </value>
+            <value>
+                <fullName>P3.4.2 Low-pressure laminates</fullName>
+                <default>false</default>
+                <label>P3.4.2 Low-pressure laminates</label>
+            </value>
+            <value>
+                <fullName>P3.4.3 Continuous pressure laminates</fullName>
+                <default>false</default>
+                <label>P3.4.3 Continuous pressure laminates</label>
+            </value>
+            <value>
+                <fullName>N6.3.1 Christmas trees</fullName>
+                <default>false</default>
+                <label>N6.3.1 Christmas trees</label>
+            </value>
+            <value>
+                <fullName>N7.1.1 Natural rubber</fullName>
+                <default>false</default>
+                <label>N7.1.1 Natural rubber</label>
+            </value>
+            <value>
+                <fullName>N7.1.2 Tyres</fullName>
+                <default>false</default>
+                <label>N7.1.2 Tyres</label>
+            </value>
+            <value>
+                <fullName>N7.1.3 Balls</fullName>
+                <default>false</default>
+                <label>N7.1.3 Balls</label>
+            </value>
+            <value>
+                <fullName>N7.1.4 Footwear</fullName>
+                <default>false</default>
+                <label>N7.1.4 Footwear</label>
+            </value>
+            <value>
+                <fullName>N7.1.5 Rubber foam pillows, mattresses</fullName>
+                <default>false</default>
+                <label>N7.1.5 Rubber foam pillows, mattresses</label>
+            </value>
+            <value>
+                <fullName>N7.1.6 Balata, gutta-percha, guayule</fullName>
+                <default>false</default>
+                <label>N7.1.6 Balata, gutta-percha, guayule</label>
+            </value>
+            <value>
+                <fullName>N7.1.7 Other manufactured rubber prods.</fullName>
+                <default>false</default>
+                <label>N7.1.7 Other manufactured rubber prods.</label>
+            </value>
+            <value>
+                <fullName>N9.6.1 Maple syrup or sugar</fullName>
+                <default>false</default>
+                <label>N9.6.1 Maple syrup or sugar</label>
+            </value>
+            <value>
+                <fullName>N9.6.2 Birch syrup or sugar</fullName>
+                <default>false</default>
+                <label>N9.6.2 Birch syrup or sugar</label>
+            </value>
+            <value>
+                <fullName>030101 Flitches, boules and slabs</fullName>
+                <default>false</default>
+                <label>030101 Flitches, boules and slabs</label>
+            </value>
+            <value>
+                <fullName>030102 Solid wood boards and planks</fullName>
+                <default>false</default>
+                <label>030102 Solid wood boards and planks</label>
+            </value>
+            <value>
+                <fullName>030103 Beams</fullName>
+                <default>false</default>
+                <label>030103 Beams</label>
+            </value>
+            <value>
+                <fullName>030104 Poles and piles</fullName>
+                <default>false</default>
+                <label>030104 Poles and piles</label>
+            </value>
+            <value>
+                <fullName>030105 Peeler cores</fullName>
+                <default>false</default>
+                <label>030105 Peeler cores</label>
+            </value>
+            <value>
+                <fullName>030106 Pencil slat</fullName>
+                <default>false</default>
+                <label>030106 Pencil slat</label>
+            </value>
+            <value>
+                <fullName>030107 Other sawnwood</fullName>
+                <default>false</default>
+                <label>030107 Other sawnwood</label>
+            </value>
+            <value>
+                <fullName>050602 High Density Fiberboard (HDF)</fullName>
+                <default>false</default>
+                <label>050602 High Density Fiberboard (HDF)</label>
+            </value>
+            <value>
+                <fullName>050501 Chipboard</fullName>
+                <default>false</default>
+                <label>050501 Chipboard</label>
+            </value>
+            <value>
+                <fullName>050502 OSB</fullName>
+                <default>false</default>
+                <label>050502 OSB</label>
+            </value>
+            <value>
+                <fullName>050503 Other particle board</fullName>
+                <default>false</default>
+                <label>050503 Other particle board</label>
+            </value>
+            <value>
+                <fullName>050601 Medium Density Fiberboard (MDF)</fullName>
+                <default>false</default>
+                <label>050601 Medium Density Fiberboard (MDF)</label>
+            </value>
+            <value>
+                <fullName>050603 Softboard and insulating board</fullName>
+                <default>false</default>
+                <label>050603 Softboard and insulating board</label>
+            </value>
+            <value>
+                <fullName>060201 Wooden frames</fullName>
+                <default>false</default>
+                <label>060201 Wooden frames</label>
+            </value>
+            <value>
+                <fullName>060203 Kitchenware and similar utensils</fullName>
+                <default>false</default>
+                <label>060203 Kitchenware and similar utensils</label>
+            </value>
+            <value>
+                <fullName>060204 Hangers and clothes pegs</fullName>
+                <default>false</default>
+                <label>060204 Hangers and clothes pegs</label>
+            </value>
+            <value>
+                <fullName>060209 Other household products</fullName>
+                <default>false</default>
+                <label>060209 Other household products</label>
+            </value>
+            <value>
+                <fullName>060310 Other tools and turned wood</fullName>
+                <default>false</default>
+                <label>060310 Other tools and turned wood</label>
+            </value>
+            <value>
+                <fullName>060104 Barrels, staves and other cooperage products</fullName>
+                <default>false</default>
+                <label>060104 Barrels, staves and other cooperage products</label>
+            </value>
+            <value>
+                <fullName>060302 Toys and games</fullName>
+                <default>false</default>
+                <label>060302 Toys and games</label>
+            </value>
+            <value>
+                <fullName>060402 Others</fullName>
+                <default>false</default>
+                <label>060402 Others</label>
+            </value>
+            <value>
+                <fullName>060307 Decorative objects and art</fullName>
+                <default>false</default>
+                <label>060307 Decorative objects and art</label>
+            </value>
+            <value>
+                <fullName>060305 Wooden stationery</fullName>
+                <default>false</default>
+                <label>060305 Wooden stationery</label>
+            </value>
+            <value>
+                <fullName>060206 Bathroom accessories</fullName>
+                <default>false</default>
+                <label>060206 Bathroom accessories</label>
+            </value>
+            <value>
+                <fullName>060306 Dowels</fullName>
+                <default>false</default>
+                <label>060306 Dowels</label>
+            </value>
+            <value>
+                <fullName>060303 Sport goods</fullName>
+                <default>false</default>
+                <label>060303 Sport goods</label>
+            </value>
+            <value>
+                <fullName>080103 Decking and garden sleepers</fullName>
+                <default>false</default>
+                <label>080103 Decking and garden sleepers</label>
+            </value>
+            <value>
+                <fullName>080203 Fencing material</fullName>
+                <default>false</default>
+                <label>080203 Fencing material</label>
+            </value>
+            <value>
+                <fullName>080101 Garden furniture</fullName>
+                <default>false</default>
+                <label>080101 Garden furniture</label>
+            </value>
+            <value>
+                <fullName>080202 Trellis and plant support</fullName>
+                <default>false</default>
+                <label>080202 Trellis and plant support</label>
+            </value>
+            <value>
+                <fullName>080201 Garden sheds</fullName>
+                <default>false</default>
+                <label>080201 Garden sheds</label>
+            </value>
+            <value>
+                <fullName>080205 Garden storage</fullName>
+                <default>false</default>
+                <label>080205 Garden storage</label>
+            </value>
+            <value>
+                <fullName>080204 Pergolas</fullName>
+                <default>false</default>
+                <label>080204 Pergolas</label>
+            </value>
+            <value>
+                <fullName>090307 Other wood material for construction</fullName>
+                <default>false</default>
+                <label>090307 Other wood material for construction</label>
+            </value>
+            <value>
+                <fullName>090305 Architectural joinery items</fullName>
+                <default>false</default>
+                <label>090305 Architectural joinery items</label>
+            </value>
+            <value>
+                <fullName>090302 Doors</fullName>
+                <default>false</default>
+                <label>090302 Doors</label>
+            </value>
+            <value>
+                <fullName>090201 Exterior</fullName>
+                <default>false</default>
+                <label>090201 Exterior</label>
+            </value>
+            <value>
+                <fullName>090206 Interior</fullName>
+                <default>false</default>
+                <label>090206 Interior</label>
+            </value>
+            <value>
+                <fullName>090202 Structure</fullName>
+                <default>false</default>
+                <label>090202 Structure</label>
+            </value>
+            <value>
+                <fullName>090203 Roof</fullName>
+                <default>false</default>
+                <label>090203 Roof</label>
+            </value>
+            <value>
+                <fullName>090204 Wall</fullName>
+                <default>false</default>
+                <label>090204 Wall</label>
+            </value>
+            <value>
+                <fullName>090301 Windows</fullName>
+                <default>false</default>
+                <label>090301 Windows</label>
+            </value>
+            <value>
+                <fullName>090303 Shingles and shakes</fullName>
+                <default>false</default>
+                <label>090303 Shingles and shakes</label>
+            </value>
+            <value>
+                <fullName>090304 Flooring</fullName>
+                <default>false</default>
+                <label>090304 Flooring</label>
+            </value>
+            <value>
+                <fullName>100403 Unbleached sulphate (kraft) pulp</fullName>
+                <default>false</default>
+                <label>100403 Unbleached sulphate (kraft) pulp</label>
+            </value>
+            <value>
+                <fullName>100404 Bleached sulphate (kraft) pulp</fullName>
+                <default>false</default>
+                <label>100404 Bleached sulphate (kraft) pulp</label>
+            </value>
+            <value>
+                <fullName>100301 cellulosic fibre from dissolving pulp</fullName>
+                <default>false</default>
+                <label>100301 cellulosic fibre from dissolving pulp</label>
+            </value>
+            <value>
+                <fullName>110107 Other graphic papers</fullName>
+                <default>false</default>
+                <label>110107 Other graphic papers</label>
+            </value>
+            <value>
+                <fullName>110407 Flexible paper packaging</fullName>
+                <default>false</default>
+                <label>110407 Flexible paper packaging</label>
+            </value>
+            <value>
+                <fullName>110104 Woodfree papers (coated and uncoated)</fullName>
+                <default>false</default>
+                <label>110104 Woodfree papers (coated and uncoated)</label>
+            </value>
+            <value>
+                <fullName>110102 Uncoated mechanical papers</fullName>
+                <default>false</default>
+                <label>110102 Uncoated mechanical papers</label>
+            </value>
+            <value>
+                <fullName>110101 Newsprint paper</fullName>
+                <default>false</default>
+                <label>110101 Newsprint paper</label>
+            </value>
+            <value>
+                <fullName>110103 Coated mechanical papers</fullName>
+                <default>false</default>
+                <label>110103 Coated mechanical papers</label>
+            </value>
+            <value>
+                <fullName>110105 Paper for blank forms</fullName>
+                <default>false</default>
+                <label>110105 Paper for blank forms</label>
+            </value>
+            <value>
+                <fullName>110106 Paper for tickets</fullName>
+                <default>false</default>
+                <label>110106 Paper for tickets</label>
+            </value>
+            <value>
+                <fullName>110201 Books</fullName>
+                <default>false</default>
+                <label>110201 Books</label>
+            </value>
+            <value>
+                <fullName>110202 Book covers</fullName>
+                <default>false</default>
+                <label>110202 Book covers</label>
+            </value>
+            <value>
+                <fullName>110203 Magazines and Newspaper</fullName>
+                <default>false</default>
+                <label>110203 Magazines and Newspaper</label>
+            </value>
+            <value>
+                <fullName>110206 Calendars, diaries and organisers</fullName>
+                <default>false</default>
+                <label>110206 Calendars, diaries and organisers</label>
+            </value>
+            <value>
+                <fullName>110501 Notebooks</fullName>
+                <default>false</default>
+                <label>110501 Notebooks</label>
+            </value>
+            <value>
+                <fullName>110504 Rolled thermal paper</fullName>
+                <default>false</default>
+                <label>110504 Rolled thermal paper</label>
+            </value>
+            <value>
+                <fullName>110508 Adhesive labels</fullName>
+                <default>false</default>
+                <label>110508 Adhesive labels</label>
+            </value>
+            <value>
+                <fullName>110307 Sanitary products</fullName>
+                <default>false</default>
+                <label>110307 Sanitary products</label>
+            </value>
+            <value>
+                <fullName>110309 Wet wipes</fullName>
+                <default>false</default>
+                <label>110309 Wet wipes</label>
+            </value>
+            <value>
+                <fullName>110302 Toilet paper / bathroom tissue</fullName>
+                <default>false</default>
+                <label>110302 Toilet paper / bathroom tissue</label>
+            </value>
+            <value>
+                <fullName>110205 Marketing collateral</fullName>
+                <default>false</default>
+                <label>110205 Marketing collateral</label>
+            </value>
+            <value>
+                <fullName>110208 Other printed matter</fullName>
+                <default>false</default>
+                <label>110208 Other printed matter</label>
+            </value>
+            <value>
+                <fullName>110204 Paper toys and games</fullName>
+                <default>false</default>
+                <label>110204 Paper toys and games</label>
+            </value>
+            <value>
+                <fullName>110404 Sacks and Paper bags</fullName>
+                <default>false</default>
+                <label>110404 Sacks and Paper bags</label>
+            </value>
+            <value>
+                <fullName>110403 Wrapping papers</fullName>
+                <default>false</default>
+                <label>110403 Wrapping papers</label>
+            </value>
+            <value>
+                <fullName>110401 Case materials and corrugated and Solid Fiber Box</fullName>
+                <default>false</default>
+                <label>110401 Case materials and corrugated and Solid Fiber Box</label>
+            </value>
+            <value>
+                <fullName>110402 Cartonboard, Folding boxboards</fullName>
+                <default>false</default>
+                <label>110402 Cartonboard, Folding boxboards</label>
+            </value>
+            <value>
+                <fullName>110405 Food and beverages packaging</fullName>
+                <default>false</default>
+                <label>110405 Food and beverages packaging</label>
+            </value>
+            <value>
+                <fullName>110506 Envelopes</fullName>
+                <default>false</default>
+                <label>110506 Envelopes</label>
+            </value>
+            <value>
+                <fullName>110301 Tissues products</fullName>
+                <default>false</default>
+                <label>110301 Tissues products</label>
+            </value>
+            <value>
+                <fullName>110304 Kitchen paper</fullName>
+                <default>false</default>
+                <label>110304 Kitchen paper</label>
+            </value>
+            <value>
+                <fullName>110305 Tablecloths and napkins</fullName>
+                <default>false</default>
+                <label>110305 Tablecloths and napkins</label>
+            </value>
+            <value>
+                <fullName>110306 Paper dinnerware</fullName>
+                <default>false</default>
+                <label>110306 Paper dinnerware</label>
+            </value>
+            <value>
+                <fullName>110605 Impregnated paper</fullName>
+                <default>false</default>
+                <label>110605 Impregnated paper</label>
+            </value>
+            <value>
+                <fullName>110411 Other papers mainly for packaging</fullName>
+                <default>false</default>
+                <label>110411 Other papers mainly for packaging</label>
+            </value>
+            <value>
+                <fullName>110310 Other household and sanitary paper</fullName>
+                <default>false</default>
+                <label>110310 Other household and sanitary paper</label>
+            </value>
+            <value>
+                <fullName>110207 Point-of-sales materials</fullName>
+                <default>false</default>
+                <label>110207 Point-of-sales materials</label>
+            </value>
+            <value>
+                <fullName>110408 Paper trays, containers, cups</fullName>
+                <default>false</default>
+                <label>110408 Paper trays, containers, cups</label>
+            </value>
+            <value>
+                <fullName>120203 Foam</fullName>
+                <default>false</default>
+                <label>120203 Foam</label>
+            </value>
+            <value>
+                <fullName>120104 Rolls and panels of compressed cork</fullName>
+                <default>false</default>
+                <label>120104 Rolls and panels of compressed cork</label>
+            </value>
+            <value>
+                <fullName>120106 Cork for construction</fullName>
+                <default>false</default>
+                <label>120106 Cork for construction</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>P1.1 Mechanical pulp, bleached</controllingFieldValue>
+            <valueName>P1.1.1 Groundwood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P1.1 Mechanical pulp, bleached</controllingFieldValue>
+            <valueName>P1.1.2 Refiner pulp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P1.2 Mechanical pulp, unbleached</controllingFieldValue>
+            <valueName>P1.2.1 Groundwood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P1.2 Mechanical pulp, unbleached</controllingFieldValue>
+            <valueName>P1.2.2 Refiner pulp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W4.3 Treated dimensional timber, lumber or plywood</controllingFieldValue>
+            <controllingFieldValue>W1.1 Roundwood (logs)</controllingFieldValue>
+            <valueName>W4.3.1 Treated glued laminated timber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W4.3 Treated dimensional timber, lumber or plywood</controllingFieldValue>
+            <valueName>W4.3.2 Treated finger jointed lumber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>050600 Fibreboard</controllingFieldValue>
+            <valueName>050602 High Density Fiberboard (HDF)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>050600 Fibreboard</controllingFieldValue>
+            <valueName>050601 Medium Density Fiberboard (MDF)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>050600 Fibreboard</controllingFieldValue>
+            <valueName>050603 Softboard and insulating board</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>050500 Particle board</controllingFieldValue>
+            <valueName>050501 Chipboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>050500 Particle board</controllingFieldValue>
+            <valueName>050502 OSB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>050500 Particle board</controllingFieldValue>
+            <valueName>050503 Other particle board</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P1.7 Dissolving pulp</controllingFieldValue>
+            <valueName>P1.7.1 Specialty cellulose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P1.7 Dissolving pulp</controllingFieldValue>
+            <valueName>P1.7.2 Cellulose derivatives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P1.7 Dissolving pulp</controllingFieldValue>
+            <valueName>P1.7.3 Regenerated cllulose film</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P1.7 Dissolving pulp</controllingFieldValue>
+            <valueName>P1.7.4 Rayon and other synthetic fibres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P1.8 Pulp from recovered paper</controllingFieldValue>
+            <valueName>P1.8.1 Recovered pulp, deinked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P1.8 Pulp from recovered paper</controllingFieldValue>
+            <valueName>P1.8.2 Recovered pulp, not deinked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.1 Copying, printing, communication paper</controllingFieldValue>
+            <valueName>P2.1.1 Coated paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.1 Copying, printing, communication paper</controllingFieldValue>
+            <valueName>P2.1.2 Uncoated paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060200 Household goods</controllingFieldValue>
+            <valueName>060201 Wooden frames</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060200 Household goods</controllingFieldValue>
+            <valueName>060203 Kitchenware and similar utensils</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060200 Household goods</controllingFieldValue>
+            <valueName>060204 Hangers and clothes pegs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060200 Household goods</controllingFieldValue>
+            <valueName>060209 Other household products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060200 Household goods</controllingFieldValue>
+            <valueName>060206 Bathroom accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060300 Tools and turned wood</controllingFieldValue>
+            <valueName>060310 Other tools and turned wood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060300 Tools and turned wood</controllingFieldValue>
+            <valueName>060302 Toys and games</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060300 Tools and turned wood</controllingFieldValue>
+            <valueName>060307 Decorative objects and art</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060300 Tools and turned wood</controllingFieldValue>
+            <valueName>060305 Wooden stationery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060300 Tools and turned wood</controllingFieldValue>
+            <valueName>060306 Dowels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060300 Tools and turned wood</controllingFieldValue>
+            <valueName>060303 Sport goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.1 Impregnated papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.2 Photographic base papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.3 Thermographic papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.4 Translucent papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.5 Self-copying and carbon papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.6 Cigarette papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.7 Filter papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.8 Crepe papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.9 Embossed and perforated paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.10 Composite papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.11 Wallpaper base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P2.4 Specialty paper</controllingFieldValue>
+            <valueName>P2.4.12 Security paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060400 Other manufactured wood</controllingFieldValue>
+            <valueName>060402 Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>060100 Wood packaging</controllingFieldValue>
+            <valueName>060104 Barrels, staves and other cooperage products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P3.4 Paperboardlaminates</controllingFieldValue>
+            <valueName>P3.4.1 High-pressure laminates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P3.4 Paperboardlaminates</controllingFieldValue>
+            <valueName>P3.4.2 Low-pressure laminates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>P3.4 Paperboardlaminates</controllingFieldValue>
+            <valueName>P3.4.3 Continuous pressure laminates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.1 Plywood</controllingFieldValue>
+            <valueName>W8.1.1 Laminboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.1 Plywood</controllingFieldValue>
+            <valueName>W8.1.2 Veneer plywood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.2 Particleboard</controllingFieldValue>
+            <valueName>W8.2.1 Melamineparticleboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.2 Particleboard</controllingFieldValue>
+            <valueName>W8.2.2 Veneered particleboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.2 Particleboard</controllingFieldValue>
+            <valueName>W8.2.3 Oriented Strand Board(OSB)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.2 Particleboard</controllingFieldValue>
+            <valueName>W8.2.4 Smooth-surface panel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.2 Particleboard</controllingFieldValue>
+            <valueName>W8.2.5 Wood cement particleboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.2 Particleboard</controllingFieldValue>
+            <valueName>W8.2.6 Plasterboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.2 Particleboard</controllingFieldValue>
+            <valueName>W8.2.7 Strawboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.2 Particleboard</controllingFieldValue>
+            <valueName>W8.2.8 Graded particleboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.3 Fibreboard</controllingFieldValue>
+            <valueName>W8.3.1 High-density fibreboard (HDF)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.3 Fibreboard</controllingFieldValue>
+            <valueName>W8.3.2 Medium-density fibreboard (MDF)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.3 Fibreboard</controllingFieldValue>
+            <valueName>W8.3.3 Softboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W8.3 Fibreboard</controllingFieldValue>
+            <valueName>W8.3.4 Medium-hard-fibreboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>080100 Garden Furniture / Outdoor Products</controllingFieldValue>
+            <valueName>080103 Decking and garden sleepers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>080100 Garden Furniture / Outdoor Products</controllingFieldValue>
+            <valueName>080101 Garden furniture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>080200 Landscaping Timbers</controllingFieldValue>
+            <valueName>080203 Fencing material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>080200 Landscaping Timbers</controllingFieldValue>
+            <valueName>080202 Trellis and plant support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>080200 Landscaping Timbers</controllingFieldValue>
+            <valueName>080201 Garden sheds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>080200 Landscaping Timbers</controllingFieldValue>
+            <valueName>080205 Garden storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>080200 Landscaping Timbers</controllingFieldValue>
+            <valueName>080204 Pergolas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090300 Wood material for construction</controllingFieldValue>
+            <valueName>090307 Other wood material for construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090300 Wood material for construction</controllingFieldValue>
+            <valueName>090305 Architectural joinery items</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090300 Wood material for construction</controllingFieldValue>
+            <valueName>090302 Doors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090300 Wood material for construction</controllingFieldValue>
+            <valueName>090301 Windows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090300 Wood material for construction</controllingFieldValue>
+            <valueName>090303 Shingles and shakes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090300 Wood material for construction</controllingFieldValue>
+            <valueName>090304 Flooring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090200 Integrated Parts of Wooden Buildings and constructions</controllingFieldValue>
+            <valueName>090201 Exterior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090200 Integrated Parts of Wooden Buildings and constructions</controllingFieldValue>
+            <valueName>090206 Interior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090200 Integrated Parts of Wooden Buildings and constructions</controllingFieldValue>
+            <valueName>090202 Structure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090200 Integrated Parts of Wooden Buildings and constructions</controllingFieldValue>
+            <valueName>090203 Roof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>090200 Integrated Parts of Wooden Buildings and constructions</controllingFieldValue>
+            <valueName>090204 Wall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>100400 Chemical pulp</controllingFieldValue>
+            <valueName>100403 Unbleached sulphate (kraft) pulp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>100400 Chemical pulp</controllingFieldValue>
+            <valueName>100404 Bleached sulphate (kraft) pulp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>100300 Dissolving pulp and derivatives</controllingFieldValue>
+            <valueName>100301 cellulosic fibre from dissolving pulp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110100 Graphic papers</controllingFieldValue>
+            <valueName>110107 Other graphic papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110100 Graphic papers</controllingFieldValue>
+            <valueName>110104 Woodfree papers (coated and uncoated)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110100 Graphic papers</controllingFieldValue>
+            <valueName>110102 Uncoated mechanical papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110100 Graphic papers</controllingFieldValue>
+            <valueName>110101 Newsprint paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110100 Graphic papers</controllingFieldValue>
+            <valueName>110103 Coated mechanical papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110100 Graphic papers</controllingFieldValue>
+            <valueName>110105 Paper for blank forms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110100 Graphic papers</controllingFieldValue>
+            <valueName>110106 Paper for tickets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110400 Packaging materials</controllingFieldValue>
+            <valueName>110407 Flexible paper packaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110400 Packaging materials</controllingFieldValue>
+            <valueName>110404 Sacks and Paper bags</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110400 Packaging materials</controllingFieldValue>
+            <valueName>110403 Wrapping papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110400 Packaging materials</controllingFieldValue>
+            <valueName>110401 Case materials and corrugated and Solid Fiber Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110400 Packaging materials</controllingFieldValue>
+            <valueName>110402 Cartonboard, Folding boxboards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110400 Packaging materials</controllingFieldValue>
+            <valueName>110405 Food and beverages packaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110400 Packaging materials</controllingFieldValue>
+            <valueName>110411 Other papers mainly for packaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110400 Packaging materials</controllingFieldValue>
+            <valueName>110408 Paper trays, containers, cups</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110200 Printed matter</controllingFieldValue>
+            <valueName>110201 Books</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110200 Printed matter</controllingFieldValue>
+            <valueName>110202 Book covers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110200 Printed matter</controllingFieldValue>
+            <valueName>110203 Magazines and Newspaper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110200 Printed matter</controllingFieldValue>
+            <valueName>110206 Calendars, diaries and organisers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110200 Printed matter</controllingFieldValue>
+            <valueName>110205 Marketing collateral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110200 Printed matter</controllingFieldValue>
+            <valueName>110208 Other printed matter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110200 Printed matter</controllingFieldValue>
+            <valueName>110204 Paper toys and games</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110200 Printed matter</controllingFieldValue>
+            <valueName>110207 Point-of-sales materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110500 Stationery Products</controllingFieldValue>
+            <valueName>110501 Notebooks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110500 Stationery Products</controllingFieldValue>
+            <valueName>110504 Rolled thermal paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110500 Stationery Products</controllingFieldValue>
+            <valueName>110508 Adhesive labels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110500 Stationery Products</controllingFieldValue>
+            <valueName>110506 Envelopes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110300 Household and sanitary paper</controllingFieldValue>
+            <valueName>110307 Sanitary products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110300 Household and sanitary paper</controllingFieldValue>
+            <valueName>110309 Wet wipes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110300 Household and sanitary paper</controllingFieldValue>
+            <valueName>110302 Toilet paper / bathroom tissue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110300 Household and sanitary paper</controllingFieldValue>
+            <valueName>110301 Tissues products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110300 Household and sanitary paper</controllingFieldValue>
+            <valueName>110304 Kitchen paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110300 Household and sanitary paper</controllingFieldValue>
+            <valueName>110305 Tablecloths and napkins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110300 Household and sanitary paper</controllingFieldValue>
+            <valueName>110306 Paper dinnerware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110300 Household and sanitary paper</controllingFieldValue>
+            <valueName>110310 Other household and sanitary paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>110600 Other paper and paperboard</controllingFieldValue>
+            <valueName>110605 Impregnated paper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W11.5 Flooring</controllingFieldValue>
+            <valueName>W11.5.1 Laminate flooring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W11.5 Flooring</controllingFieldValue>
+            <valueName>W11.5.2 Parquet flooring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W11.5 Flooring</controllingFieldValue>
+            <valueName>W11.5.3 Plank flooring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W11.5 Flooring</controllingFieldValue>
+            <valueName>W11.5.4 Wood-block flooring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W11.5 Flooring</controllingFieldValue>
+            <valueName>W11.5.5 Engineered flooring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>120200 Rubber / Latex</controllingFieldValue>
+            <valueName>120203 Foam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>120100 Cork and cork products</controllingFieldValue>
+            <valueName>120104 Rolls and panels of compressed cork</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>120100 Cork and cork products</controllingFieldValue>
+            <valueName>120106 Cork for construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W13.1 Garden furniture</controllingFieldValue>
+            <valueName>W13.1.1 Garden tables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W13.1 Garden furniture</controllingFieldValue>
+            <valueName>W13.1.2 Gardenbenches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W13.1 Garden furniture</controllingFieldValue>
+            <valueName>W13.1.3 Garden chairs and stools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W13.1 Garden furniture</controllingFieldValue>
+            <valueName>W13.1.4 Hammocks and hammock frames</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>N6.3 Wholetreesor plants</controllingFieldValue>
+            <valueName>N6.3.1 Christmas trees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>N7.1 Rubber / latex</controllingFieldValue>
+            <valueName>N7.1.1 Natural rubber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>N7.1 Rubber / latex</controllingFieldValue>
+            <valueName>N7.1.2 Tyres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>N7.1 Rubber / latex</controllingFieldValue>
+            <valueName>N7.1.3 Balls</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>N7.1 Rubber / latex</controllingFieldValue>
+            <valueName>N7.1.4 Footwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>N7.1 Rubber / latex</controllingFieldValue>
+            <valueName>N7.1.5 Rubber foam pillows, mattresses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>N7.1 Rubber / latex</controllingFieldValue>
+            <valueName>N7.1.6 Balata, gutta-percha, guayule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>N7.1 Rubber / latex</controllingFieldValue>
+            <valueName>N7.1.7 Other manufactured rubber prods.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W15.3 Sporting goods</controllingFieldValue>
+            <valueName>W15.3.1 Bicycles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W15.3 Sporting goods</controllingFieldValue>
+            <valueName>W15.3.2 Bats, sticks, poles and paddles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W15.3 Sporting goods</controllingFieldValue>
+            <valueName>W15.3.3 Boards and skis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>W15.3 Sporting goods</controllingFieldValue>
+            <valueName>W15.3.4 Other sporting goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>N9.6 Sap-based foods</controllingFieldValue>
+            <valueName>N9.6.1 Maple syrup or sugar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>N9.6 Sap-based foods</controllingFieldValue>
+            <valueName>N9.6.2 Birch syrup or sugar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>030100 Sawnwood</controllingFieldValue>
+            <valueName>030101 Flitches, boules and slabs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>030100 Sawnwood</controllingFieldValue>
+            <valueName>030102 Solid wood boards and planks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>030100 Sawnwood</controllingFieldValue>
+            <valueName>030103 Beams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>030100 Sawnwood</controllingFieldValue>
+            <valueName>030104 Poles and piles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>030100 Sawnwood</controllingFieldValue>
+            <valueName>030105 Peeler cores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>030100 Sawnwood</controllingFieldValue>
+            <valueName>030106 Pencil slat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>030100 Sawnwood</controllingFieldValue>
+            <valueName>030107 Other sawnwood</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

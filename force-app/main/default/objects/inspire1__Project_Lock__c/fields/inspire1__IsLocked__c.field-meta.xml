@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__IsLocked__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>(NOT(ISBLANK(inspire1__User__c))) &amp;&amp; (NOT(ISBLANK(inspire1__LockDate__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IsLocked</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

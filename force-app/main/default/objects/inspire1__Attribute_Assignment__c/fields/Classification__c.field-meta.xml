@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification__c</fullName>
+    <externalId>false</externalId>
+    <label>Classification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ASI Witness</fullName>
+                <default>false</default>
+                <label>ASI Witness</label>
+            </value>
+            <value>
+                <fullName>Auditor</fullName>
+                <default>false</default>
+                <label>Auditor</label>
+            </value>
+            <value>
+                <fullName>Auditor Lead</fullName>
+                <default>false</default>
+                <label>Auditor Lead</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>Lead</fullName>
+                <default>false</default>
+                <label>Lead</label>
+            </value>
+            <value>
+                <fullName>P1</fullName>
+                <default>false</default>
+                <label>P1</label>
+            </value>
+            <value>
+                <fullName>P2</fullName>
+                <default>false</default>
+                <label>P2</label>
+            </value>
+            <value>
+                <fullName>P3</fullName>
+                <default>false</default>
+                <label>P3</label>
+            </value>
+            <value>
+                <fullName>Peer Reviewer</fullName>
+                <default>false</default>
+                <label>Peer Reviewer</label>
+            </value>
+            <value>
+                <fullName>Qualified</fullName>
+                <default>false</default>
+                <label>Qualified</label>
+            </value>
+            <value>
+                <fullName>Sales Rep</fullName>
+                <default>false</default>
+                <label>Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Sampler</fullName>
+                <default>false</default>
+                <label>Sampler</label>
+            </value>
+            <value>
+                <fullName>Senior Lead</fullName>
+                <default>false</default>
+                <label>Senior Lead</label>
+            </value>
+            <value>
+                <fullName>Senior Witness</fullName>
+                <default>false</default>
+                <label>Senior Witness</label>
+            </value>
+            <value>
+                <fullName>Senior Witness Auditor</fullName>
+                <default>false</default>
+                <label>Senior Witness Auditor</label>
+            </value>
+            <value>
+                <fullName>SLCWA</fullName>
+                <default>false</default>
+                <label>SLCWA</label>
+            </value>
+            <value>
+                <fullName>Social Auditor</fullName>
+                <default>false</default>
+                <label>Social Auditor</label>
+            </value>
+            <value>
+                <fullName>Team Auditor</fullName>
+                <default>false</default>
+                <label>Team Auditor</label>
+            </value>
+            <value>
+                <fullName>Technical Auditor</fullName>
+                <default>false</default>
+                <label>Technical Auditor</label>
+            </value>
+            <value>
+                <fullName>Technical Expert</fullName>
+                <default>false</default>
+                <label>Technical Expert</label>
+            </value>
+            <value>
+                <fullName>Technical Reviewer</fullName>
+                <default>false</default>
+                <label>Technical Reviewer</label>
+            </value>
+            <value>
+                <fullName>Trainee</fullName>
+                <default>false</default>
+                <label>Trainee</label>
+            </value>
+            <value>
+                <fullName>Trainer</fullName>
+                <default>false</default>
+                <label>Trainer</label>
+            </value>
+            <value>
+                <fullName>Translator</fullName>
+                <default>false</default>
+                <label>Translator</label>
+            </value>
+            <value>
+                <fullName>Witness</fullName>
+                <default>false</default>
+                <label>Witness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

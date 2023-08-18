@@ -1,0 +1,9 @@
+.slds-modal__container {
+    max-height: 90rem !important;
+    height: 90% !important;
+}
+.error-msg{
+     color: red; 
+     font-size: large;
+     padding: 10px 0 10px 15px;
+}

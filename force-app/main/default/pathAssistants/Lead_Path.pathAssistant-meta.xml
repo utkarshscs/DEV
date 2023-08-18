@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Lead Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Program__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <info>&lt;p&gt;Learn about and contact your new lead quickly.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Use Salesforce leads to separate prospects from the Salesforce contacts you’ve already sold to.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Respond to your lead within five minutes to increase your chances of converting the lead record to an opportunity. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Visit your lead’s website to learn about your lead’s business and industry.&lt;/li&gt;&lt;li&gt;Find your lead on social networks to determine how to best engage and connect.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Program__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <info>&lt;p&gt;Nurture your lead so that you’re top-of-mind.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Send emails based on time intervals and your leads’ actions on our website. Nurturing leads helps to free up time to focus on other opportunities in your pipeline.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Assign a rating to your lead based on what you’ve learned during the qualification process.&lt;/li&gt;&lt;li&gt;Work with marketing to add your lead to campaigns to further nurture the relationship.&lt;/li&gt;&lt;li&gt;Before you mark your lead as Unqualified, schedule six follow-up tasks to email or call your lead.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Nurturing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Program__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <info>&lt;p&gt;Please validate the program and address for lead before conversion&lt;/p&gt;</info>
+        <picklistValueName>Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Program__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;&quot;&gt;SQL (Sales Qualified Lead): &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;&quot;&gt;A person who has been qualified by sales for further contact.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Congratulations! Now it’s time to convert the lead record into an opportunity. Then, continue the qualification process with your new contact.&lt;/p&gt;</info>
+        <picklistValueName>SQL</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Keep track of the info related to your unqualified leads.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Your lead may be unqualified if they are not interested in your products or they have left the company associated with the prospect.&lt;/span&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Document lessons learned for future reference&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Save outreach details and contact information&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Unqualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Program__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <info>&lt;p&gt;Verify contact information and qualify your lead.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Gather as much contact information as you can. Get tips from the pros about the importance of qualifying your lead.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Get your lead’s email address, phone number, and title so that you can include your lead in future campaigns.&lt;/li&gt;&lt;li&gt;Email your lead first, and immediately follow up with a phone call.&lt;/li&gt;&lt;li&gt;Rehearse your call scripts so that you sound confident and the flow of your conversation is more natural.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Working</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>SCS_Global_Services</recordTypeName>
+</PathAssistant>

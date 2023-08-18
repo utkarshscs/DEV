@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Task Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Certificate Decision</fullName>
+                <default>false</default>
+                <label>Certificate Decision</label>
+            </value>
+            <value>
+                <fullName>Conduct Audit</fullName>
+                <default>false</default>
+                <label>Conduct Audit</label>
+            </value>
+            <value>
+                <fullName>Final Invoice Sent</fullName>
+                <default>false</default>
+                <label>Final Invoice Sent</label>
+            </value>
+            <value>
+                <fullName>Final Payment Received</fullName>
+                <default>false</default>
+                <label>Final Payment Received</label>
+            </value>
+            <value>
+                <fullName>Initial Invoice Sent</fullName>
+                <default>false</default>
+                <label>Initial Invoice Sent</label>
+            </value>
+            <value>
+                <fullName>Initial Payment Received</fullName>
+                <default>false</default>
+                <label>Initial Payment Received</label>
+            </value>
+            <value>
+                <fullName>WO Sent</fullName>
+                <default>false</default>
+                <label>WO Sent</label>
+            </value>
+            <value>
+                <fullName>WO Signed</fullName>
+                <default>false</default>
+                <label>WO Signed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

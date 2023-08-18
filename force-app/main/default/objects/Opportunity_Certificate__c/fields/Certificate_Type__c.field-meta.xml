@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certificate_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Should reflect ownership from perspective of the Opportunity -- Account-Owned is owned by same Account as Opportunity, Third-Party is owned by a different Account than the Opportunity (usually for Private Label opportunity).</inlineHelpText>
+    <label>Certificate Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account-Owned</fullName>
+                <default>false</default>
+                <label>Account-Owned</label>
+            </value>
+            <value>
+                <fullName>Third Party Manufacturer</fullName>
+                <default>false</default>
+                <label>Third Party Manufacturer</label>
+            </value>
+            <value>
+                <fullName>Third Party Private Label</fullName>
+                <default>false</default>
+                <label>Third Party Private Label</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

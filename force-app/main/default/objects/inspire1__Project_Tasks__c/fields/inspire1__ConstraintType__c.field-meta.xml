@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__ConstraintType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines the type of constraint applied to the project task.</description>
+    <externalId>false</externalId>
+    <label>Constraint Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>As soon as possible</fullName>
+                <default>false</default>
+                <label>As soon as possible</label>
+            </value>
+            <value>
+                <fullName>As late as possible</fullName>
+                <default>false</default>
+                <label>As late as possible</label>
+            </value>
+            <value>
+                <fullName>Finish no earlier than</fullName>
+                <default>false</default>
+                <label>Finish no earlier than</label>
+            </value>
+            <value>
+                <fullName>Finish no later than</fullName>
+                <default>false</default>
+                <label>Finish no later than</label>
+            </value>
+            <value>
+                <fullName>Must finish on</fullName>
+                <default>false</default>
+                <label>Must finish on</label>
+            </value>
+            <value>
+                <fullName>Must start on</fullName>
+                <default>false</default>
+                <label>Must start on</label>
+            </value>
+            <value>
+                <fullName>Start no earlier than</fullName>
+                <default>false</default>
+                <label>Start no earlier than</label>
+            </value>
+            <value>
+                <fullName>Start no later than</fullName>
+                <default>false</default>
+                <label>Start no later than</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Program__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>V5 + Addedum 1</fullName>
+                <default>false</default>
+                <label>V5 + Addedum 1</label>
+            </value>
+            <value>
+                <fullName>V5</fullName>
+                <default>false</default>
+                <label>V5</label>
+            </value>
+            <value>
+                <fullName>V5 2021</fullName>
+                <default>false</default>
+                <label>V5 2021</label>
+            </value>
+            <value>
+                <fullName>V5 2021 + Addendum 1</fullName>
+                <default>false</default>
+                <label>V5 2021 + Addendum 1</label>
+            </value>
+            <value>
+                <fullName>V6</fullName>
+                <default>false</default>
+                <label>V6</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>RSPO P&amp;C</controllingFieldValue>
+            <controllingFieldValue>RSPO Supply Chain</controllingFieldValue>
+            <valueName>V5 + Addedum 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RSPO P&amp;C</controllingFieldValue>
+            <controllingFieldValue>RSPO Supply Chain</controllingFieldValue>
+            <valueName>V5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RSPO P&amp;C</controllingFieldValue>
+            <controllingFieldValue>RSPO Supply Chain</controllingFieldValue>
+            <valueName>V5 2021</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RSPO P&amp;C</controllingFieldValue>
+            <controllingFieldValue>RSPO Supply Chain</controllingFieldValue>
+            <valueName>V5 2021 + Addendum 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RSPO P&amp;C</controllingFieldValue>
+            <controllingFieldValue>RSPO Supply Chain</controllingFieldValue>
+            <valueName>V6</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

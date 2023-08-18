@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AnnouncedUnannounced__c</fullName>
+    <externalId>false</externalId>
+    <label>Announced/Unannounced?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Announced</fullName>
+                <default>false</default>
+                <label>Announced</label>
+            </value>
+            <value>
+                <fullName>Unannounced</fullName>
+                <default>false</default>
+                <label>Unannounced</label>
+            </value>
+            <value>
+                <fullName>Reissue after extension to scope</fullName>
+                <default>false</default>
+                <label>Reissue after extension to scope</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

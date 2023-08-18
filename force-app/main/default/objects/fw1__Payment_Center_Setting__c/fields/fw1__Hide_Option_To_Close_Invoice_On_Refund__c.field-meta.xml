@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Hide_Option_To_Close_Invoice_On_Refund__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Hide Option To Close Invoice On Refund</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

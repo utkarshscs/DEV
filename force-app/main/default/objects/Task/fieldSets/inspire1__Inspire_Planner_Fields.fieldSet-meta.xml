@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Inspire_Planner_Fields</fullName>
+    <description>Fields to include in Inspire Planner.  Adding fields to this field set will add them to the Inspire Planner interface.</description>
+    <label>Inspire Planner - Project UI Fields</label>
+</FieldSet>

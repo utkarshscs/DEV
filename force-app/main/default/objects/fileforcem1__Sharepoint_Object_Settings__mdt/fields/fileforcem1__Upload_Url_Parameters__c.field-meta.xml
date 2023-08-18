@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fileforcem1__Upload_Url_Parameters__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If you need to set custom fields or parameters by appending to the SharePoint uploader&apos;s Upload.aspx url, enter it here. To merge Salesforce fields on the record, enter it within brackets &quot;[]&quot;. For example, CaseNo=[CaseNumber].</inlineHelpText>
+    <label>File Upload Url Custom Parameters</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

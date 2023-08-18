@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Dunning</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>800</height>
+    <isResizable>true</isResizable>
+    <linkType>page</linkType>
+    <masterLabel>Reminders</masterLabel>
+    <openType>newWindow</openType>
+    <page>fw1__DunningSetup</page>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <width>999</width>
+</WebLink>

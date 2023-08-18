@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Redistribute_Installments_Equally__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Redistribute installments equally on amount change.</description>
+    <externalId>false</externalId>
+    <label>Redistribute Installments Equally</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

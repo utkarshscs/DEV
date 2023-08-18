@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Disable_Time_Tracker_Weekly_Tasks__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Set this setting to TRUE if users do not want Time Tracker weekly view to display applicable tasks by default.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set this setting to TRUE if users do not want Time Tracker weekly view to display applicable tasks by default.</inlineHelpText>
+    <label>Disable Time Tracker Weekly Tasks</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

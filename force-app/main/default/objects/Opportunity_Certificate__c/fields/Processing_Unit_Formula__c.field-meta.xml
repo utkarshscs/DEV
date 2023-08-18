@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Processing_Unit_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>If (
+				  ISPICKVAL(Processing_Unit_Value__c, &apos;Other&apos;),  Processing_Unit_Value_Other__c, TEXT(Processing_Unit_Value__c)
+)</formula>
+    <label>Processing Unit Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

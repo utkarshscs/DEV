@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Loss Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lost to Competitor</fullName>
+                <default>false</default>
+                <label>Lost to Competitor</label>
+            </value>
+            <value>
+                <fullName>No Budget / Lost Funding</fullName>
+                <default>false</default>
+                <label>No Budget / Lost Funding</label>
+            </value>
+            <value>
+                <fullName>No Decision / Non-Responsive</fullName>
+                <default>false</default>
+                <label>No Decision / Non-Responsive</label>
+            </value>
+            <value>
+                <fullName>Cost/Price</fullName>
+                <default>false</default>
+                <label>Cost/Price</label>
+            </value>
+            <value>
+                <fullName>Not in line with SCS mission</fullName>
+                <default>false</default>
+                <label>Not in line with SCS mission</label>
+            </value>
+            <value>
+                <fullName>Bandwidth</fullName>
+                <default>false</default>
+                <label>Bandwidth</label>
+            </value>
+            <value>
+                <fullName>Lack of expertise</fullName>
+                <default>false</default>
+                <label>Lack of expertise</label>
+            </value>
+            <value>
+                <fullName>Invoice Amount not received</fullName>
+                <default>false</default>
+                <label>Invoice Amount not received</label>
+            </value>
+            <value>
+                <fullName>Customer didn’t sign PSA</fullName>
+                <default>false</default>
+                <label>Customer didn’t sign PSA</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Delete</fullName>
+                <default>false</default>
+                <label>Delete</label>
+            </value>
+            <value>
+                <fullName>Removed from Bundle Opportunity</fullName>
+                <default>false</default>
+                <label>Removed from Bundle Opportunity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

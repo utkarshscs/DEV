@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <name>Filtered_Record</name>
+        <label>Filtered Record</label>
+        <locationX>402</locationX>
+        <locationY>863</locationY>
+        <assignmentItems>
+            <assignToReference>filteredRecord</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_To_Filter_Record</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_To_Filter_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Contact</name>
+        <label>Update Contact</label>
+        <locationX>314</locationX>
+        <locationY>1247</locationY>
+        <assignmentItems>
+            <assignToReference>filteredRecord.Contact__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.ContactId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Contact_On_PCR</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Assignment_Check</name>
+        <label>Assignment Check</label>
+        <locationX>534</locationX>
+        <locationY>755</locationY>
+        <defaultConnector>
+            <targetReference>Loop_To_Filter_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Assign</name>
+            <conditionLogic>1 OR ( 2 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_To_Filter_Record.Program_Role__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Role</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_To_Filter_Record.Program_Role__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Billing</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Role</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bill To Contact</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Filtered_Record</targetReference>
+            </connector>
+            <label>Assign ?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_for_Contact_Update</name>
+        <label>Check for Contact Update</label>
+        <locationX>314</locationX>
+        <locationY>1139</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Record_Not_Found</name>
+            <conditionLogic>1 AND ( 2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>filteredRecord</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Role</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bill To Contact</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Role</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Primary</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Role</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Secondary</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_PCR</targetReference>
+            </connector>
+            <label>Record Not Found</label>
+        </rules>
+        <rules>
+            <name>contactChanged</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>filteredRecord</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>filteredRecord.Contact__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.ContactId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Contact</targetReference>
+            </connector>
+            <label>contactChanged ?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Program_Contact_Role_Update_Check</name>
+        <label>Program Contact Role Update Check</label>
+        <locationX>578</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_PCR</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>updatePCR</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Opportunity_Data</targetReference>
+            </connector>
+            <label>Update PCR</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>pcrCreateCheck</name>
+        <dataType>Boolean</dataType>
+        <expression>CONTAINS(TEXT({!$Record.Role}), {!$Label.PCR_Roles})</expression>
+    </formulas>
+    <formulas>
+        <name>roleToCreate</name>
+        <dataType>String</dataType>
+        <expression>IF(
+TEXT({!$Record.Role}) == &apos;Bill To Contact&apos;, &apos;Billing&apos;, TEXT({!$Record.Role})
+)</expression>
+    </formulas>
+    <formulas>
+        <name>updatePCR</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+ISNEW(),
+ISCHANGED({!$Record.Role}),
+ISCHANGED({!$Record.ContactId})
+)</expression>
+    </formulas>
+    <interviewLabel>OCR Generic Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OCR Generic Flow</label>
+    <loops>
+        <name>Loop_To_Filter_Record</name>
+        <label>Loop To Filter Record</label>
+        <locationX>314</locationX>
+        <locationY>647</locationY>
+        <collectionReference>Get_PCR</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assignment_Check</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Check_for_Contact_Update</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_PCR</name>
+        <label>Create PCR</label>
+        <locationX>50</locationX>
+        <locationY>1247</locationY>
+        <inputAssignments>
+            <field>Contact__c</field>
+            <value>
+                <elementReference>$Record.ContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Program_Role__c</field>
+            <value>
+                <elementReference>roleToCreate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Program__c</field>
+            <value>
+                <elementReference>Get_Opportunity_Data.Programc__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Program_Contact_Role__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Opportunity_Data</name>
+        <label>Get Opportunity Data</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_PCR</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.OpportunityId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>AccountId</queriedFields>
+        <queriedFields>Programc__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_PCR</name>
+        <label>Get PCR</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_To_Filter_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Opportunity_Data.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Program__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Opportunity_Data.Programc__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Program_Contact_Role__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Contact_On_PCR</name>
+        <label>Update Contact On PCR</label>
+        <locationX>314</locationX>
+        <locationY>1355</locationY>
+        <inputReference>filteredRecord</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Program_Contact_Role_Update_Check</targetReference>
+        </connector>
+        <object>OpportunityContactRole</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>filteredRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Program_Contact_Role__c</objectType>
+    </variables>
+</Flow>

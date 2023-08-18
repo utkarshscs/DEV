@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__CreditCard_Expiry_Job_Id_2__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Credit card expiry reminder job ID - for installments</description>
+    <externalId>false</externalId>
+    <label>CreditCard Expiry Job Id 2</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

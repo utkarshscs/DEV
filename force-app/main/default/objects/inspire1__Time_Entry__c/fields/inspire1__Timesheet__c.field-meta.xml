@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Timesheet__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to related Timesheet the Time Entry belongs to.</description>
+    <externalId>false</externalId>
+    <label>Timesheet</label>
+    <referenceTo>inspire1__Timesheet__c</referenceTo>
+    <relationshipLabel>Time Entries</relationshipLabel>
+    <relationshipName>Time_Entries</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

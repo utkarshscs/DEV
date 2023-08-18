@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>FSC_Connection</label>
+    <protected>false</protected>
+    <values>
+        <field>Content_Type__c</field>
+        <value xsi:type="xsd:string">application/json</value>
+    </values>
+    <values>
+        <field>End_Point_URL__c</field>
+        <value xsi:type="xsd:string">https://scs-salesforce-fsc-service-stage.azurewebsites.net/api/scs-salesforce-fsc-service</value>
+    </values>
+    <values>
+        <field>Function_Key__c</field>
+        <value xsi:type="xsd:string">nTTApKDaPYnytJ3Se8XCV-9ny_wXc4KbYsK20GO00c1sAzFu-PXfTw==</value>
+    </values>
+    <values>
+        <field>Method_Name__c</field>
+        <value xsi:type="xsd:string">POST</value>
+    </values>
+</CustomMetadata>

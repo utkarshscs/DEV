@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Defines the user the risk is assigned to.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Define who the risk or issue has been assigned to.</inlineHelpText>
+    <label>Owner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Risks</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

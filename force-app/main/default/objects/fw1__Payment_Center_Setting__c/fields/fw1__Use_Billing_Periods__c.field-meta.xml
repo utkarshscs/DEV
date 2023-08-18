@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Use_Billing_Periods__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Lower versions of Payment Center (i.e. below 6.0) use Next Invoice Date as basis for the billing period. Newer versions now use Next Invoice Billing Period Start/End. Use this flag to switch to the new version.</description>
+    <externalId>false</externalId>
+    <label>Use Billing Periods</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

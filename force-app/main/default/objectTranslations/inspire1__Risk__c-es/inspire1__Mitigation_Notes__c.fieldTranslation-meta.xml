@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Define los pasos o acciones que se pueden tomar para reducir o eliminar el impacto o la probabilidad.</help>
+    <label></label>
+    <name>inspire1__Mitigation_Notes__c</name>
+</CustomFieldTranslation>

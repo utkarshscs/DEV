@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Sales_Tax__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( fw1__Taxable__c, 
+    IF( fw1__Is_Shipping_Taxable__c , 
+        (fw1__Net_Amount__c +  fw1__Shipping_And_Handling__c)  *  fw1__Sales_Tax_Rate__c, 
+        fw1__Net_Amount__c  *  fw1__Sales_Tax_Rate__c), 
+    0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sales Tax</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

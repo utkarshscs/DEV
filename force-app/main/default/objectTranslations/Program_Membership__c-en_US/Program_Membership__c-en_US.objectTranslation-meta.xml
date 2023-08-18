@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Program Membership</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Program Memberships</value>
+    </caseValues>
+    <layouts>
+        <layout>FSC COC</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fair Trade USA</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Program Membership Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RSPO</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SMETA</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>FSC_COC</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>FT_USA</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>RSPO</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Rainforest_Alliance</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SMETA</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

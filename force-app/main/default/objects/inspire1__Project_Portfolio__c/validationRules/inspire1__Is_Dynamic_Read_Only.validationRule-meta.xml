@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Is_Dynamic_Read_Only</fullName>
+    <active>true</active>
+    <description>is_dynamic field is read only after record is created</description>
+    <errorConditionFormula>ISCHANGED(inspire1__Is_Dynamic__c)</errorConditionFormula>
+    <errorDisplayField>inspire1__Is_Dynamic__c</errorDisplayField>
+    <errorMessage>This field cannot be changed after the record is created.</errorMessage>
+</ValidationRule>

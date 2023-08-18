@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Processing_Unit_Value__c</fullName>
+    <externalId>false</externalId>
+    <label>Processing Unit Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Biogas plant</fullName>
+                <default>false</default>
+                <label>Biogas plant</label>
+            </value>
+            <value>
+                <fullName>Biomethane plant</fullName>
+                <default>false</default>
+                <label>Biomethane plant</label>
+            </value>
+            <value>
+                <fullName>Plup mill</fullName>
+                <default>false</default>
+                <label>Plup mill</label>
+            </value>
+            <value>
+                <fullName>Biodiesel plant</fullName>
+                <default>false</default>
+                <label>Biodiesel plant</label>
+            </value>
+            <value>
+                <fullName>Refinery</fullName>
+                <default>false</default>
+                <label>Refinery</label>
+            </value>
+            <value>
+                <fullName>Ethanol plant</fullName>
+                <default>false</default>
+                <label>Ethanol plant</label>
+            </value>
+            <value>
+                <fullName>Sugar mill</fullName>
+                <default>false</default>
+                <label>Sugar mill</label>
+            </value>
+            <value>
+                <fullName>HVO plant</fullName>
+                <default>false</default>
+                <label>HVO plant</label>
+            </value>
+            <value>
+                <fullName>Treatment plant (waste/residues)</fullName>
+                <default>false</default>
+                <label>Treatment plant (waste/residues)</label>
+            </value>
+            <value>
+                <fullName>Crushing plant</fullName>
+                <default>false</default>
+                <label>Crushing plant</label>
+            </value>
+            <value>
+                <fullName>Co-Processing</fullName>
+                <default>false</default>
+                <label>Co-Processing</label>
+            </value>
+            <value>
+                <fullName>Methanol plant</fullName>
+                <default>false</default>
+                <label>Methanol plant</label>
+            </value>
+            <value>
+                <fullName>Oil mill</fullName>
+                <default>false</default>
+                <label>Oil mill</label>
+            </value>
+            <value>
+                <fullName>Melting plant</fullName>
+                <default>false</default>
+                <label>Melting plant</label>
+            </value>
+            <value>
+                <fullName>Pyrolysis plant</fullName>
+                <default>false</default>
+                <label>Pyrolysis plant</label>
+            </value>
+            <value>
+                <fullName>Polymerisation plant</fullName>
+                <default>false</default>
+                <label>Polymerisation plant</label>
+            </value>
+            <value>
+                <fullName>Speciality chemical plant</fullName>
+                <default>false</default>
+                <label>Speciality chemical plant</label>
+            </value>
+            <value>
+                <fullName>Mechanical recycling plant</fullName>
+                <default>false</default>
+                <label>Mechanical recycling plant</label>
+            </value>
+            <value>
+                <fullName>(Plastic) waster processor</fullName>
+                <default>false</default>
+                <label>(Plastic) waster processor</label>
+            </value>
+            <value>
+                <fullName>Cracker</fullName>
+                <default>false</default>
+                <label>Cracker</label>
+            </value>
+            <value>
+                <fullName>Converter</fullName>
+                <default>false</default>
+                <label>Converter</label>
+            </value>
+            <value>
+                <fullName>Electrolysis plant</fullName>
+                <default>false</default>
+                <label>Electrolysis plant</label>
+            </value>
+            <value>
+                <fullName>Energy producer</fullName>
+                <default>false</default>
+                <label>Energy producer</label>
+            </value>
+            <value>
+                <fullName>Food processing plant</fullName>
+                <default>false</default>
+                <label>Food processing plant</label>
+            </value>
+            <value>
+                <fullName>Liquefaction Plant</fullName>
+                <default>false</default>
+                <label>Liquefaction Plant</label>
+            </value>
+            <value>
+                <fullName>HEFA plant</fullName>
+                <default>false</default>
+                <label>HEFA plant</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

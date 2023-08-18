@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>inspire1__Left_Side_Portfolio_Viewer</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>inspire1__Portfolio_Custom_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>inspire1__Right_Side_Portfolio_Viewer</name>
+    </fieldSets>
+    <layouts>
+        <layout>Food And Agriculture</layout>
+        <sections>
+            <label></label>
+            <section>Budget and Time</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Status Report</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Task Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Natural Resources Layout</layout>
+        <sections>
+            <label></label>
+            <section>Budget and Time</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Status Report</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Task Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Research and Development</layout>
+        <sections>
+            <label></label>
+            <section>Budget and Time</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Status Report</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Task Summary</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Add_Witness_Audit</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Create_Sharepoint_Folder</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Create_Sharepoint_Folder_LWC</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Log_CAP_NCs</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Log_Expense</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>RSPO_Details</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Admin</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Bundle_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ECS</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Food_and_Agriculture</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Natural_Resources</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Research_and_Development</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SCS_Consulting</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>SCS_Standard</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Training_Opportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ProgramFieldIsMandatoryForTemplates</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>inspire1__Project_Key_for_Agile</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Export_CAP_History</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Import_CAP_Data</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>inspire1__Project_Schedule</name>
+    </webLinks>
+</CustomObjectTranslation>

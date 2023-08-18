@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Define que la tarea está abierta después de la fecha de finalización.</help>
+    <label></label>
+    <name>inspire1__Overdue__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Wenn TRUE, wird ein Projektteam-Mitglied automatisch als Projektmitarbeiter hinzugefügt.&quot;</help>
+    <label></label>
+    <name>inspire1__Add_as_Collaborator__c</name>
+</CustomFieldTranslation>

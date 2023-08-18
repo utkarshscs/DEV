@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This will auto checked when &quot;start date is available but end date is blank&quot; OR &quot;Start date is past date and end date is future date&quot;.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This will auto checked when &quot;start date is available but end date is blank&quot; OR &quot;Start date is past date and end date is future date&quot;.</inlineHelpText>
+    <label>Active</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

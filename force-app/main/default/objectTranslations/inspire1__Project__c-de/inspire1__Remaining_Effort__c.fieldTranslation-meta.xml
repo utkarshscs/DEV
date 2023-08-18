@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Differenz zwischen tatsächlicher Leistung und geplanter Leistung  Kalkulation: Gesamte tatsächliche Leistung - gesamte geplante Leistung</help>
+    <label></label>
+    <name>inspire1__Remaining_Effort__c</name>
+</CustomFieldTranslation>

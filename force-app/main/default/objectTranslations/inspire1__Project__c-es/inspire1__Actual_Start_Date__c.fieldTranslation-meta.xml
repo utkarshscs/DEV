@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Define la fecha real de inicio del proyecto. Está será la fecha de inicio de la primera tarea.</help>
+    <label></label>
+    <name>inspire1__Actual_Start_Date__c</name>
+</CustomFieldTranslation>

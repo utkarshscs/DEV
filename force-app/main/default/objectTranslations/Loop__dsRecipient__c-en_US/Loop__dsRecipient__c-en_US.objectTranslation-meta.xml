@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Loop__Recipient_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Loop__Recipient_Dynamic_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Loop__Recipient_Selected_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Loop__Recipient_Selected_User</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Loop__Recipient_Static_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Loop__Recipient_Static_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Loop__SignNow_Signer_requires_Role_Name</name>
+    </validationRules>
+</CustomObjectTranslation>

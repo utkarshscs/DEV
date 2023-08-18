@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Total de horas planificadas para la tarea del proyecto para todos los recursos asignados.</help>
+    <label></label>
+    <name>inspire1__Total_Planned_Effort__c</name>
+</CustomFieldTranslation>

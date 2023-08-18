@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Organic search</fullName>
+        <default>false</default>
+        <label>Organic search</label>
+    </customValue>
+    <customValue>
+        <fullName>Paid search</fullName>
+        <default>false</default>
+        <label>Paid search</label>
+    </customValue>
+    <customValue>
+        <fullName>Email marketing</fullName>
+        <default>false</default>
+        <label>Email marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Organic Social</fullName>
+        <default>false</default>
+        <label>Organic Social</label>
+    </customValue>
+    <customValue>
+        <fullName>Paid Social</fullName>
+        <default>false</default>
+        <label>Paid Social</label>
+    </customValue>
+    <customValue>
+        <fullName>Referrals</fullName>
+        <default>false</default>
+        <label>Referrals</label>
+    </customValue>
+    <customValue>
+        <fullName>Other campaigns</fullName>
+        <default>false</default>
+        <label>Other campaigns</label>
+    </customValue>
+    <customValue>
+        <fullName>Direct traffic</fullName>
+        <default>false</default>
+        <label>Direct traffic</label>
+    </customValue>
+    <customValue>
+        <fullName>Offline Sources</fullName>
+        <default>false</default>
+        <label>Offline Sources</label>
+    </customValue>
+    <customValue>
+        <fullName>Lead Forensics</fullName>
+        <default>false</default>
+        <label>Lead Forensics</label>
+    </customValue>
+    <customValue>
+        <fullName>Zoom Info</fullName>
+        <default>false</default>
+        <label>Zoom Info</label>
+    </customValue>
+    <masterLabel>Web Traffic Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Brand owner</fullName>
+                <default>false</default>
+                <label>Brand owner</label>
+            </value>
+            <value>
+                <fullName>Canna (Cannabis)</fullName>
+                <default>false</default>
+                <label>Canna (Cannabis)</label>
+            </value>
+            <value>
+                <fullName>consultants/trade</fullName>
+                <default>false</default>
+                <label>consultants/trade</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>food/ingredients</fullName>
+                <default>false</default>
+                <label>food/ingredients</label>
+            </value>
+            <value>
+                <fullName>food/packaging</fullName>
+                <default>false</default>
+                <label>food/packaging</label>
+            </value>
+            <value>
+                <fullName>Food packaging mfg</fullName>
+                <default>false</default>
+                <label>Food packaging mfg</label>
+            </value>
+            <value>
+                <fullName>grower</fullName>
+                <default>false</default>
+                <label>grower</label>
+            </value>
+            <value>
+                <fullName>Grower/Pack/Ship/Dist</fullName>
+                <default>false</default>
+                <label>Grower/Pack/Ship/Dist</label>
+            </value>
+            <value>
+                <fullName>Grower &amp; Handler</fullName>
+                <default>false</default>
+                <label>Grower &amp; Handler</label>
+            </value>
+            <value>
+                <fullName>Handler</fullName>
+                <default>false</default>
+                <label>Handler</label>
+            </value>
+            <value>
+                <fullName>Handler (Non-Processor)</fullName>
+                <default>false</default>
+                <label>Handler (Non-Processor)</label>
+            </value>
+            <value>
+                <fullName>Handler (Processor)</fullName>
+                <default>false</default>
+                <label>Handler (Processor)</label>
+            </value>
+            <value>
+                <fullName>Mfg/processing</fullName>
+                <default>false</default>
+                <label>Mfg/processing</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>pack/dist</fullName>
+                <default>false</default>
+                <label>pack/dist</label>
+            </value>
+            <value>
+                <fullName>Partners, Consultants, Trade Associations</fullName>
+                <default>false</default>
+                <label>Partners, Consultants, Trade Associations</label>
+            </value>
+            <value>
+                <fullName>Private Label</fullName>
+                <default>false</default>
+                <label>Private Label</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Wine/beer</fullName>
+                <default>false</default>
+                <label>Wine/beer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

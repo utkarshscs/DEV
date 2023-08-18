@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Calcula los días de atraso de un proyecto.  
+
+HOY - Fecha de finalización</help>
+    <label></label>
+    <name>inspire1__Days_Overdue_Project__c</name>
+</CustomFieldTranslation>

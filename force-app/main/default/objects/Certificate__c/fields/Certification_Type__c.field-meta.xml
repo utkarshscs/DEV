@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certification_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Certification Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Initial</fullName>
+                <default>false</default>
+                <label>Initial</label>
+            </value>
+            <value>
+                <fullName>Re-certification</fullName>
+                <default>false</default>
+                <label>Re-certification</label>
+            </value>
+            <value>
+                <fullName>Unannounced</fullName>
+                <default>false</default>
+                <label>Unannounced</label>
+            </value>
+            <value>
+                <fullName>Surveillance audit</fullName>
+                <default>false</default>
+                <label>Surveillance audit</label>
+            </value>
+            <value>
+                <fullName>Pre-assessment</fullName>
+                <default>false</default>
+                <label>Pre-assessment</label>
+            </value>
+            <value>
+                <fullName>Scope Expansion</fullName>
+                <default>false</default>
+                <label>Scope Expansion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fileforcem1__Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>SharePoint Column Name</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To get the column name from SharePoint, open the column, and in the URL grab the name after the &quot;Field=&quot; URL parameter.</inlineHelpText>
+    <label>Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

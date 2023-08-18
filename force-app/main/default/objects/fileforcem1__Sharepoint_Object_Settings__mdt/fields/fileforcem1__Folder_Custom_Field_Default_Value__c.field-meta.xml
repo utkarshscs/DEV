@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fileforcem1__Folder_Custom_Field_Default_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Each column must have the actual SharePoint field value and a default value separated by a colon. Salesforce merge fields should be surrounded by square brackets. Example: Cust_x0020_Col1:[Id],Another_x0020_Col2:Another Value</inlineHelpText>
+    <label>Folder Custom Field Default Value</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

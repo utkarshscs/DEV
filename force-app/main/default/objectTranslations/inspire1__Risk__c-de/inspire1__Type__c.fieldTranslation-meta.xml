@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Der Hauptunterschied besteht darin, dass ein Problem bereits eingetreten ist. Ein Risiko ist ein potenzielles Problem, das eintreten könnte und sich positiv oder negativ auf das Projekt auswirken kann.&quot;</help>
+    <label></label>
+    <name>inspire1__Type__c</name>
+    <picklistValues>
+        <masterLabel>Issue</masterLabel>
+        <translation>Problem</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risk</masterLabel>
+        <translation>Risiko</translation>
+    </picklistValues>
+</CustomFieldTranslation>

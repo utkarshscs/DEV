@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Close_Out_Invoice_Default__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>During a refund, an option to close out the related invoice is available. This setting defines the option&apos;s default value or behavior.</inlineHelpText>
+    <label>Close Out Invoice Default</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>fw1__True_False_Hide</valueSetName>
+    </valueSet>
+</CustomField>

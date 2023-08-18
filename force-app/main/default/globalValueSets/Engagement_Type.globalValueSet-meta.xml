@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1st Surveillance</fullName>
+        <default>false</default>
+        <label>1st Surveillance</label>
+    </customValue>
+    <customValue>
+        <fullName>2nd Surveillance</fullName>
+        <default>false</default>
+        <label>2nd Surveillance</label>
+    </customValue>
+    <customValue>
+        <fullName>3rd Party Verification</fullName>
+        <default>false</default>
+        <label>3rd Party Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>3rd Surveillance</fullName>
+        <default>false</default>
+        <label>3rd Surveillance</label>
+    </customValue>
+    <customValue>
+        <fullName>4th Surveillance</fullName>
+        <default>false</default>
+        <label>4th Surveillance</label>
+    </customValue>
+    <customValue>
+        <fullName>ACDR only</fullName>
+        <default>false</default>
+        <label>ACDR only</label>
+    </customValue>
+    <customValue>
+        <fullName>Action Plan Review</fullName>
+        <default>false</default>
+        <label>Action Plan Review</label>
+    </customValue>
+    <customValue>
+        <fullName>AIM Initial</fullName>
+        <default>false</default>
+        <label>AIM Initial</label>
+    </customValue>
+    <customValue>
+        <fullName>AIM Renewal</fullName>
+        <default>false</default>
+        <label>AIM Renewal</label>
+    </customValue>
+    <customValue>
+        <fullName>All</fullName>
+        <default>false</default>
+        <label>All</label>
+    </customValue>
+    <customValue>
+        <fullName>Annual Surveillance</fullName>
+        <default>false</default>
+        <label>Annual Surveillance</label>
+    </customValue>
+    <customValue>
+        <fullName>CAP</fullName>
+        <default>false</default>
+        <label>CAP</label>
+    </customValue>
+    <customValue>
+        <fullName>Certification</fullName>
+        <default>false</default>
+        <label>Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Closure of Findings</fullName>
+        <default>false</default>
+        <label>Closure of Findings</label>
+    </customValue>
+    <customValue>
+        <fullName>Complaint Resolution</fullName>
+        <default>false</default>
+        <label>Complaint Resolution</label>
+    </customValue>
+    <customValue>
+        <fullName>Conformance Surveillance</fullName>
+        <default>false</default>
+        <label>Conformance Surveillance</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting</fullName>
+        <default>false</default>
+        <label>Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Due Diligence</fullName>
+        <default>false</default>
+        <label>Due Diligence</label>
+    </customValue>
+    <customValue>
+        <fullName>Each Additional</fullName>
+        <default>false</default>
+        <label>Each Additional</label>
+    </customValue>
+    <customValue>
+        <fullName>Evaluation</fullName>
+        <default>false</default>
+        <label>Evaluation</label>
+    </customValue>
+    <customValue>
+        <fullName>Expansion of Scope</fullName>
+        <default>false</default>
+        <label>Expansion of Scope</label>
+    </customValue>
+    <customValue>
+        <fullName>Expedited Audit</fullName>
+        <default>false</default>
+        <label>Expedited Audit</label>
+    </customValue>
+    <customValue>
+        <fullName>Extension</fullName>
+        <default>false</default>
+        <label>Extension</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Assessment</fullName>
+        <default>false</default>
+        <label>Field Assessment</label>
+    </customValue>
+    <customValue>
+        <fullName>FIP Services</fullName>
+        <default>false</default>
+        <label>FIP Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Follow-up</fullName>
+        <default>false</default>
+        <label>Follow-up</label>
+    </customValue>
+    <customValue>
+        <fullName>FSA Farm Management Group Claims</fullName>
+        <default>false</default>
+        <label>FSA Farm Management Group Claims</label>
+    </customValue>
+    <customValue>
+        <fullName>FSA Option 1</fullName>
+        <default>false</default>
+        <label>FSA Option 1</label>
+    </customValue>
+    <customValue>
+        <fullName>FSA Option 2</fullName>
+        <default>false</default>
+        <label>FSA Option 2</label>
+    </customValue>
+    <customValue>
+        <fullName>FSA Option 3</fullName>
+        <default>false</default>
+        <label>FSA Option 3</label>
+    </customValue>
+    <customValue>
+        <fullName>FSA Stand-Alone Farm Claims</fullName>
+        <default>false</default>
+        <label>FSA Stand-Alone Farm Claims</label>
+    </customValue>
+    <customValue>
+        <fullName>FSC Annual Administration Fee (AAF)</fullName>
+        <default>false</default>
+        <label>FSC Annual Administration Fee (AAF)</label>
+    </customValue>
+    <customValue>
+        <fullName>Full Assessment</fullName>
+        <default>false</default>
+        <label>Full Assessment</label>
+    </customValue>
+    <customValue>
+        <fullName>GAP Analysis</fullName>
+        <default>false</default>
+        <label>GAP Analysis</label>
+    </customValue>
+    <customValue>
+        <fullName>Independent Assessment</fullName>
+        <default>false</default>
+        <label>Independent Assessment</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial</fullName>
+        <default>true</default>
+        <label>Initial</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial v2</fullName>
+        <default>false</default>
+        <label>Initial v2</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial - 2 Pillar</fullName>
+        <default>false</default>
+        <label>Initial - 2 Pillar</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial 3-year</fullName>
+        <default>false</default>
+        <label>Initial 3-year</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial - 4 Pillar</fullName>
+        <default>false</default>
+        <label>Initial - 4 Pillar</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial rush</fullName>
+        <default>false</default>
+        <label>Initial rush</label>
+    </customValue>
+    <customValue>
+        <fullName>License</fullName>
+        <default>false</default>
+        <label>License</label>
+    </customValue>
+    <customValue>
+        <fullName>Methodology Assessment</fullName>
+        <default>false</default>
+        <label>Methodology Assessment</label>
+    </customValue>
+    <customValue>
+        <fullName>Midterm</fullName>
+        <default>false</default>
+        <label>Midterm</label>
+    </customValue>
+    <customValue>
+        <fullName>Notice of Change</fullName>
+        <default>false</default>
+        <label>Notice of Change</label>
+    </customValue>
+    <customValue>
+        <fullName>On-site Audit</fullName>
+        <default>false</default>
+        <label>On-site Audit</label>
+    </customValue>
+    <customValue>
+        <fullName>PEFC Notification Fee</fullName>
+        <default>false</default>
+        <label>PEFC Notification Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Periodic</fullName>
+        <default>false</default>
+        <label>Periodic</label>
+    </customValue>
+    <customValue>
+        <fullName>Pre-Assessment</fullName>
+        <default>false</default>
+        <label>Pre-Assessment</label>
+    </customValue>
+    <customValue>
+        <fullName>Pre-assessment (doc)</fullName>
+        <default>false</default>
+        <label>Pre-assessment (doc)</label>
+    </customValue>
+    <customValue>
+        <fullName>Pre-Assessment Review</fullName>
+        <default>false</default>
+        <label>Pre-Assessment Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Re-Assessment</fullName>
+        <default>false</default>
+        <label>Re-Assessment</label>
+    </customValue>
+    <customValue>
+        <fullName>Re-certification</fullName>
+        <default>false</default>
+        <label>Re-certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Re-Evaluation</fullName>
+        <default>false</default>
+        <label>Re-Evaluation</label>
+    </customValue>
+    <customValue>
+        <fullName>Renewal</fullName>
+        <default>false</default>
+        <label>Renewal</label>
+    </customValue>
+    <customValue>
+        <fullName>Reverification</fullName>
+        <default>false</default>
+        <label>Reverification</label>
+    </customValue>
+    <customValue>
+        <fullName>Scope Adjustment</fullName>
+        <default>false</default>
+        <label>Scope Adjustment</label>
+    </customValue>
+    <customValue>
+        <fullName>Scope Change</fullName>
+        <default>false</default>
+        <label>Scope Change</label>
+    </customValue>
+    <customValue>
+        <fullName>Scope Expansion</fullName>
+        <default>false</default>
+        <label>Scope Expansion</label>
+    </customValue>
+    <customValue>
+        <fullName>Surveillance</fullName>
+        <default>false</default>
+        <label>Surveillance</label>
+    </customValue>
+    <customValue>
+        <fullName>TER Initial</fullName>
+        <default>false</default>
+        <label>TER Initial</label>
+    </customValue>
+    <customValue>
+        <fullName>TER Renewal</fullName>
+        <default>false</default>
+        <label>TER Renewal</label>
+    </customValue>
+    <customValue>
+        <fullName>Third-Party Assessment</fullName>
+        <default>false</default>
+        <label>Third-Party Assessment</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer</fullName>
+        <default>false</default>
+        <label>Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer Re-Evaluation</fullName>
+        <default>false</default>
+        <label>Transfer Re-Evaluation</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer Surveillance</fullName>
+        <default>false</default>
+        <label>Transfer Surveillance</label>
+    </customValue>
+    <customValue>
+        <fullName>Transition Audit</fullName>
+        <default>false</default>
+        <label>Transition Audit</label>
+    </customValue>
+    <customValue>
+        <fullName>Unannounced</fullName>
+        <default>false</default>
+        <label>Unannounced</label>
+    </customValue>
+    <customValue>
+        <fullName>Validation</fullName>
+        <default>false</default>
+        <label>Validation</label>
+    </customValue>
+    <customValue>
+        <fullName>Validation and Verification</fullName>
+        <default>false</default>
+        <label>Validation and Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>Verification</fullName>
+        <default>false</default>
+        <label>Verification</label>
+    </customValue>
+    <customValue>
+        <fullName>Waive</fullName>
+        <default>false</default>
+        <label>Waive</label>
+    </customValue>
+    <customValue>
+        <fullName>Re-Audit</fullName>
+        <default>false</default>
+        <label>Re-Audit</label>
+    </customValue>
+    <customValue>
+        <fullName>Book</fullName>
+        <default>false</default>
+        <label>Book</label>
+    </customValue>
+    <customValue>
+        <fullName>Claim</fullName>
+        <default>false</default>
+        <label>Claim</label>
+    </customValue>
+    <customValue>
+        <fullName>Approved Input Materials</fullName>
+        <default>false</default>
+        <label>Approved Input Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Translations</fullName>
+        <default>false</default>
+        <label>Translations</label>
+    </customValue>
+    <customValue>
+        <fullName>DMS Migration</fullName>
+        <default>false</default>
+        <label>DMS Migration</label>
+    </customValue>
+    <customValue>
+        <fullName>Annual Audit</fullName>
+        <default>false</default>
+        <label>Annual Audit</label>
+    </customValue>
+    <customValue>
+        <fullName>Pre-Evaluation</fullName>
+        <default>false</default>
+        <label>Pre-Evaluation</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Label</fullName>
+        <default>false</default>
+        <label>Private Label</label>
+    </customValue>
+    <customValue>
+        <fullName>GAP Assessment/Procedure Development</fullName>
+        <default>false</default>
+        <label>GAP Assessment/Procedure Development</label>
+    </customValue>
+    <customValue>
+        <fullName>ET1</fullName>
+        <default>false</default>
+        <label>ET1</label>
+    </customValue>
+    <customValue>
+        <fullName>ET2</fullName>
+        <default>false</default>
+        <label>ET2</label>
+    </customValue>
+    <customValue>
+        <fullName>Trade Audits</fullName>
+        <default>false</default>
+        <label>Trade Audits</label>
+    </customValue>
+    <customValue>
+        <fullName>Any additional Projects with Existing Clients</fullName>
+        <default>false</default>
+        <label>Any additional Projects with Existing Clients</label>
+    </customValue>
+    <customValue>
+        <fullName>Pilot</fullName>
+        <default>false</default>
+        <label>Pilot</label>
+    </customValue>
+    <customValue>
+        <fullName>GHG</fullName>
+        <default>false</default>
+        <label>GHG</label>
+    </customValue>
+    <customValue>
+        <fullName>Scope Extension</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Scope Extension</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>None</label>
+    </customValue>
+    <masterLabel>Engagement Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

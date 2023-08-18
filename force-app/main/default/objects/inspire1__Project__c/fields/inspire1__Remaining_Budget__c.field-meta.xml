@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Remaining_Budget__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Difference between Actual Cost from Budgeted Cost.  
+Calculation: Budgeted Cost - Actual Cost</description>
+    <externalId>false</externalId>
+    <formula>inspire1__Budgeted_Cost__c -  inspire1__Actual_Cost__c</formula>
+    <inlineHelpText>Difference between Actual Cost from Budgeted Cost.  
+Calculation: Budgeted Cost - Actual Cost</inlineHelpText>
+    <label>Remaining Budget</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

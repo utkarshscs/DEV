@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Campaign_Source_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+	Affiliate_Opportunity_flag__c = false,
+	NOT( $Permission.Bypass_Permission ),
+	$Profile.Name != &apos;SCS Integration&apos;,
+	OR(
+		ISPICKVAL( StageName ,&apos;Closed Won&apos;),
+		ISPICKVAL( StageName ,&apos;Closed Lost&apos;)		
+	),
+	ISBLANK(CampaignId ) ,
+	NOT(RecordType.DeveloperName=&apos;Training_Opportunity&apos;),
+	NOT(RecordType.DeveloperName=&apos;Bundle_Opportunity&apos;),
+	NOT(RecordType.DeveloperName=&apos;SCS_Standard&apos;),
+	NOT(ISPICKVAL( Type , &apos;Existing Business&apos;)),
+	NOT(ISPICKVAL( Engagement_Type__c ,&apos;Scope Change&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>CampaignId</errorDisplayField>
+    <errorMessage>Primary Campaign Source must be required</errorMessage>
+</ValidationRule>

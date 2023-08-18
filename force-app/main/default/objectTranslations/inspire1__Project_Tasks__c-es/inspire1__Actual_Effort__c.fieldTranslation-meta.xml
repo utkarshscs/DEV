@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Define el número real de horas empleadas para completar la tarea del proyecto en función de las entradas de tiempo del recurso.</help>
+    <label></label>
+    <name>inspire1__Actual_Effort__c</name>
+</CustomFieldTranslation>

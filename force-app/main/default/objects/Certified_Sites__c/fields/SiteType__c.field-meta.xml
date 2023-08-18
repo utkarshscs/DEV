@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SiteType__c</fullName>
+    <externalId>false</externalId>
+    <label>Site Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bonsucro Site</fullName>
+                <default>false</default>
+                <label>Bonsucro Site</label>
+            </value>
+            <value>
+                <fullName>Estates</fullName>
+                <default>false</default>
+                <label>Estates</label>
+            </value>
+            <value>
+                <fullName>Farm</fullName>
+                <default>false</default>
+                <label>Farm</label>
+            </value>
+            <value>
+                <fullName>Farm Site</fullName>
+                <default>false</default>
+                <label>Farm Site</label>
+            </value>
+            <value>
+                <fullName>First Collector</fullName>
+                <default>false</default>
+                <label>First Collector</label>
+            </value>
+            <value>
+                <fullName>First Collector &amp; Trader</fullName>
+                <default>false</default>
+                <label>First Collector &amp; Trader</label>
+            </value>
+            <value>
+                <fullName>Industrial Operator</fullName>
+                <default>false</default>
+                <label>Industrial Operator</label>
+            </value>
+            <value>
+                <fullName>Main Office</fullName>
+                <default>false</default>
+                <label>Main Office</label>
+            </value>
+            <value>
+                <fullName>Mechanical Operator</fullName>
+                <default>false</default>
+                <label>Mechanical Operator</label>
+            </value>
+            <value>
+                <fullName>Palm Oil Mill and Supply Base</fullName>
+                <default>false</default>
+                <label>Palm Oil Mill and Supply Base</label>
+            </value>
+            <value>
+                <fullName>Point of Origin</fullName>
+                <default>false</default>
+                <label>Point of Origin</label>
+            </value>
+            <value>
+                <fullName>Processing Unit</fullName>
+                <default>false</default>
+                <label>Processing Unit</label>
+            </value>
+            <value>
+                <fullName>Sales Entity</fullName>
+                <default>false</default>
+                <label>Sales Entity</label>
+            </value>
+            <value>
+                <fullName>Scheme Smallholders /Outgrowers</fullName>
+                <default>false</default>
+                <label>Scheme Smallholders /Outgrowers</label>
+            </value>
+            <value>
+                <fullName>Storage Unit</fullName>
+                <default>false</default>
+                <label>Storage Unit</label>
+            </value>
+            <value>
+                <fullName>Trader</fullName>
+                <default>false</default>
+                <label>Trader</label>
+            </value>
+            <value>
+                <fullName>Trader with Storage</fullName>
+                <default>false</default>
+                <label>Trader with Storage</label>
+            </value>
+            <value>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+                <label>Warehouse</label>
+            </value>
+            <value>
+                <fullName>Additional Sites</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Additional Sites</label>
+            </value>
+            <value>
+                <fullName>Group/Multisite Members</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Group/Multisite Members</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

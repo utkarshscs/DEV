@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Collaborator_Permission_Level__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines permission level for Collaborator.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Defines permission level for Collaborator.</inlineHelpText>
+    <label>Collaborator Permission Level</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Viewer</fullName>
+                <default>true</default>
+                <label>Viewer</label>
+            </value>
+            <value>
+                <fullName>Editor</fullName>
+                <default>false</default>
+                <label>Editor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

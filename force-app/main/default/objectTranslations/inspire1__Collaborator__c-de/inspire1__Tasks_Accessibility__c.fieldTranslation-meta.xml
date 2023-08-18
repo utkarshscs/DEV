@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>inspire1__Tasks_Accessibility__c</name>
+    <picklistValues>
+        <masterLabel>Assigned Tasks Only</masterLabel>
+        <translation>Nur zugewiesene Aufgaben</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Project</masterLabel>
+        <translation>Volles Projekt</translation>
+    </picklistValues>
+</CustomFieldTranslation>

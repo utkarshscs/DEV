@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Display_Invoice_Lines__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>When paying multiple invoices, invoice and PO numbers are displayed. Check this box to display invoice lines as well.</inlineHelpText>
+    <label>Display Invoice Lines</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

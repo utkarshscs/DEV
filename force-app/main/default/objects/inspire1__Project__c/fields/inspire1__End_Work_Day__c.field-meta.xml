@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__End_Work_Day__c</fullName>
+    <defaultValue>&apos;17:00&apos;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Captures end of workday for Projects.  Used for hourly based project tasks.</description>
+    <externalId>false</externalId>
+    <label>End Work Day</label>
+    <length>10</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

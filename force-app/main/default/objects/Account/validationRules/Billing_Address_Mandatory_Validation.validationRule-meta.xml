@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Address_Mandatory_Validation</fullName>
+    <active>true</active>
+    <description>While creating the account Billing County, City and Street is mandatory</description>
+    <errorConditionFormula>AND(
+	ISBLANK(BillingCountry),
+	RecordType.DeveloperName = &apos;Customer&apos;, 
+	NOT($Permission.Bypass_Permission)
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>“Country“ field of “Billing Address” is mandatory for creating an account record.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Stage_Access_Validation_Rule</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+NOT($Permission.Bypass_Permission),
+OR(
+ISNEW(),
+ISCHANGED(StageName)
+
+),
+ ISPICKVAL(StageName, &apos;Closed Lost - Operations&apos;),
+AND( $UserRole.Name &lt;&gt; &apos;Technical Manager&apos;, $UserRole.Name &lt;&gt; &apos;Technical Associate&apos;))</errorConditionFormula>
+    <errorMessage>Only TA and TM can move the opportunity stage to Closed Lost -Operations.</errorMessage>
+</ValidationRule>

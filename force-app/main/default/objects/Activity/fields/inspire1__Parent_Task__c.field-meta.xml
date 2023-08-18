@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Parent_Task__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Reference to parent task name related to Inspire Task.</description>
+    <externalId>false</externalId>
+    <formula>inspire1__Inspire_Task__r.inspire1__Parent_Task__r.Name</formula>
+    <label>Parent Task</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

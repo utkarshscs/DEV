@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Payment_Term_Email_Alert_for_Opportunity</fullName>
+        <description>Payment Term Email Alert for Opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Accounting_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Payment_Term_Email_Template_for_Opp</template>
+    </alerts>
+</Workflow>

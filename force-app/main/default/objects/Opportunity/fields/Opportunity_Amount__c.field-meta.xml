@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Amount__c</fullName>
+    <description>OLI rollup excluding Revenue type - Travel expense</description>
+    <externalId>false</externalId>
+    <label>Opportunity Amount (Excluding Expense)</label>
+    <summarizedField>OpportunityLineItem.Total_Sales_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Revenue_Type__c</field>
+        <operation>contains</operation>
+        <value>P - Professional Fees, F - Fees (Accreditation), C - Commission Revenue</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

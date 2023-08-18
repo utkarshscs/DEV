@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ASL__Envelope_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>CASE(ASL__Status__c, &apos;created&apos;, &apos;Created&apos;, 
+						            &apos;in_Progress&apos;, &apos;In Progress&apos;,
+						            &apos;completed&apos;, &apos;Completed&apos;, 
+						            &apos;expired&apos;, &apos;Expired&apos;,
+						            &apos;declined&apos;, &apos;Declined&apos;, 
+						            &apos;cancelled&apos;, &apos;Cancelled&apos;,
+						            &apos;staled&apos;, &apos;Staled&apos;,
+						            &apos;signer_Authentication_Failed&apos;, &apos;Signer Authentication Failed&apos;, &apos;&apos;)</formula>
+    <label>Envelope Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

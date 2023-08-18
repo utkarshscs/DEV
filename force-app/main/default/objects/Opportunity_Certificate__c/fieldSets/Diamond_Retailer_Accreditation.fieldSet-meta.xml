@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diamond_Retailer_Accreditation</fullName>
+    <description>Used to generate certificate template.</description>
+    <displayedFields>
+        <field>Retailer_Wholesaler__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Date_of_Issuing__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Diamond Retailer Accreditation</label>
+</FieldSet>

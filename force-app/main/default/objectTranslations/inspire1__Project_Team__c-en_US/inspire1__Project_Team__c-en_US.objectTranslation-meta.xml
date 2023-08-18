@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>inspire1__Prevent_User_and_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>inspire1__User_or_Contact_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

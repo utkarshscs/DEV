@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auditor</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SCS_Contact_Compact_Layout</compactLayoutAssignment>
+    <label>Auditor</label>
+    <picklistValues>
+        <picklist>Expertise__c</picklist>
+        <values>
+            <fullName>Asia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auditing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latin America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middle East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub-saharan Africa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chain of Custody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Climate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forestry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Cycle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seafood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Function__c</picklist>
+        <values>
+            <fullName>Sample Values</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Role__c</picklist>
+        <values>
+            <fullName>Sample Values</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Affiliate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct traffic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing - Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations%2FMedia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales - Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheme %28NGP%2C SQF%2C RSPO%2C etc%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show%2FEvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website - Apply Now</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website - Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website - Request for Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website Resource Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoom Info</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Main_Services_of_Interest__c</picklist>
+        <values>
+            <fullName>ASC Aquaculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASC Aquaculture Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Technical Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alliance for Responsible Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>American Tree Farm System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assure Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assure Certified Private Label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIFMA level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRCGS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bee Better Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Better Cotton Initiative %28BCI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biodegradable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biofuels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonsucro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonsucro Chain of Custody Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonsucro EU Chain of Custody Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonsucro EU Production Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonsucro Production Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonsucro Smallholder Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDP Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSS Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CanopyStyle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbon Footprint Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbon Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbon Offset Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbon Offset Verification - Forestry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbon Offset Verification - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clearview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Footprint Calculation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Sustainability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Costco GMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dairy and Animal Welfare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diamond Producer accreditation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diamond Retailer Accreditation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diamond Supplier Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECS Archive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECS Other REMOVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECV - System Allocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESG Certification%2C Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoEnclose REMOVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Claims Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Product Declarations %28EPD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmentally Preferable Product %28EPP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equitable Food Initiative %28EFI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FEMB Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSC Chain of Custody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSC Forest Management %28FSC-FM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSSC 22000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facts %28NSF336%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fair Trade USA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fairmined Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FloorScore Private Label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floorscore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Safety Ag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Safety Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Safety Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forest Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forest Management Consulting Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forest Products Chain of Custody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formaldehyde Emissions Regulations %28CARB%2FEPA Rule%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLOBALG%2EA%2EP%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMP AG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMP%2FGDP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMP%2FGDP - AG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gluten-Free</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Retail%2FGreen Ecommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green Squared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HACCP Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPD Flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IAQ - Building Materials %28IAQ-BM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IAQ - Furniture %28IAQ-FURN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISCC CORSIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISCC EU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISCC PLUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISO 14001%2F45001 Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISO 22000 Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indoor Advantage %28IAQ%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jewelry %26 Metals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jewelry %26 Minerals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LBMA and LPPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LCA Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LPC Declare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Safe Paint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Harvest Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Cycle Assessment %28LCA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Cycle Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Living Product Challenge %28LPC%29 %28Remove%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>London Bullion Market Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>London Platinum and Palladium Market Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Carbon Fuel Standard %28LCFS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSC Chain of Custody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSC Fisheries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandatory Reporting Requirements%28MCR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materiality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials Ingredient Declarations %28HPD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NAF%2FNAUF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSF%2FANSI 140</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSF%2FANSI 332</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-GMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEFC Chain of Custody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pesticide Residue Free</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pesticide Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plant-Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primus Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primus Standard%2F GMP-AG%2F GAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PrimusGFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Category Rule %28PCR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Footprint Calculation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REPLENISH Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSB CORSIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSB Combination Audit %28Multiple RSB Systems%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSB EU-RED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSB Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSB Japan Fit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSB Smallholder Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSPO P%26C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSPO Supply Chain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rainforest Alliance %28UTZ%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recycled Content</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regenerative Organic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report Assurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research %26 Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Jewellery Council %28RJC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Minerals Assurance Process %28RMAP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Minerals Initiative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Source Supply Chain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Sourcing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Sourcing Strategies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Water Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Water Practices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Wood Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Wood Chain of Custody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsible Wool %28change to Responsible Animal Fiber%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Responsibly Managed Peatlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAI FSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Recycled Content %28Metals%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Recycled Content and Responsible Source %28Metals or Gemstones%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Responsible Source %28Metals or Gemstones%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Responsible Source Gemstones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCS Responsible Source Metals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFI Certified Sourcing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFI Chain of Custody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFI Fiber Sourcing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFI Forest Management %28SFI-FM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMETA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVLK Timber Legality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salvaged Wood and Fiber Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Science Based Targets Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seafood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seafood Chain of Custody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seafood CoC %28MSC%2FASC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signet Responsible Sourcing Protocol %28SRSP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soil Carbon Initiative %28SCI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Starbucks C%2EA%2EF%2EE%2E Practices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Chain Consulting REMOVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustainability Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustainability Rated Diamonds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustainable Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustainable Biomass Program %28SBP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustainable Diamond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustainably Grown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Advisory Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textile Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Climate Registry %28TCR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USDA Organic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veriflora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WAVE Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Certification %28AWS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zero Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cal COMPlint</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Program_Schemes__c</picklist>
+        <values>
+            <fullName>Bonsucro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAFÉ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EFI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FTUSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HAACP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UTZ</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recent_Lead_Source_p__c</picklist>
+        <values>
+            <fullName>Direct traffic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Forensics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offline Sources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referrals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoom Info</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Standards__c</picklist>
+        <values>
+            <fullName>Diamonds 007</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold 007</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jewelry 007</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LCACN 108</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LCSEA 002</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFM 003</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG 001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Starbucks Dairy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WAVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZW 110</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Web_Traffic_Source__c</picklist>
+        <values>
+            <fullName>Direct traffic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Forensics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offline Sources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referrals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoom Info</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>fw1__Level__c</picklist>
+        <values>
+            <fullName>Primary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

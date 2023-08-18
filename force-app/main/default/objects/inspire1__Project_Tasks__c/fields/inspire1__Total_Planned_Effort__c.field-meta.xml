@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Total_Planned_Effort__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Total hours planned for project task across all assigned resources.  Rollup from all related Salesforce tasks.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total hours planned for project task across all assigned resources.</inlineHelpText>
+    <label>Total Allocated Effort</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

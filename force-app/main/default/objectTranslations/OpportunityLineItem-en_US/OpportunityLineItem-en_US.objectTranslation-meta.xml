@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>DiscountPrcnt_or_DiscountAmt_is_required</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>fw2__Add_Kit_Items</name>
+    </webLinks>
+</CustomObjectTranslation>

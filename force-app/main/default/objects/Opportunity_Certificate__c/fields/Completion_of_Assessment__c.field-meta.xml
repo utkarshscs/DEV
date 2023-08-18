@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completion_of_Assessment__c</fullName>
+    <externalId>false</externalId>
+    <label>Completion of Assessment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Field Operations and Harvesting Harmonized Food Safety Standard</fullName>
+                <default>false</default>
+                <label>Field Operations and Harvesting Harmonized Food Safety Standard</label>
+            </value>
+            <value>
+                <fullName>Post-Harvest Operations Harmonized Food Safety Standard</fullName>
+                <default>false</default>
+                <label>Post-Harvest Operations Harmonized Food Safety Standard</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

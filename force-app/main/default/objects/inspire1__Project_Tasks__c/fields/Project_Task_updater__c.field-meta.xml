@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Task_updater__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Project Task updater</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.inspire1__Project__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.inspire1__Project__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>inspire1__Project_Tasks__c</referenceTo>
+    <relationshipLabel>Project Tasks (Project Task updater)</relationshipLabel>
+    <relationshipName>Project_Tasks</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

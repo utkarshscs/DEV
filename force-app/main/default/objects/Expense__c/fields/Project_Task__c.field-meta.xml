@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Task__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Project Task</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <filterItems>
+            <field>inspire1__Project_Tasks__c.inspire1__Project__r.Id</field>
+            <operation>equals</operation>
+            <valueField>$Source.Project__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>inspire1__Project_Tasks__c.inspire1__Task_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Group</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>inspire1__Project_Tasks__c</referenceTo>
+    <relationshipLabel>Expenses</relationshipLabel>
+    <relationshipName>Expenses</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

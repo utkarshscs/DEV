@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source_required_for_New_Business</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Type ,&quot;New Business&quot;),
+OR(
+ISCHANGED(Type),
+ISNEW()
+),
+NOT( $Permission.Bypass_Permission ),
+ISBLANK(TEXT(LeadSource))
+)</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>For all New Business opportunities Lead Source is required</errorMessage>
+</ValidationRule>

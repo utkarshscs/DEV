@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SYNC_TRIGGER_LIST</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Is_Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DeveloperName</field>
+        <operation>contains</operation>
+        <value>Sync</value>
+    </filters>
+    <label>SYNC TRIGGER LIST</label>
+</ListView>

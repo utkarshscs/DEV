@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingCurrency__c</fullName>
+    <externalId>false</externalId>
+    <label>Billing Currency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CFA</fullName>
+                <default>true</default>
+                <label>CFA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

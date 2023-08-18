@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Term__c</fullName>
+    <defaultValue>&apos;Net 30&apos;</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>If you want to change this value to Net 45 or Net 60 then make the change to &quot;Requested Payment Term&quot;. It will trigger an auto email to the Accounting team. The value will get changed only post approval of the Accounting team.</inlineHelpText>
+    <label>Payment Terms</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

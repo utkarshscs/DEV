@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_Type__c</fullName>
+    <description>FSC</description>
+    <externalId>false</externalId>
+    <label>Location Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>COC - Group Manager - Legal Entity</fullName>
+                <default>false</default>
+                <label>COC - Group Manager - Legal Entity</label>
+            </value>
+            <value>
+                <fullName>COC - Group Member - Legal Entity</fullName>
+                <default>false</default>
+                <label>COC - Group Member - Legal Entity</label>
+            </value>
+            <value>
+                <fullName>COC - Multisite Manager - Legal Entity</fullName>
+                <default>false</default>
+                <label>COC - Multisite Manager - Legal Entity</label>
+            </value>
+            <value>
+                <fullName>COC - Single Certificate - Legal Entity</fullName>
+                <default>false</default>
+                <label>COC - Single Certificate - Legal Entity</label>
+            </value>
+            <value>
+                <fullName>COC - Site</fullName>
+                <default>false</default>
+                <label>COC - Site</label>
+            </value>
+            <value>
+                <fullName>COC - Site - Legal Entity</fullName>
+                <default>false</default>
+                <label>COC - Site - Legal Entity</label>
+            </value>
+            <value>
+                <fullName>COC - Subsite</fullName>
+                <default>false</default>
+                <label>COC - Subsite</label>
+            </value>
+            <value>
+                <fullName>FM - Group Manager</fullName>
+                <default>false</default>
+                <label>FM - Group Manager</label>
+            </value>
+            <value>
+                <fullName>FM - Group Member</fullName>
+                <default>false</default>
+                <label>FM - Group Member</label>
+            </value>
+            <value>
+                <fullName>FM - Single Certificate</fullName>
+                <default>false</default>
+                <label>FM - Single Certificate</label>
+            </value>
+            <value>
+                <fullName>Project Certificate</fullName>
+                <default>false</default>
+                <label>Project Certificate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

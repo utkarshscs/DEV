@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>DMS_Client_Sync_Action</name>
+        <label>DMS Client Sync Action</label>
+        <locationX>776</locationX>
+        <locationY>383</locationY>
+        <actionName>Account.DMS_Client_Sync</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>DMS Client Sync Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>DMS Client Sync Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>650</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>DMS_Client_Sync_Action</targetReference>
+        </connector>
+        <filterFormula>
+
+TRUE
+/*$Record.DMS_Client_ID__c != NULL
+&amp;&amp;
+$User.Id != &apos;2F0056g000004azNTAAY&apos;
+&amp;&amp;
+$User.Id != &apos;2F0056g000004nwxJAAQ&apos;*/</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

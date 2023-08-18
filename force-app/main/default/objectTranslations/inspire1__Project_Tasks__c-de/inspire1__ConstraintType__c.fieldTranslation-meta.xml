@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>inspire1__ConstraintType__c</name>
+    <picklistValues>
+        <masterLabel>As late as possible</masterLabel>
+        <translation>So spät wie möglich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>As soon as possible</masterLabel>
+        <translation>So schnell wie möglich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finish no earlier than</masterLabel>
+        <translation>Beenden nicht früher als</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finish no later than</masterLabel>
+        <translation>Beenden nicht später als</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Must finish on</masterLabel>
+        <translation>Muss beendet werden am</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Must start on</masterLabel>
+        <translation>Muss beginnen am</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start no earlier than</masterLabel>
+        <translation>Nicht früher als ... starten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start no later than</masterLabel>
+        <translation>Lege die Berechtigungen für den Projektmitarbeiter fest</translation>
+    </picklistValues>
+</CustomFieldTranslation>

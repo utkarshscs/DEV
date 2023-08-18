@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Total_Planned_Effort__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Sum of planned effort across all project tasks.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of planned effort across all project tasks.</inlineHelpText>
+    <label>Total Allocated Effort</label>
+    <summarizedField>inspire1__Project_Tasks__c.inspire1__Planned_Effort__c</summarizedField>
+    <summaryFilterItems>
+        <field>inspire1__Project_Tasks__c.inspire1__Task_Type__c</field>
+        <operation>equals</operation>
+        <value>Task</value>
+    </summaryFilterItems>
+    <summaryForeignKey>inspire1__Project_Tasks__c.inspire1__Project__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>Address_Decision</name>
+        <label>Address Decision</label>
+        <locationX>314</locationX>
+        <locationY>863</locationY>
+        <defaultConnector>
+            <targetReference>Billing_Address_From_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default - Is Account ?</defaultConnectorLabel>
+        <rules>
+            <name>Is_Bill_To_Company</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.fw2__Opportunity__r.Bill_To_Address__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Billing_Address_From_Account_Site</targetReference>
+            </connector>
+            <label>Is Bill To Company ?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Child_Decision</name>
+        <label>Child Decision</label>
+        <locationX>578</locationX>
+        <locationY>623</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Opportunity_Exist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.fw2__Opportunity__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Billing_Contact</targetReference>
+            </connector>
+            <label>Is Opportunity Exist ?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Master_Decision</name>
+        <label>Master Decision</label>
+        <locationX>974</locationX>
+        <locationY>383</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Terms_From_Opportunity</targetReference>
+            </connector>
+            <label>Is New ?</label>
+        </rules>
+        <rules>
+            <name>Is_Invoice_Date_Change</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.fw1__Invoice_Date__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Due_Date_On_Invoice</targetReference>
+            </connector>
+            <label>Is Invoice Date Change</label>
+        </rules>
+    </decisions>
+    <description>1- Update terms from opportunity. 
+2- Update billing address from opportunity&apos;s account.
+3- update billing address from opportunity&apos;s billing contact..
+4- Added contact Name population from billing Contact.
+5- Change billing address to shipping address from account site to invoice - 17-11-2022.
+6- Populate PO number from Opportunity
+7- Made updates to avoid populating billing contact address into invoice address Case :1566</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>varDueDate</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.fw1__Invoice_Date__c} + {!$Record.fw1__Terms__c}</expression>
+    </formulas>
+    <formulas>
+        <description>This formula user to calculate the value from payment term of opportunity.</description>
+        <name>varPaymentTerm</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!$Record.fw1__Opportunity__r.Payment_Term__c}, &quot;Net 15&quot;,15,&quot;Net 45&quot;,45,&quot;Net 60&quot;,60,&quot;Net 90&quot;,90,&quot;Upon_receipt&quot;,0,30)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Invoice - Master Process -After {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Invoice - Master Process -After</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Billing_Address_From_Account</name>
+        <label>Billing Address From Account</label>
+        <locationX>575</locationX>
+        <locationY>999</locationY>
+        <inputAssignments>
+            <field>Billing_Company_Name__c</field>
+            <value>
+                <elementReference>$Record.fw1__Account__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Client_Tax_ID__c</field>
+            <value>
+                <elementReference>$Record.fw1__Account__r.Client_Tax_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Billing_City__c</field>
+            <value>
+                <elementReference>$Record.fw1__Account__r.BillingCity</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Billing_Country__c</field>
+            <value>
+                <elementReference>$Record.fw1__Account__r.BillingCountry</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Billing_State__c</field>
+            <value>
+                <elementReference>$Record.fw1__Account__r.BillingState</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Billing_Street__c</field>
+            <value>
+                <elementReference>$Record.fw1__Account__r.BillingStreet</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Billing_Zip__c</field>
+            <value>
+                <elementReference>$Record.fw1__Account__r.BillingPostalCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__PO_Number__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.PO_VAT_number__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Billing_Address_From_Account_Site</name>
+        <label>Billing Address From Account Site</label>
+        <locationX>50</locationX>
+        <locationY>983</locationY>
+        <inputAssignments>
+            <field>Billing_Account_Site__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.Bill_To_Address__r.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Billing_Company_Name__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.Bill_To_Company__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Client_Tax_ID__c</field>
+            <value>
+                <elementReference>$Record.Billing_Company_Name__r.Client_Tax_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Billing_City__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.Bill_To_Address__r.ShippingCity</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Billing_Country__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.Bill_To_Address__r.ShippingCountry</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Billing_State__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.Bill_To_Address__r.ShippingState</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Billing_Street__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.Bill_To_Address__r.ShippingStreet</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Billing_Zip__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.Bill_To_Address__r.ShippingPostalCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__PO_Number__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.PO_VAT_number__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Billing_Contact</name>
+        <label>Update Billing Contact</label>
+        <locationX>314</locationX>
+        <locationY>743</locationY>
+        <connector>
+            <targetReference>Address_Decision</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>fw1_ContactName__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.Billing_Contact__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>fw1__Contact__c</field>
+            <value>
+                <elementReference>$Record.fw2__Opportunity__r.Billing_Contact__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Due Date  using invoice date and terms.</description>
+        <name>Update_Due_Date_On_Invoice</name>
+        <label>Update Due Date On Invoice</label>
+        <locationX>1106</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>fw1__Due_Date__c</field>
+            <value>
+                <elementReference>varDueDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update &quot;Terms&quot; field on invoice from &quot;Payment Terms&quot; of opportunity</description>
+        <name>Update_Terms_From_Opportunity</name>
+        <label>Update Terms From Opportunity</label>
+        <locationX>578</locationX>
+        <locationY>503</locationY>
+        <connector>
+            <targetReference>Child_Decision</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>fw1__Terms__c</field>
+            <value>
+                <elementReference>varPaymentTerm</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>848</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Master_Decision</targetReference>
+        </connector>
+        <object>fw1__Invoice__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

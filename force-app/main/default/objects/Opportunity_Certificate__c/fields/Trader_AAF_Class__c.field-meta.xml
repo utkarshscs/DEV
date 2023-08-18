@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trader_AAF_Class__c</fullName>
+    <description>FSC</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(FSC_Certificate_Type__c, &apos;Group Certificate&apos;) &amp;&amp;  INCLUDES(Certificate__r.SCS_Certification_Type__c, &apos;Trader&apos;),
+ IF(FPT_Trader_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_1.Maximum_Turnover__c,&apos;Class 1&apos;,
+ IF(FPT_Trader_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_2.Maximum_Turnover__c,&apos;Class 2&apos;,
+ IF(FPT_Trader_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_3.Maximum_Turnover__c,&apos;Class 3&apos;,
+ IF(FPT_Trader_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_4.Maximum_Turnover__c,&apos;Class 4&apos;,
+ IF(FPT_Trader_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_5.Maximum_Turnover__c,&apos;Class 5&apos;,
+ IF(FPT_Trader_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_6.Maximum_Turnover__c,&apos;Class 6&apos;,
+ IF(FPT_Trader_Calculated__c  &gt; $CustomMetadata.FSC_AAF_Table__mdt.Class_7.Minimum_Turnover__c,&apos;Class 7&apos;,&apos;&apos;))))))), 
+IF(ISPICKVAL(FSC_Certificate_Type__c, &apos;Project Certificate&apos;) &amp;&amp; INCLUDES(Certificate__r.SCS_Certification_Type__c, &apos;Trader&apos;),
+IF(Project_Cost__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_1.Maximum_Turnover__c,&apos;Class 1&apos;,
+ IF(Project_Cost__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_2.Maximum_Turnover__c,&apos;Class 2&apos;,
+ IF(Project_Cost__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_3.Maximum_Turnover__c,&apos;Class 3&apos;,
+ IF(Project_Cost__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_4.Maximum_Turnover__c,&apos;Class 4&apos;,
+ IF(Project_Cost__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_5.Maximum_Turnover__c,&apos;Class 5&apos;,
+ IF(Project_Cost__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_6.Maximum_Turnover__c,&apos;Class 6&apos;,
+ IF(Project_Cost__c  &gt; $CustomMetadata.FSC_AAF_Table__mdt.Class_7.Minimum_Turnover__c,&apos;Class 7&apos;,&apos;&apos;))))))),
+IF(INCLUDES(Certificate__r.SCS_Certification_Type__c, &apos;Trader&apos;),
+IF(FPT_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_1.Maximum_Turnover__c,&apos;Class 1&apos;,
+ IF(FPT_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_2.Maximum_Turnover__c,&apos;Class 2&apos;,
+ IF(FPT_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_3.Maximum_Turnover__c,&apos;Class 3&apos;,
+ IF(FPT_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_4.Maximum_Turnover__c,&apos;Class 4&apos;,
+ IF(FPT_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_5.Maximum_Turnover__c,&apos;Class 5&apos;,
+ IF(FPT_Calculated__c  &lt;= $CustomMetadata.FSC_AAF_Table__mdt.Class_6.Maximum_Turnover__c,&apos;Class 6&apos;,
+ IF(FPT_Calculated__c  &gt; $CustomMetadata.FSC_AAF_Table__mdt.Class_7.Minimum_Turnover__c,&apos;Class 7&apos;,&apos;&apos;))))))),&apos;&apos;)))</formula>
+    <label>Trader AAF Class</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

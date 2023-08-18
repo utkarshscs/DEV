@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Auto_BillPay_Options__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Installment Auto-BillPay Options</description>
+    <externalId>false</externalId>
+    <label>Auto-BillPay Options</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Installment Date</fullName>
+                <default>true</default>
+                <label>Installment Date</label>
+            </value>
+            <value>
+                <fullName>Installment Due Date</fullName>
+                <default>false</default>
+                <label>Installment Due Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

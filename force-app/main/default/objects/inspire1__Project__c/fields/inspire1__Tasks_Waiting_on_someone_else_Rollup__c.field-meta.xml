@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Tasks_Waiting_on_someone_else_Rollup__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Number of tasks that have status of Waiting on someone else.</description>
+    <externalId>false</externalId>
+    <label>Tasks Waiting on someone else</label>
+    <summaryFilterItems>
+        <field>inspire1__Project_Tasks__c.inspire1__Status__c</field>
+        <operation>equals</operation>
+        <value>Waiting on someone else</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>inspire1__Project_Tasks__c.inspire1__Task_Type__c</field>
+        <operation>equals</operation>
+        <value>Task</value>
+    </summaryFilterItems>
+    <summaryForeignKey>inspire1__Project_Tasks__c.inspire1__Project__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

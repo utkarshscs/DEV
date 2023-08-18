@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Open_Checklist_Items</fullName>
+    <active>true</active>
+    <description>Cannot update task to completed if open checklist items remain.</description>
+    <errorConditionFormula>AND(
+   ISCHANGED( Status ),
+   OR(
+      ISPICKVAL(Status,&quot;Completed&quot;),
+      TEXT(Status) = $Setup.inspire1__InspirePlannerConfig__c.inspire1__Task_Status_Completed__c
+      ),
+ inspire1__Inspire_Task__r.inspire1__Remaining_Checklist_Items__c &gt; 0
+   )</errorConditionFormula>
+    <errorMessage>You cannot close this Task since there are required Checklist items still open.  Please complete the required Checklist items first.</errorMessage>
+</ValidationRule>

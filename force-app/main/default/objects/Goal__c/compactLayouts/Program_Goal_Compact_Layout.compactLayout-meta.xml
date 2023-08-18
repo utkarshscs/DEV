@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Goal_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Goal_Name__c</fields>
+    <fields>Goal_Amount__c</fields>
+    <fields>Achieved__c</fields>
+    <label>Program Goal Compact Layout</label>
+</CompactLayout>

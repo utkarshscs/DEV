@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Total_Slack__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The total slack (or total float) is the amount of time that this task can be delayed without causing a delay to the project end.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The total slack (or total float) is the amount of time that this task can be delayed without causing a delay to the project end.</inlineHelpText>
+    <label>Total Slack</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

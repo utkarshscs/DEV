@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <description>Sets Federal Tax Id based on Entity</description>
+        <name>Set_Federal_Tax_Id</name>
+        <label>Set Federal Tax Id</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Federal_Tax_ID__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.fw1__Entity__r.Federal_Tax_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Sets Federal Tax Id on Invoice object based on Entity selected</description>
+    <environments>Default</environments>
+    <interviewLabel>Set Federal Tax Id on Invoice {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Federal Tax Id on Invoice</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Federal_Tax_Id</targetReference>
+        </connector>
+        <filterFormula>{!$Record__Prior.fw1__Entity__c} != {!$Record.fw1__Entity__c} &amp;&amp; {!$Record.fw1__Entity__r.Federal_Tax_ID__c} != null</filterFormula>
+        <object>fw1__Invoice__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

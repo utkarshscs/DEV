@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Beschreibt den Prozentsatz, um den sich das Projekt gegenüber der ursprünglichen Baseline verschoben hat.  Ein negativer Wert bedeutet das Projekt wurde frühzeitig beendet.&quot;</help>
+    <label></label>
+    <name>inspire1__Percent_Slippage__c</name>
+</CustomFieldTranslation>

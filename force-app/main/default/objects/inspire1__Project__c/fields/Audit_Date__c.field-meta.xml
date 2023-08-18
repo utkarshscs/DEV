@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_Date__c</fullName>
+    <description>This field shows the date when the audit is finished. This field is controlled through the &quot;Actual finish date&quot; of the task that has &quot;Task Category&quot; = &quot;Conduct Audit&quot;.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field shows the date when the audit is finished. This field is controlled through the &quot;Actual finish date&quot; of the task that has &quot;Task Category&quot; = &quot;Conduct Audit&quot;.</inlineHelpText>
+    <label>Audit Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

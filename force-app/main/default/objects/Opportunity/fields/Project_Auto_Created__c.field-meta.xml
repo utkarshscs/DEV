@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Auto_Created__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox is set to true, when a project has been created by Flow.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checkbox is set to true, when a project has been created by Flow.</inlineHelpText>
+    <label>Project Auto Created</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

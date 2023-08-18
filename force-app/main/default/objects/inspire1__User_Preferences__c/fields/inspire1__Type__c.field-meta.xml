@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines the type of preference.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Kanban</fullName>
+                <default>false</default>
+                <label>Kanban</label>
+            </value>
+            <value>
+                <fullName>Project</fullName>
+                <default>false</default>
+                <label>Project</label>
+            </value>
+            <value>
+                <fullName>Resource Allocation List</fullName>
+                <default>false</default>
+                <label>Resource Allocation List</label>
+            </value>
+            <value>
+                <fullName>Portfolio Dashboard</fullName>
+                <default>false</default>
+                <label>Portfolio Dashboard</label>
+            </value>
+            <value>
+                <fullName>Time Tracker</fullName>
+                <default>false</default>
+                <label>Time Tracker</label>
+            </value>
+            <value>
+                <fullName>Weekly Time Tracker</fullName>
+                <default>false</default>
+                <label>Weekly Time Tracker</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__All</fullName>
+    <columns>NAME</columns>
+    <columns>fw1__Account__c</columns>
+    <columns>fw1__Contact__c</columns>
+    <columns>fw1__Profile_Type__c</columns>
+    <columns>fw1__UseAsDefault__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

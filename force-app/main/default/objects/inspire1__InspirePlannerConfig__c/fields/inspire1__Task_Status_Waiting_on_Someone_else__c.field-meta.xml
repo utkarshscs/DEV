@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Task_Status_Waiting_on_Someone_else__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The inputted value will replace standard Waiting on Someone else value and inherit behavior of Waiting on Someone else.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Input a single status value that will replace the standard Waiting on Someone else status.</inlineHelpText>
+    <label>Task Status Waiting on Someone else</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

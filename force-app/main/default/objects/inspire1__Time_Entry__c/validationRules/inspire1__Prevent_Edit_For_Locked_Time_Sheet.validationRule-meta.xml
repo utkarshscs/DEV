@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Prevent_Edit_For_Locked_Time_Sheet</fullName>
+    <active>true</active>
+    <description>Prevent user from modifying record if the related Timesheet is locked.</description>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+NOT(ISNULL( inspire1__Timesheet__c )),
+OR(
+ISPICKVAL( inspire1__Timesheet__r.inspire1__Status__c , &quot;Submitted&quot;),
+ISPICKVAL( inspire1__Timesheet__r.inspire1__Status__c , &quot;Approved&quot;)
+)
+)</errorConditionFormula>
+    <errorMessage>This Time Entry record cannot be modified since the related Timesheet is locked. You must recall the Timesheet in order to edit.</errorMessage>
+</ValidationRule>

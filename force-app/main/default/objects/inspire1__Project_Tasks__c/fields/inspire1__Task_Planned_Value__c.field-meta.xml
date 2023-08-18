@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Task_Planned_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Planned Value defines the budgeted amount through the current reporting period.</description>
+    <externalId>false</externalId>
+    <formula>IF( 
+  TODAY() &lt; inspire1__Start_Date__c, 0,
+  IF (TODAY() &gt; inspire1__Finish_Date_Only__c,  inspire1__Budgeted_Cost__c,
+  (((inspire1__Duration__c -(inspire1__Finish_Date_Only__c - TODAY()+1))/ inspire1__Duration__c ) *  inspire1__Budgeted_Cost__c )
+)
+)</formula>
+    <inlineHelpText>Planned Value defines the budgeted amount through the current reporting period.</inlineHelpText>
+    <label>Task Planned Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

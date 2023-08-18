@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Conflict of Interest</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Conflict of Interests</value>
+    </caseValues>
+    <layouts>
+        <layout>Conflict of Interest Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Auditor_Should_Not_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Either_Internal_Or_External_Auditor</name>
+    </validationRules>
+</CustomObjectTranslation>

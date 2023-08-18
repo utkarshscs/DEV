@@ -1,0 +1,177 @@
+<template>
+	<template if:true={showSpinner}>
+		<lightning-spinner alternative-text="Loading"></lightning-spinner>
+	</template>
+
+	<!-- Screen 1 Start -->
+	<div if:true={showScreen1}>
+		<lightning-modal-header label="Select Certificate"></lightning-modal-header>
+		<lightning-modal-body>
+			<lightning-card title={labelName}>
+				<lightning-button variant="brand" slot="actions" label="Create New Certificate" class="slds-float_right"
+					onclick={gotoScreen2} disabled={isDisable}></lightning-button>
+				<template if:true={isProjectFound}>
+					<div if:true={showTable}
+						class="demo-only demo-only--sizing slds-grid slds-wrap slds-box slds-box_x-small">
+						<lightning-datatable key-field="id" data={certificates} columns={columns}
+							onrowselection={handleRowSelection} max-row-selection="1"></lightning-datatable>
+						<!--Pagination Start-->
+						<div if:true={isShowPaginationButton}
+							class="slds-align_absolute-center slds-box slds-box_x-small">
+							<div class="slds-p-right_xx-small">
+								<lightning-button disabled={isPrev} onclick={handlePaginationFirst} variant="brand"
+									icon-name="utility:arrow_left" name="first" title="First"></lightning-button>
+							</div>
+							<div class="slds-p-right_xx-small">
+								<lightning-button disabled={isPrev} onclick={handlePaginationPrev} variant="brand"
+									icon-name="utility:back" name="prev" title="Previous"></lightning-button>
+							</div>
+							<span class="slds-badge slds-badge_lightest">{recordStart}-{recordEnd} of {totalRecords} | Page {pageNumber} of {totalPages}</span>
+							<div class="slds-p-left_xx-small">
+								<lightning-button disabled={isNext} onclick={handlePaginationNext} variant="brand"
+									icon-name="utility:forward" icon-position="right" name="Next" title="Next">
+								</lightning-button>
+							</div>
+							<div class="slds-p-left_xx-small">
+								<lightning-button disabled={isNext} onclick={handlePaginationLast} variant="brand"
+									icon-name="utility:arrow_right" icon-position="right" name="Last" title="Last">
+								</lightning-button>
+							</div>
+						</div>
+						<!--Pagination End-->
+					</div>
+					<div if:false={showTable}
+						class="demo-only demo-only--sizing slds-grid slds-wrap slds-box slds-box_x-small">
+						<h1 class="slds-text-heading_small">{noCertificateMessage}</h1>
+					</div>
+				</template>
+				<template if:false={isProjectFound}>
+					<div class="error-msg">
+						{errMsg}
+					</div>
+				</template>
+			</lightning-card>
+		</lightning-modal-body>
+		<lightning-modal-footer>
+			<lightning-button class="slds-button slds-text-align_right" variant="neutral" label="Cancel"
+				onclick={closeAction}></lightning-button>
+			<lightning-button class="slds-button slds-text-align_right" variant="brand" label="Next"
+				onclick={handleNext} disabled={hideNext}></lightning-button>
+		</lightning-modal-footer>
+	</div>
+
+	<!-- Screen 2 Start -->
+	<lightning-quick-action-panel if:true={showScreen2} header="Create Certificate">
+		<lightning-record-edit-form data-id="certificate" object-api-name="Certificate__c"
+			onsubmit={handleSaveCertificate} onsuccess={handleCertificateSuccess} onerror={handleError}>
+			<div class="slds-box" if:true={showScreen2}>
+				<lightning-layout multiple-rows>
+					<lightning-layout-item size="12">
+						<div class="slds-p-around_xx-small" style="background: #516318;color:white;font-weight: bold;
+                    font-size: 1.25em;margin-bottom: 12px;text-align:center;"> Certificate Details</div>
+					</lightning-layout-item>
+					<!-- For Each Input Field -->
+					<template for:each={certificateInputFields} for:item="item">
+							<lightning-layout-item key={item.name} size="6">
+								<lightning-input-field field-name={item.name} required={item.required} value={item.value}>
+								</lightning-input-field>
+							</lightning-layout-item> 
+					</template>
+					<!--lightning-layout-item size="6">
+						<lightning-input-field data-id="certificate" field-name="Refer_SCS_Scheme_Number__c" value={referSCSSchemeNo} required>
+						</lightning-input-field>
+					</lightning-layout-item>
+					<lightning-layout-item size="6">
+						<lightning-input-field data-id="certificate" field-name="Scheme_Certification_Number__c" value={schemeCertNo}>
+						</lightning-input-field>
+					</lightning-layout-item>
+					<lightning-layout-item size="6">
+						<lightning-input-field data-id="certificate" field-name="ValidFrom__c" value={validFrom} required>
+						</lightning-input-field>
+					</lightning-layout-item>
+					<lightning-layout-item size="6">
+						<lightning-input-field data-id="certificate" field-name="ValidThrough__c" value={validThrough} required>
+						</lightning-input-field>
+					</lightning-layout-item>
+					<lightning-layout-item size="6">
+						<lightning-input-field data-id="certificate" field-name="Certification_Type__c" value={certType} required>
+						</lightning-input-field>
+					</lightning-layout-item>
+					<template if:true={showStartDateField}>
+						<lightning-layout-item size="6">
+							<lightning-input-field data-id="certificate" field-name="Start_date_of_first_certificate__c" value={startDate} required>
+							</lightning-input-field>
+						</lightning-layout-item>
+					</template-->
+					<lightning-layout-item size="12" class="slds-hide">
+						<lightning-input-field data-id="certificate" field-name="Account__c" value={accId}>
+						</lightning-input-field>
+						<lightning-input-field data-id="certificate" field-name="Program__c" value={programId}>
+						</lightning-input-field>
+						<lightning-input-field data-id="certificate" field-name="Opportunity__c" value={recordId}>
+						</lightning-input-field>
+					</lightning-layout-item>
+				</lightning-layout>
+			</div>
+			<div style='padding-top: 15px;text-align: right;'>
+				<template if:true={showScreen2}>
+					<lightning-button class="slds-float_left" variant="neutral" label="Cancel" onclick={closeAction}>
+					</lightning-button>
+					<lightning-button variant="brand" label="Back" onclick={gotoScreen1} class="slds-m-left_x-small">
+					</lightning-button>
+					<lightning-button variant="brand" type="submit" label="Save and Next" class="slds-m-left_x-small">
+					</lightning-button>
+				</template>
+			</div>
+		</lightning-record-edit-form>
+	</lightning-quick-action-panel>
+
+	<!-- Screen 3 Start -->
+	<lightning-quick-action-panel if:true={showScreen3} header="Create Opportunity Certificate">
+		<lightning-record-edit-form data-id="oppty_certificate" object-api-name="Opportunity_Certificate__c"
+			onsubmit={handleSaveOpptyCertificate} onsuccess={handleOpptyCertificateSuccess} onerror={handleError}>
+			<lightning-messages> </lightning-messages>
+			<div class="slds-box" if:true={showScreen3}>
+				<lightning-layout multiple-rows>
+					<lightning-layout-item size="12">
+						<div class="slds-p-around_xx-small" style="background: #516318;color:white;font-weight: bold;
+                font-size: 1.25em;margin-bottom: 12px;text-align:center;"> Opportunity Certificate Details -
+							{programName}</div>
+					</lightning-layout-item>
+
+					<!-- For Each Input Field -->
+					<template for:each={opportunityCertificateInputFields} for:item="item">
+						<template if:false={item.isProductCertificateType}>
+							<lightning-layout-item key={item.name} size="6">
+								<lightning-input-field field-name={item.name} required={item.required}>
+								</lightning-input-field>
+							</lightning-layout-item>
+						</template>
+						<template if:true={item.isProductCertificateType}>
+							<lightning-layout-item key={item.name} size="6">
+								<lightning-input-field field-name={item.name} required={item.required} class="productType">
+								</lightning-input-field>
+							</lightning-layout-item> 
+						</template>
+					</template>
+					<lightning-layout-item size="12" class="slds-hide">
+						<lightning-input-field field-name="Customer__c" value={accId}></lightning-input-field>
+						<lightning-input-field field-name="Opportunity__c" value={recordId}></lightning-input-field>
+						<lightning-input-field field-name="Certificate__c" value={selectedCertificateId}>
+						</lightning-input-field>
+					</lightning-layout-item>
+				</lightning-layout>
+			</div>
+			<div style='padding-top: 15px;text-align: right;'>
+				<template if:true={showScreen3}>
+					<lightning-button class="slds-float_left" variant="neutral" label="Cancel" onclick={closeAction}>
+					</lightning-button>
+					<lightning-button variant="brand" label="Back" onclick={gotoScreen2} class="slds-m-left_x-small">
+					</lightning-button>
+					<lightning-button variant="brand" type="submit" label="Save" class="slds-m-left_x-small">
+					</lightning-button>
+				</template>
+			</div>
+		</lightning-record-edit-form>
+	</lightning-quick-action-panel>
+</template>

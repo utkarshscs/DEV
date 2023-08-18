@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsibly_Managed_Peatlands</fullName>
+    <description>Use for 702 certificate creation</description>
+    <displayedFields>
+        <field>Product_s__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Responsibly Managed Peatlands</label>
+</FieldSet>

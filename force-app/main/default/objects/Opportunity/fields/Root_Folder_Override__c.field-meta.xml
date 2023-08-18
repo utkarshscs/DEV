@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Root_Folder_Override__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS($Label.Opportunity_RT_SCS_Global_Services, $RecordType.DeveloperName),Account.SharePoint_Folder_Id__c + &apos;,Opportunities&apos;, IF(CONTAINS($Label.Opportunity_RT_SCS_Consulting, $RecordType.DeveloperName),Account.SC_SharePoint_Folder_Id__c + &apos;,Opportunities&apos;,Account.SS_SharePoint_Folder_Id__c + &apos;,Opportunities&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Root Folder Override</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

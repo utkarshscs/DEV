@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group_Member_or_Additional_SItes__c</fullName>
+    <externalId>false</externalId>
+    <label>Group Members or Additional SItes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Group Members</fullName>
+                <default>true</default>
+                <label>Group Members</label>
+            </value>
+            <value>
+                <fullName>Addtional Sites</fullName>
+                <default>false</default>
+                <label>Addtional Sites</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

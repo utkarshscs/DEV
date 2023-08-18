@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certification_Manager__c</fullName>
+    <description>FSC</description>
+    <externalId>false</externalId>
+    <label>Certification Manager</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1.	SFI – NSF Managed</fullName>
+                <default>false</default>
+                <label>1.	SFI – NSF Managed</label>
+            </value>
+            <value>
+                <fullName>2.	SFI – SCS Managed</fullName>
+                <default>false</default>
+                <label>2.	SFI – SCS Managed</label>
+            </value>
+            <value>
+                <fullName>PEFC – Intertek Sweden</fullName>
+                <default>false</default>
+                <label>PEFC – Intertek Sweden</label>
+            </value>
+            <value>
+                <fullName>RPP – SCS Managed</fullName>
+                <default>false</default>
+                <label>RPP – SCS Managed</label>
+            </value>
+            <value>
+                <fullName>Intertek Bulgaria</fullName>
+                <default>false</default>
+                <label>Intertek Bulgaria</label>
+            </value>
+            <value>
+                <fullName>Intertek Japan</fullName>
+                <default>false</default>
+                <label>Intertek Japan</label>
+            </value>
+            <value>
+                <fullName>FTES</fullName>
+                <default>false</default>
+                <label>FTES</label>
+            </value>
+            <value>
+                <fullName>GPC</fullName>
+                <default>false</default>
+                <label>GPC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

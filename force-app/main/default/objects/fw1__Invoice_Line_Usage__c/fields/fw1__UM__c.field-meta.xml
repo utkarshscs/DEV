@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__UM__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>UM</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>fw1__Usage_UM</valueSetName>
+    </valueSet>
+</CustomField>

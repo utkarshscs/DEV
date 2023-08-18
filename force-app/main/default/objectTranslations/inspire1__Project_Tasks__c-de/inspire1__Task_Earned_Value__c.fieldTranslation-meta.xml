@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Gewinnsumme basierend auf den abgeschlossenen Anteil der Aufgabe. Kalkulation: Budgetierte Kosten * abgeschlossener Anteil</help>
+    <label></label>
+    <name>inspire1__Task_Earned_Value__c</name>
+</CustomFieldTranslation>

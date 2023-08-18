@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Grower / Packer</fullName>
+                <default>false</default>
+                <label>Grower / Packer</label>
+            </value>
+            <value>
+                <fullName>Processor / Manufacturer</fullName>
+                <default>false</default>
+                <label>Processor / Manufacturer</label>
+            </value>
+            <value>
+                <fullName>Distributor / Retailer</fullName>
+                <default>false</default>
+                <label>Distributor / Retailer</label>
+            </value>
+            <value>
+                <fullName>grower</fullName>
+                <default>false</default>
+                <label>grower</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

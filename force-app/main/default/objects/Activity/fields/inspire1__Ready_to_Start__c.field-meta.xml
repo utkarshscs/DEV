@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Ready_to_Start__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Identifies if all Predecessors have been met and task is ready to be started.  Referenced from related Project Task.</description>
+    <externalId>false</externalId>
+    <formula>inspire1__Inspire_Task__r.inspire1__ReadyToStart__c</formula>
+    <inlineHelpText>Identifies if all Predecessors have been met and task is ready to be started.</inlineHelpText>
+    <label>Ready to Start</label>
+    <type>Checkbox</type>
+</CustomField>

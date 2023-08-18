@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Budget_Variance_Percent__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The percentage of variance between Earned Value and Actual Cost.  
+Calculation: (Earned Value - Actual Cost) / Actual Cost</description>
+    <externalId>false</externalId>
+    <formula>IF(inspire1__Actual_Cost__c &gt; 0, 
+  (inspire1__Earned_Value__c - inspire1__Actual_Cost__c) / inspire1__Actual_Cost__c,
+  0
+)</formula>
+    <inlineHelpText>The percentage of variance between Earned Value and Actual Cost.  
+Calculation: (Earned Value - Actual Cost) / Actual Cost</inlineHelpText>
+    <label>Cost Variance %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

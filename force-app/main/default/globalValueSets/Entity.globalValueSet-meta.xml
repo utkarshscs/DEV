@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ECS</fullName>
+        <default>false</default>
+        <label>ECS</label>
+    </customValue>
+    <customValue>
+        <fullName>Food and Agriculture</fullName>
+        <default>false</default>
+        <label>Food and Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Resources</fullName>
+        <default>false</default>
+        <label>Natural Resources</label>
+    </customValue>
+    <customValue>
+        <fullName>SCS Consulting</fullName>
+        <default>false</default>
+        <label>SCS Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>SCS Standard</fullName>
+        <default>false</default>
+        <label>SCS Standard</label>
+    </customValue>
+    <customValue>
+        <fullName>Research and Development</fullName>
+        <default>false</default>
+        <label>Research and Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Technical Programs</fullName>
+        <default>false</default>
+        <label>Advanced Technical Programs</label>
+    </customValue>
+    <masterLabel>Entity</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

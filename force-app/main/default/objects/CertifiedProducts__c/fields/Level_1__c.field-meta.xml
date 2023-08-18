@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_1__c</fullName>
+    <externalId>false</externalId>
+    <label>Level 1</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>W1 Rough wood</fullName>
+                <default>false</default>
+                <label>W1 Rough wood</label>
+            </value>
+            <value>
+                <fullName>W2 Wood charcoal</fullName>
+                <default>false</default>
+                <label>W2 Wood charcoal</label>
+            </value>
+            <value>
+                <fullName>W3 Wood in chips or particles</fullName>
+                <default>false</default>
+                <label>W3 Wood in chips or particles</label>
+            </value>
+            <value>
+                <fullName>W4 Impregnated/treated wood</fullName>
+                <default>false</default>
+                <label>W4 Impregnated/treated wood</label>
+            </value>
+            <value>
+                <fullName>W5 Solid wood (sawn, chipped, peeled)</fullName>
+                <default>false</default>
+                <label>W5 Solid wood (sawn, chipped, peeled)</label>
+            </value>
+            <value>
+                <fullName>W6 Products from planing mill</fullName>
+                <default>false</default>
+                <label>W6 Products from planing mill</label>
+            </value>
+            <value>
+                <fullName>W7 Veneer</fullName>
+                <default>false</default>
+                <label>W7 Veneer</label>
+            </value>
+            <value>
+                <fullName>W8 Wood panels</fullName>
+                <default>false</default>
+                <label>W8 Wood panels</label>
+            </value>
+            <value>
+                <fullName>W9 Engineered wood products</fullName>
+                <default>false</default>
+                <label>W9 Engineered wood products</label>
+            </value>
+            <value>
+                <fullName>W10 Wood package and similar</fullName>
+                <default>false</default>
+                <label>W10 Wood package and similar</label>
+            </value>
+            <value>
+                <fullName>W11 Wood for construction</fullName>
+                <default>false</default>
+                <label>W11 Wood for construction</label>
+            </value>
+            <value>
+                <fullName>W12 Indoor furniture</fullName>
+                <default>false</default>
+                <label>W12 Indoor furniture</label>
+            </value>
+            <value>
+                <fullName>W13 Outdooor furniture and gardening</fullName>
+                <default>false</default>
+                <label>W13 Outdooor furniture and gardening</label>
+            </value>
+            <value>
+                <fullName>W14 Musical instruments</fullName>
+                <default>false</default>
+                <label>W14 Musical instruments</label>
+            </value>
+            <value>
+                <fullName>W15 Recreational goods</fullName>
+                <default>false</default>
+                <label>W15 Recreational goods</label>
+            </value>
+            <value>
+                <fullName>W16 Household articles</fullName>
+                <default>false</default>
+                <label>W16 Household articles</label>
+            </value>
+            <value>
+                <fullName>W17 Stationery of wood</fullName>
+                <default>false</default>
+                <label>W17 Stationery of wood</label>
+            </value>
+            <value>
+                <fullName>W18 Other manufactured wood products</fullName>
+                <default>false</default>
+                <label>W18 Other manufactured wood products</label>
+            </value>
+            <value>
+                <fullName>W19 Other wood products n.e.c.</fullName>
+                <default>false</default>
+                <label>W19 Other wood products n.e.c.</label>
+            </value>
+            <value>
+                <fullName>P1 Pulp</fullName>
+                <default>false</default>
+                <label>P1 Pulp</label>
+            </value>
+            <value>
+                <fullName>P2 Paper</fullName>
+                <default>false</default>
+                <label>P2 Paper</label>
+            </value>
+            <value>
+                <fullName>P3 Paperboard</fullName>
+                <default>false</default>
+                <label>P3 Paperboard</label>
+            </value>
+            <value>
+                <fullName>P4 Corrugated paper and paperboard</fullName>
+                <default>false</default>
+                <label>P4 Corrugated paper and paperboard</label>
+            </value>
+            <value>
+                <fullName>P5 Packaging and wrappings of paper</fullName>
+                <default>false</default>
+                <label>P5 Packaging and wrappings of paper</label>
+            </value>
+            <value>
+                <fullName>P6 Household and sanitary products</fullName>
+                <default>false</default>
+                <label>P6 Household and sanitary products</label>
+            </value>
+            <value>
+                <fullName>P7 Stationery of paper</fullName>
+                <default>false</default>
+                <label>P7 Stationery of paper</label>
+            </value>
+            <value>
+                <fullName>P8 Printed materials</fullName>
+                <default>false</default>
+                <label>P8 Printed materials</label>
+            </value>
+            <value>
+                <fullName>P9 Bobbins, spools, rolls and similar</fullName>
+                <default>false</default>
+                <label>P9 Bobbins, spools, rolls and similar</label>
+            </value>
+            <value>
+                <fullName>P10 Other pulp and paper products n.e.c.</fullName>
+                <default>false</default>
+                <label>P10 Other pulp and paper products n.e.c.</label>
+            </value>
+            <value>
+                <fullName>N1 Barks</fullName>
+                <default>false</default>
+                <label>N1 Barks</label>
+            </value>
+            <value>
+                <fullName>N2 Soil conditioner and substrates</fullName>
+                <default>false</default>
+                <label>N2 Soil conditioner and substrates</label>
+            </value>
+            <value>
+                <fullName>N3 Cork and articles of cork</fullName>
+                <default>false</default>
+                <label>N3 Cork and articles of cork</label>
+            </value>
+            <value>
+                <fullName>N4 Straw, wicker, rattan and similar</fullName>
+                <default>false</default>
+                <label>N4 Straw, wicker, rattan and similar</label>
+            </value>
+            <value>
+                <fullName>N5 Bamboo and articles of bamboo</fullName>
+                <default>false</default>
+                <label>N5 Bamboo and articles of bamboo</label>
+            </value>
+            <value>
+                <fullName>N6 Plants and parts of plants</fullName>
+                <default>false</default>
+                <label>N6 Plants and parts of plants</label>
+            </value>
+            <value>
+                <fullName>N7 Natural gums, oils and derivatives</fullName>
+                <default>false</default>
+                <label>N7 Natural gums, oils and derivatives</label>
+            </value>
+            <value>
+                <fullName>N8 Chemical, medicinal and cosmetic</fullName>
+                <default>false</default>
+                <label>N8 Chemical, medicinal and cosmetic</label>
+            </value>
+            <value>
+                <fullName>N9 Food</fullName>
+                <default>false</default>
+                <label>N9 Food</label>
+            </value>
+            <value>
+                <fullName>N10 Other NTFP n.e.c.</fullName>
+                <default>false</default>
+                <label>N10 Other NTFP n.e.c.</label>
+            </value>
+            <value>
+                <fullName>010000 Roundwood</fullName>
+                <default>false</default>
+                <label>010000 Roundwood</label>
+            </value>
+            <value>
+                <fullName>020000 Fuelwood and energy</fullName>
+                <default>false</default>
+                <label>020000 Fuelwood and energy</label>
+            </value>
+            <value>
+                <fullName>030000 Sawnwood and treated wood</fullName>
+                <default>false</default>
+                <label>030000 Sawnwood and treated wood</label>
+            </value>
+            <value>
+                <fullName>040000 Engineered wood products</fullName>
+                <default>false</default>
+                <label>040000 Engineered wood products</label>
+            </value>
+            <value>
+                <fullName>050000 Wood based panels</fullName>
+                <default>false</default>
+                <label>050000 Wood based panels</label>
+            </value>
+            <value>
+                <fullName>060000 Wood manufacturers</fullName>
+                <default>false</default>
+                <label>060000 Wood manufacturers</label>
+            </value>
+            <value>
+                <fullName>070000 Indoor Furniture</fullName>
+                <default>false</default>
+                <label>070000 Indoor Furniture</label>
+            </value>
+            <value>
+                <fullName>080000 Exterior products</fullName>
+                <default>false</default>
+                <label>080000 Exterior products</label>
+            </value>
+            <value>
+                <fullName>090000 Wooden Buildings and construction material</fullName>
+                <default>false</default>
+                <label>090000 Wooden Buildings and construction material</label>
+            </value>
+            <value>
+                <fullName>100000 Pulp</fullName>
+                <default>false</default>
+                <label>100000 Pulp</label>
+            </value>
+            <value>
+                <fullName>110000 Paper and paper board</fullName>
+                <default>false</default>
+                <label>110000 Paper and paper board</label>
+            </value>
+            <value>
+                <fullName>120000 Non-wood products</fullName>
+                <default>false</default>
+                <label>120000 Non-wood products</label>
+            </value>
+            <value>
+                <fullName>130000 Other products</fullName>
+                <default>false</default>
+                <label>130000 Other products</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

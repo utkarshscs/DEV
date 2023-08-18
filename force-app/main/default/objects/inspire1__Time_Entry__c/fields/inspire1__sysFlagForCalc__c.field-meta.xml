@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__sysFlagForCalc__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Identifies if the record should be included in next rollup execution.</description>
+    <externalId>false</externalId>
+    <formula>IF( AND(NOT(ISBLANK( inspire1__Tracked_Project_Tasks__c )),( inspire1__Entry_Type__c = &quot;Task&quot;),( inspire1__Tracked_Project_Tasks__r.inspire1__Actual_Effort__c &lt; inspire1__Efforts__c)),
+TRUE,
+FALSE
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>sysFlagForCalc</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

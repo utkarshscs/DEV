@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Contact_Role_on_stage_change</fullName>
+    <active>true</active>
+    <description>Checking Contact Role is present on Opportunity</description>
+    <errorConditionFormula>AND(
+NOT( $Permission.Bypass_Permission ),CheckContactRole__c = True)</errorConditionFormula>
+    <errorMessage>You can&apos;t change this Opportunity&apos;s stage as there is no primary contact role related to this opportunity.</errorMessage>
+</ValidationRule>

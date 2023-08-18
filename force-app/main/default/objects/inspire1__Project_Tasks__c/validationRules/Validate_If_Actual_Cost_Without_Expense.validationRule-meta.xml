@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_If_Actual_Cost_Without_Expense</fullName>
+    <active>true</active>
+    <description>Validates if the user has added Actual Cost not using the Log Expense button.</description>
+    <errorConditionFormula>ISCHANGED( inspire1__Actual_Cost__c ) &amp;&amp;  NOT(  ISBLANK(inspire1__Actual_Cost__c) ) &amp;&amp;   ISPICKVAL(inspire1__Task_Type__c, &apos;Task&apos;) &amp;&amp;
+NOT(ISCHANGED( Toggle__c ))</errorConditionFormula>
+    <errorMessage>To enter actual costs, please click the Log Expense button.</errorMessage>
+</ValidationRule>

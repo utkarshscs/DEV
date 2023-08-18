@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fileforcem1__Folder_Name_Field__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Salesforce record field which sets the folder name inside SharePoint.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>The Salesforce record field which sets the folder name inside SharePoint. For example: for Opportunity the field could be &quot;Name&quot;; or for Case the field could be &quot;CaseNumber.&quot;</inlineHelpText>
+    <label>Folder Name Field</label>
+    <metadataRelationshipControllingField>fileforcem1__Sharepoint_Object_Settings__mdt.fileforcem1__Salesforce_Object__c</metadataRelationshipControllingField>
+    <referenceTo>FieldDefinition</referenceTo>
+    <relationshipLabel>SharePoint_Object_Settings</relationshipLabel>
+    <relationshipName>SharePoint_Object_Settings2</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Define el porcentaje de deslizamiento del proyecto con respecto al porcentaje de referencia inicial. Un valor negativo significa que el proyecto se ha completado antes de lo previsto.</help>
+    <label></label>
+    <name>inspire1__Percent_Slippage__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>fw1__CreditCard</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>fw1__Delete_Profile</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Request_Bank_Authorization</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Tokenize</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Tokenize_Profiles</name>
+    </webLinks>
+</CustomObjectTranslation>

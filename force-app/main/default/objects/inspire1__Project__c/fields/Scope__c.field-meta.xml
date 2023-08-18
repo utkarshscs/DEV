@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scope__c</fullName>
+    <externalId>false</externalId>
+    <label>Scope</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ISH</fullName>
+                <default>false</default>
+                <label>ISH</label>
+            </value>
+            <value>
+                <fullName>P&amp;C - POM</fullName>
+                <default>false</default>
+                <label>P&amp;C - POM</label>
+            </value>
+            <value>
+                <fullName>NPP</fullName>
+                <default>false</default>
+                <label>NPP</label>
+            </value>
+            <value>
+                <fullName>Special Audit</fullName>
+                <default>false</default>
+                <label>Special Audit</label>
+            </value>
+            <value>
+                <fullName>SCC - Independent Mill</fullName>
+                <default>false</default>
+                <label>SCC - Independent Mill</label>
+            </value>
+            <value>
+                <fullName>SCC - Other</fullName>
+                <default>false</default>
+                <label>SCC - Other</label>
+            </value>
+            <value>
+                <fullName>SCC - PKC</fullName>
+                <default>false</default>
+                <label>SCC - PKC</label>
+            </value>
+            <value>
+                <fullName>SCC - Port</fullName>
+                <default>false</default>
+                <label>SCC - Port</label>
+            </value>
+            <value>
+                <fullName>SCC - Refinery</fullName>
+                <default>false</default>
+                <label>SCC - Refinery</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

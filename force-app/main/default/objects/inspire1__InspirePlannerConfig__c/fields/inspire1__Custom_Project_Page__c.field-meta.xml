@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Custom_Project_Page__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Determines URL for home icon.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check if you are using a custom Lightning page for Projects.</inlineHelpText>
+    <label>Custom Project Page</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

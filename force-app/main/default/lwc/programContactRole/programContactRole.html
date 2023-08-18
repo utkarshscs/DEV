@@ -1,0 +1,73 @@
+<template>
+
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+    </template>
+
+    <lightning-card>
+
+        <div class="slds-cell-wrap fixTableHead slds-scrollable" style="padding-left: 10px; width: 100%;">
+
+            <template if:true={showTable}>
+
+                <table class="slds-table slds-table_bordered slds-table_striped slds-m-top_small slds-table--header-fixed">
+                    <thead>
+                        <tr class="slds-line-height_reset slds-text-title_bold">
+                            <th class="slds-text-align_center" scope="col" style="width: 10%;">
+                                Program
+                            </th>
+                            <th class="slds-text-align_center" scope="col" style="width: 10%;">
+                                Account Name
+                            </th>
+                            <th class="slds-text-align_center" scope="col" style="width: 10%;">
+                                First Name
+                            </th>
+                            <th class="slds-text-align_center" scope="col" style="width: 10%;">
+                                Last Name
+                            </th>
+                            <th class="slds-text-align_center" scope="col" style="width: 10%;">
+                                Title
+                            </th>
+                            <th class="slds-text-align_center" scope="col" style="width: 10%;">
+                                Phone
+                            </th>
+                            <th class="slds-text-align_center" scope="col" style="width: 10%;">
+                                Fax
+                            </th>
+                            <th class="slds-text-align_center" scope="col" style="width: 10%;">
+                                Mobile
+                            </th>
+                            <th class="slds-text-align_center" scope="col" style="width: 10%;">
+                                Email
+                            </th>
+                            <th class="slds-text-align_center" scope="col" style="width: 10%;">
+                                Program Role
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={dataToDisplay} for:item="data" for:index="index">
+                            <tr class="slds-hint-parent" key={data.Id}>
+                                <td class="slds-text-align_center" scope="col" style="width: 10%;"><a href={data.progId} target="_blank">{data.program}</a></td>
+                                <td class="slds-text-align_center" scope="col" style="width: 10%;"><a href={data.accountId} target="_blank">{data.accountName}</a></td>
+                                <td class="slds-text-align_center" scope="col" style="width: 10%;">{data.firstName}</td>
+                                <td class="slds-text-align_center" scope="col" style="width: 10%;">{data.lastName}</td>
+                                <td class="slds-text-align_center" scope="col" style="width: 10%;">{data.title}</td>
+                                <td class="slds-text-align_center" scope="col" style="width: 10%;">{data.phone}</td>
+                                <td class="slds-text-align_center" scope="col" style="width: 10%;">{data.fax}</td>
+                                <td class="slds-text-align_center" scope="col" style="width: 10%;">{data.mobile}</td>
+                                <td class="slds-text-align_center" scope="col" style="width: 10%;">{data.email}</td>
+                                <td class="slds-text-align_center" scope="col" style="width: 10%;">{data.programRole}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </template>
+            <template if:false={showTable}>
+                <div>
+                    <span style="color:red; text-align:center">{errorMessage}</span>
+                </div>
+            </template>
+        </div>
+    </lightning-card>    
+</template>

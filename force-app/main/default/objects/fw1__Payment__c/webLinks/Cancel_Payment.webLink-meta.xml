@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancel_Payment</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Cancel Payment</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/flow/Payment_Status_Update?PaymentID={!fw1__Payment__c.Id}&amp;InvoiceNumber={!fw1__Payment__c.fw1__InvoiceId__c}&amp;PaymentAmount={!VALUE(TEXT(fw1__Payment__c.fw1__Total_Paid_Amount__c))}&amp;PaymentStatus
+={!fw1__Payment__c.fw1__Status__c}&amp;retURL={!fw1__Payment__c.Id}</url>
+</WebLink>

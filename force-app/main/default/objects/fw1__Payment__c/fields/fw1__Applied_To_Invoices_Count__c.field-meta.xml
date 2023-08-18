@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Applied_To_Invoices_Count__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Applied To Invoices Count</label>
+    <summaryFilterItems>
+        <field>fw1__Payment_Activity__c.fw1__Applied_To_Invoice__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>fw1__Payment_Activity__c.fw1__Payment__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;El CPI mide el valor del trabajo completado frente al coste real. Un valor de CPI &lt;1,0 indica que los costes fueron superiores a los presupuestados. Un CPI &gt;1,0 indica que los costes fueron inferiores a los presupuestados. Cálculo: Valor ganado/Coste real&quot;</help>
+    <label></label>
+    <name>inspire1__Cost_Performance_Index_CPI__c</name>
+</CustomFieldTranslation>

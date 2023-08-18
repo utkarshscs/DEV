@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Contacto al que pertenece la entrada de tiempo. Registrada desde el portal externo del proyecto.</help>
+    <label></label>
+    <name>inspire1__Contact__c</name>
+    <relationshipLabel></relationshipLabel>
+</CustomFieldTranslation>

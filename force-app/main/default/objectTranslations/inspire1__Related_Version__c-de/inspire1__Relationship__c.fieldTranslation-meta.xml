@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Definiert die Beziehungsart zwischen Nutzergeschichte (Projektaufgabe) und Version.</help>
+    <label></label>
+    <name>inspire1__Relationship__c</name>
+    <picklistValues>
+        <masterLabel>Affected Version</masterLabel>
+        <translation>Betroffene Version</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fix Version</masterLabel>
+        <translation>Version reparieren</translation>
+    </picklistValues>
+</CustomFieldTranslation>

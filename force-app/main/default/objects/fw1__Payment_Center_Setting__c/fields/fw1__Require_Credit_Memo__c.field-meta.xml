@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Require_Credit_Memo__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This flag is created for compatibility purposes. On lower versions, a credit memo is not required when payment method is Credit Memo.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this flag is checked, it is required that a Credit Memo is defined and selected when paying by Credit Memo.</inlineHelpText>
+    <label>Require Credit Memo</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

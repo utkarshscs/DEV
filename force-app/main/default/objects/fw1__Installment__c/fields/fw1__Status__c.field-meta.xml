@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(fw1__Total_Installment_Amount__c   =   fw1__Paid_Amount__c, 
+     IF(fw1__Payment__r.fw1__Status__c  =  &apos;Authorized&apos;, 
+          &apos;AUTHORIZED&apos;, 
+          &apos;PAID&apos;) , 
+     IF(fw1__Is_Due__c  =  &apos;Y&apos;, 
+          &apos;DUE&apos;, 
+          &apos;&apos;) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

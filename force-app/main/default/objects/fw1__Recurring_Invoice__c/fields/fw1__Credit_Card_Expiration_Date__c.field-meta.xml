@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Credit_Card_Expiration_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(fw1__Payment_Profile__c != null,fw1__Payment_Profile__r.fw1__Credit_Card_Expiration_Date__c,
+IF(TEXT(fw1__Expiry_Month__c) == &apos;12&apos;,DATEVALUE(fw1__Expiry_Year__c + &apos;-12-31&apos;), 
+DATE(VALUE(fw1__Expiry_Year__c), VALUE(TEXT(fw1__Expiry_Month__c)) + 1, 1) - 1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Credit Card Expiration Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

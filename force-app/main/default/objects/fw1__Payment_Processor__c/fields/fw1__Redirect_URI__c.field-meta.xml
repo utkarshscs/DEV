@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Redirect_URI__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stripe Connect redirect URI</description>
+    <externalId>false</externalId>
+    <formula>fw1__Payment_Center_Setting__r.fw1__Domain_Name__c + IF( fw1__Use_Flywire_API__c,&apos;/services/apexrest/fw1/flywire/updateStatus&apos;, &apos;/fw1__PlatformConnectSuccess&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Redirect URI</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

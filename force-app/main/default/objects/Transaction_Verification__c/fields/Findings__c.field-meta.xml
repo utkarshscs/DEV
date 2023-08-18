@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Findings__c</fullName>
+    <description>FSC</description>
+    <externalId>false</externalId>
+    <label>Findings</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Sales Reported (10.2 a)</fullName>
+                <default>false</default>
+                <label>No Sales Reported (10.2 a)</label>
+            </value>
+            <value>
+                <fullName>Non Conformity (10.2 b)</fullName>
+                <default>false</default>
+                <label>Non Conformity (10.2 b)</label>
+            </value>
+            <value>
+                <fullName>Suspension (10.2 b)</fullName>
+                <default>false</default>
+                <label>Suspension (10.2 b)</label>
+            </value>
+            <value>
+                <fullName>Termination (10.2 b)</fullName>
+                <default>false</default>
+                <label>Termination (10.2 b)</label>
+            </value>
+            <value>
+                <fullName>Removal of Site (10.2 b)</fullName>
+                <default>false</default>
+                <label>Removal of Site (10.2 b)</label>
+            </value>
+            <value>
+                <fullName>Recommendation for investigation (10.2 c)</fullName>
+                <default>false</default>
+                <label>Recommendation for investigation (10.2 c)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

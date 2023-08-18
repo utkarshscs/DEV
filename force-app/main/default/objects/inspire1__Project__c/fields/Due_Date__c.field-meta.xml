@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Due_Date__c</fullName>
+    <description>If “Audit Date“ is null/not populated, “Due Date“ should also be null/empty.
+
+If “Audit Date“ has a value &amp;&amp; If “Date NCs Closed“ is null
+
+      Then “Due Date“ should be “Audit Date“ + 28.
+
+If “Audit Date“ has a value &amp;&amp; If “Date NCs Closed“ has a value
+
+       Then “Due Date“ should be “Date NCs Closed“ + 28.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If “Audit Date“ is null/not populated, “Due Date“ should also be null/empty.
+If “Audit Date“ has a value &amp;&amp; If “Date NCs Closed“ is null
+      Then “Due Date“ should be “Audit Date“ + 28.
+If “Audit Date“ has a value &amp;&amp; If “Date NCs Closed“ has a value
+       Then “Due Date“ should be “Date NCs Closed“ + 28.</inlineHelpText>
+    <label>Due Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

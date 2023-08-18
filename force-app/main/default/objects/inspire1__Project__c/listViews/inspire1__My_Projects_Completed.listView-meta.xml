@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__My_Projects_Completed</fullName>
+    <columns>NAME</columns>
+    <columns>inspire1__Project_Status__c</columns>
+    <columns>inspire1__Actual_Start_Date__c</columns>
+    <columns>inspire1__Actual_Finish_Date__c</columns>
+    <columns>inspire1__Description__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>inspire1__Project_Status__c</field>
+        <operation>equals</operation>
+        <value>Completed</value>
+    </filters>
+    <label>My Projects - Completed</label>
+</ListView>

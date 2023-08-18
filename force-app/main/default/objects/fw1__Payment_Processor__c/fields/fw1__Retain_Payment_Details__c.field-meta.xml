@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Retain_Payment_Details__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Some processors require payment details, i.e. credit card number, etc., in order to capture, void or refund. Check this box to retain the details.</description>
+    <externalId>false</externalId>
+    <label>Retain Payment Details</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Is_Partial__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( AND(fw1__Total_Invoice_Amount__c &gt; 0,
+        fw1__Total_Paid_Amount__c &gt; 0,
+        fw1__Total_Invoice_Amount__c &gt; fw1__Total_Paid_Amount__c,
+        fw1__Balance_Due__c &gt; 0), 
+    True, 
+    False
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Partial</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

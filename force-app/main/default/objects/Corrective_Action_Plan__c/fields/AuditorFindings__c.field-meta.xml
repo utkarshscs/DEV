@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AuditorFindings__c</fullName>
+    <description>This field will also work as Supporting information</description>
+    <externalId>false</externalId>
+    <label>Auditor Findings</label>
+    <length>131000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

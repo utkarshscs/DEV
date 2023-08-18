@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Coste por hora del recurso. Usado para los cálculos del proyecto.</help>
+    <label></label>
+    <name>inspire1__Hourly_Rate__c</name>
+</CustomFieldTranslation>

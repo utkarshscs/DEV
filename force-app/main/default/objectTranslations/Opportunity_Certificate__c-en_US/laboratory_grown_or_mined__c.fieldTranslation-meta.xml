@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>laboratory_grown_or_mined__c</name>
+    <picklistValues>
+        <masterLabel>laboratory grown</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>mined</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>natural</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

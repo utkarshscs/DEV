@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Scope__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Sub Scope</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <filterItems>
+            <field>$Source.Program__c</field>
+            <operation>equals</operation>
+            <valueField>Scope__c.Program__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Scope__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Sub Scope</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Scope__c</referenceTo>
+    <relationshipLabel>Scope</relationshipLabel>
+    <relationshipName>SubScope</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diversion_Method__c</fullName>
+    <externalId>false</externalId>
+    <label>Diversion Method</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Composting</fullName>
+                <default>false</default>
+                <label>Composting</label>
+            </value>
+            <value>
+                <fullName>Donation</fullName>
+                <default>false</default>
+                <label>Donation</label>
+            </value>
+            <value>
+                <fullName>E-Waste</fullName>
+                <default>false</default>
+                <label>E-Waste</label>
+            </value>
+            <value>
+                <fullName>Incineration (No Energy Recovery)</fullName>
+                <default>false</default>
+                <label>Incineration (No Energy Recovery)</label>
+            </value>
+            <value>
+                <fullName>Landfill</fullName>
+                <default>false</default>
+                <label>Landfill</label>
+            </value>
+            <value>
+                <fullName>Unaccounted for</fullName>
+                <default>false</default>
+                <label>Unaccounted for</label>
+            </value>
+            <value>
+                <fullName>Reclamation</fullName>
+                <default>false</default>
+                <label>Reclamation</label>
+            </value>
+            <value>
+                <fullName>Recycling</fullName>
+                <default>false</default>
+                <label>Recycling</label>
+            </value>
+            <value>
+                <fullName>Reuse</fullName>
+                <default>false</default>
+                <label>Reuse</label>
+            </value>
+            <value>
+                <fullName>Sale for Manufacturing</fullName>
+                <default>false</default>
+                <label>Sale for Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Sale for Reuse</fullName>
+                <default>false</default>
+                <label>Sale for Reuse</label>
+            </value>
+            <value>
+                <fullName>Sale (Other)</fullName>
+                <default>false</default>
+                <label>Sale (Other)</label>
+            </value>
+            <value>
+                <fullName>Waste-to-Energy</fullName>
+                <default>false</default>
+                <label>Waste-to-Energy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

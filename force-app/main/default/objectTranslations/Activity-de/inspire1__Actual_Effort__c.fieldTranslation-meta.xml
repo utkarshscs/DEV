@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Tatsächliche Anzahl der Stunden, die für den Abschluss der Aufgabe auf der Grundlage der Zeiteinträge aufgewendet wurden.&quot;</help>
+    <label></label>
+    <name>inspire1__Actual_Effort__c</name>
+</CustomFieldTranslation>

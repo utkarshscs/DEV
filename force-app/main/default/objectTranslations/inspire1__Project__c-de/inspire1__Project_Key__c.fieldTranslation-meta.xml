@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Der Projektschlüssel wird das Präfix für Aufgaben, die innerhalb des Prokeltes erstellt wuden. Dieser Wert muss einzigartig sein.&quot;</help>
+    <label></label>
+    <name>inspire1__Project_Key__c</name>
+</CustomFieldTranslation>

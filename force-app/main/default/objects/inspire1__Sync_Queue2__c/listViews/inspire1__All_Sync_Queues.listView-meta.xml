@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__All_Sync_Queues</fullName>
+    <columns>NAME</columns>
+    <columns>inspire1__Sync_Mode__c</columns>
+    <columns>inspire1__Sync_Status__c</columns>
+    <columns>inspire1__Process_Date__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>inspire1__Failure_Code__c</columns>
+    <columns>inspire1__Salesforce_Task_ID__c</columns>
+    <columns>inspire1__Project_Task_ID__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>All Sync Queues</label>
+</ListView>

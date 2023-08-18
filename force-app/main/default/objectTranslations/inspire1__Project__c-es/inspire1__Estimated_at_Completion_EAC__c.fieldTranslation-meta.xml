@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>El EAC es una previsión de cuánto costará el proyecto total. Fórmula: (Coste presupuestado)/CPI</help>
+    <label></label>
+    <name>inspire1__Estimated_at_Completion_EAC__c</name>
+</CustomFieldTranslation>

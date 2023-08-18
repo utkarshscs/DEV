@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Reason_for_Change_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISBLANK(Reason_for_change__c),
+ISPICKVAL(Type, &quot;New Business&quot;),
+ISPICKVAL(StageName, &quot;Closed Won&quot;),
+NOT(ISCHANGED(StageName)),
+ISCHANGED(CloseDate),
+OR (
+AND (YEAR(CloseDate) = YEAR(TODAY()),
+CEILING( MONTH(PRIORVALUE(CloseDate)) /3) &lt; CEILING( MONTH( TODAY() ) /3)
+),
+YEAR(PRIORVALUE(CloseDate)) &lt; YEAR(TODAY())
+)
+)</errorConditionFormula>
+    <errorDisplayField>Reason_for_change__c</errorDisplayField>
+    <errorMessage>Please provide Reason for Change</errorMessage>
+</ValidationRule>

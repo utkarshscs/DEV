@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Variación de finalización = Fecha de finalización - Fecha de finalización de referencia
+\ n\ r
+El campo Variación de finalización contiene la cantidad de tiempo que representa la diferencia entre la fecha de finalización de referencia de un proyecto y su fecha de finalización programada actualmente.</help>
+    <label></label>
+    <name>inspire1__Finish_Variance__c</name>
+</CustomFieldTranslation>

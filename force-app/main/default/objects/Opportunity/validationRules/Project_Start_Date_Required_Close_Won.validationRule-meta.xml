@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Start_Date_Required_Close_Won</fullName>
+    <active>false</active>
+    <description>Project Start date needs to be populated before closed Won</description>
+    <errorConditionFormula>AND(
+ ISCHANGED(StageName),
+  NOT( $Permission.Bypass_Permission ),
+ ISPICKVAL(StageName, &apos;Closed Won&apos;),
+ ISBLANK(Project_Start_Date__c),
+ NOT(RecordType.DeveloperName = &apos;Training_Opportunity&apos;)
+)</errorConditionFormula>
+    <errorMessage>Project Start Date is a mandatory field before closing the opportunity as Closed Won.</errorMessage>
+</ValidationRule>

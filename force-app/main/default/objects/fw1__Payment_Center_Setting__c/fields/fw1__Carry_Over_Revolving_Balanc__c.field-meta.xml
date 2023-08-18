@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Carry_Over_Revolving_Balanc__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field controls if the revolving balance from previous invoices will be moved to the new invoice and reflected as revolving balance</description>
+    <externalId>false</externalId>
+    <label>Carry Over Revolving Balance</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

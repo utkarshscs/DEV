@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Budgeted_Cost__c</fullName>
+    <deprecated>false</deprecated>
+    <description>References Budgeted Cost from related Project Task.</description>
+    <externalId>false</externalId>
+    <formula>IF( 
+   $Setup.inspire1__InspirePlannerConfig__c.inspire1__Use_Effort_to_Calculate_Cost__c = TRUE,
+   inspire1__Planned_Effort__c *  inspire1__Hourly_Rate__c ,
+   inspire1__Inspire_Task__r.inspire1__Budgeted_Cost__c
+)</formula>
+    <label>Budgeted Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

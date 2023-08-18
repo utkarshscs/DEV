@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weekend_Are_Workday__c</fullName>
+    <externalId>false</externalId>
+    <formula>inspire1__Project__r.inspire1__WeekendAreWorkday__c</formula>
+    <label>Weekend Are Workday</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

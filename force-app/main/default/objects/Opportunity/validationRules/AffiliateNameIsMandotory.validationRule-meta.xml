@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AffiliateNameIsMandotory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Affiliate_Opportunity_flag__c=true ,  ISBLANK( Affiliate_Name__c )  )</errorConditionFormula>
+    <errorMessage>Please fill affiliate name for affiliate opportunity</errorMessage>
+</ValidationRule>

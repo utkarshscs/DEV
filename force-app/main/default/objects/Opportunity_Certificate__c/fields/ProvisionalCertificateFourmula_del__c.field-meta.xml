@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProvisionalCertificateFourmula_del__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(Phase_of_Group__c, &apos;MS A&apos;) , &apos;PROVISIONAL CERTIFICATE&apos; , &apos; &apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ProvisionalCertificateFourmula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

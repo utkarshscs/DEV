@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Get_Transaction_Details__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This box indicates whether another callout shall be made to get more details about a transaction (some processors, like PayPal, does not return all details in a single call).</description>
+    <externalId>false</externalId>
+    <label>Get Transaction Details</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

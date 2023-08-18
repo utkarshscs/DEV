@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Startabweichung = Startdatum - Starttermin der Baseline Die Startabweichung ist die Differenz zwischen dem Starttermin der Baseline einer Aufgabe und ihrem aktuell geplanten Startdatum.</help>
+    <label></label>
+    <name>inspire1__Start_Variance__c</name>
+</CustomFieldTranslation>

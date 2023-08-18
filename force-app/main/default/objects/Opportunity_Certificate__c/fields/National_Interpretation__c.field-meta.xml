@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>National_Interpretation__c</fullName>
+    <externalId>false</externalId>
+    <label>National Interpretation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nigeria, 2021</fullName>
+                <default>false</default>
+                <label>Nigeria, 2021</label>
+            </value>
+            <value>
+                <fullName>Guatemala National Interpretation, 2021</fullName>
+                <default>false</default>
+                <label>Guatemala National Interpretation, 2021</label>
+            </value>
+            <value>
+                <fullName>Honduras National Interpretation, 2021</fullName>
+                <default>false</default>
+                <label>Honduras National Interpretation, 2021</label>
+            </value>
+            <value>
+                <fullName>Cameroon National Interpretation, 2021</fullName>
+                <default>false</default>
+                <label>Cameroon National Interpretation, 2021</label>
+            </value>
+            <value>
+                <fullName>Colombia National Interpretation, 2019</fullName>
+                <default>false</default>
+                <label>Colombia National Interpretation, 2019</label>
+            </value>
+            <value>
+                <fullName>Cote d&apos;Ivoire National Interpreation, 2020</fullName>
+                <default>false</default>
+                <label>Cote d&apos;Ivoire National Interpreation, 2020</label>
+            </value>
+            <value>
+                <fullName>Gabon National Interpretation, 2019</fullName>
+                <default>false</default>
+                <label>Gabon National Interpretation, 2019</label>
+            </value>
+            <value>
+                <fullName>Ghana National Interpretation, 2019</fullName>
+                <default>false</default>
+                <label>Ghana National Interpretation, 2019</label>
+            </value>
+            <value>
+                <fullName>India National Interpreation, 2019</fullName>
+                <default>false</default>
+                <label>India National Interpreation, 2019</label>
+            </value>
+            <value>
+                <fullName>Indonesia National Interpretation, 2019</fullName>
+                <default>false</default>
+                <label>Indonesia National Interpretation, 2019</label>
+            </value>
+            <value>
+                <fullName>Malaysia National Interpretation, 2019</fullName>
+                <default>false</default>
+                <label>Malaysia National Interpretation, 2019</label>
+            </value>
+            <value>
+                <fullName>Mexico National Interpreatation, 2019</fullName>
+                <default>false</default>
+                <label>Mexico National Interpreatation, 2019</label>
+            </value>
+            <value>
+                <fullName>Papua New Guinea and Salomon Islands, 2019</fullName>
+                <default>false</default>
+                <label>Papua New Guinea and Salomon Islands, 2019</label>
+            </value>
+            <value>
+                <fullName>Sierra Leone National Interpreation , 2021</fullName>
+                <default>false</default>
+                <label>Sierra Leone National Interpreation , 2021</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

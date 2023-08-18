@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Earned_Effort__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The effort earned based on % Complete of Project (Total Planned Effort * % Complete)</description>
+    <externalId>false</externalId>
+    <formula>inspire1__Total_Planned_Effort__c *  inspire1__Complete__c</formula>
+    <inlineHelpText>The effort earned based on % Complete of Project (Total Planned Effort * % Complete)</inlineHelpText>
+    <label>Earned Effort</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

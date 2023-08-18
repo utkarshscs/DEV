@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Remaining_Checklist_Items__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Count of remaining checklist items that are required.</description>
+    <externalId>false</externalId>
+    <label>Remaining Checklist Items</label>
+    <summaryFilterItems>
+        <field>inspire1__Checklist_Item__c.inspire1__Completed__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>inspire1__Checklist_Item__c.inspire1__Required__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>inspire1__Checklist_Item__c.inspire1__Project_Task__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

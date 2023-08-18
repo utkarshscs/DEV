@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <description>check if record is new or updated</description>
+        <name>Check_Record_Entry</name>
+        <label>Check Record Entry</label>
+        <locationX>710</locationX>
+        <locationY>551</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_CP_Lead_Source</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isLeadSourceChanged</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LeadSource</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Lead_Source_Blank</targetReference>
+            </connector>
+            <label>Is CP Lead Source</label>
+        </rules>
+        <rules>
+            <name>Is_CP_Lead_Source_Detail</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isLeadSourceDetailChanged</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Lead_Source_Detail</targetReference>
+            </connector>
+            <label>Is CP Lead Source Detail</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Flow_Is_Active</name>
+        <label>Flow Is Active</label>
+        <locationX>1040</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Active</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Trigger_Setting</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Trigger_Setting.Is_Active__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Record_Entry</targetReference>
+            </connector>
+            <label>Is Active ?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Lead_Source_Blank</name>
+        <label>Is Lead Source Blank</label>
+        <locationX>314</locationX>
+        <locationY>671</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Lead_Source_And_Detail_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LeadSource</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Lead_Source_Details__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Lead_Source</targetReference>
+            </connector>
+            <label>Is Lead Source And Detail Blank Check</label>
+        </rules>
+        <rules>
+            <name>Is_Lead_Source_Blank_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LeadSource</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lead_Source_Detail</targetReference>
+            </connector>
+            <label>Is Lead Source Blank Check</label>
+        </rules>
+    </decisions>
+    <description>Created as per case 00001073
+new fields created - CP_Lead_Source_String,CP_Lead_Source_Details_String</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>isLeadSourceChanged</name>
+        <dataType>Boolean</dataType>
+        <expression>ISCHANGED({!$Record.CP_Lead_Source_String__c})</expression>
+    </formulas>
+    <formulas>
+        <name>isLeadSourceDetailChanged</name>
+        <dataType>Boolean</dataType>
+        <expression>ISCHANGED({!$Record.CP_Lead_Source_Details_String__c})</expression>
+    </formulas>
+    <formulas>
+        <name>leadSourceNew</name>
+        <dataType>String</dataType>
+        <expression>If(
+	ISBLANK({!$Record.Lead_Source_Details__c}), 
+	{!$Record.CP_Lead_Source_Details_String__c}, 
+	{!$Record.Lead_Source_Details__c} &amp; &apos;;&apos; &amp; {!$Record.CP_Lead_Source_Details_String__c}
+)</expression>
+    </formulas>
+    <interviewLabel>Chilli {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Chili Piper Lead Field Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Trigger_Setting</name>
+        <label>Get Trigger Setting</label>
+        <locationX>1040</locationX>
+        <locationY>311</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Flow_Is_Active</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Chili_Piper_Lead_Field_Update</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Trigger_Setting__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Lead_Source_Detail</name>
+        <label>Update Lead Source Detail</label>
+        <locationX>314</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>LeadSource</field>
+            <value>
+                <elementReference>$Record.CP_Lead_Source_String__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Lead_Source</name>
+        <label>Update Lead Source</label>
+        <locationX>50</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>LeadSource</field>
+            <value>
+                <elementReference>$Record.CP_Lead_Source_String__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Lead_Source_Details__c</field>
+            <value>
+                <elementReference>$Record.CP_Lead_Source_Details_String__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Lead_Source_Detail</name>
+        <label>Update Lead Source Detail</label>
+        <locationX>842</locationX>
+        <locationY>671</locationY>
+        <inputAssignments>
+            <field>Lead_Source_Details__c</field>
+            <value>
+                <elementReference>leadSourceNew</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>914</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Trigger_Setting</targetReference>
+        </connector>
+        <filterFormula>OR(
+	ISCHANGED({!$Record.CP_Lead_Source_String__c}),
+	ISCHANGED({!$Record.CP_Lead_Source_Details_String__c})
+)</filterFormula>
+        <object>Lead</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>leadData</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+</Flow>

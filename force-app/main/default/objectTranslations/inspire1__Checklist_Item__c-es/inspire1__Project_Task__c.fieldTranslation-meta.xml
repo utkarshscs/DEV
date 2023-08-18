@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Tarea de proyecto relacionada a la que pertenece el elemento de la lista de verificación.</help>
+    <label></label>
+    <name>inspire1__Project_Task__c</name>
+    <relationshipLabel></relationshipLabel>
+</CustomFieldTranslation>

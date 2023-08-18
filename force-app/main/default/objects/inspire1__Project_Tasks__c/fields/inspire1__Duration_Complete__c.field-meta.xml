@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Duration_Complete__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL( inspire1__DurationUnit__c, &apos;w&apos;), (inspire1__Duration__c * 5) * inspire1__Done__c,
+  IF(ISPICKVAL( inspire1__DurationUnit__c, &apos;mo&apos;), (inspire1__Duration__c * 20) * inspire1__Done__c,
+    inspire1__Duration__c * inspire1__Done__c)
+  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Duration Complete</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

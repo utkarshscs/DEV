@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_of_Next_Recertification_be_Future</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Date_of_Next_Recertification_Audit__c   &lt;=  TODAY(),$Profile.Name != &apos;SCS Integration&apos;)</errorConditionFormula>
+    <errorDisplayField>Date_of_Next_Recertification_Audit__c</errorDisplayField>
+    <errorMessage>Please make sure that the Date of Next Recertification Audit is a future date. It can not be a past date.</errorMessage>
+</ValidationRule>

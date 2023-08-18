@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System_of_Control__c</fullName>
+    <description>FSC</description>
+    <externalId>false</externalId>
+    <label>System of Control</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transfer System</fullName>
+                <default>false</default>
+                <label>Transfer System</label>
+            </value>
+            <value>
+                <fullName>Percentage System</fullName>
+                <default>false</default>
+                <label>Percentage System</label>
+            </value>
+            <value>
+                <fullName>Credit System</fullName>
+                <default>false</default>
+                <label>Credit System</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

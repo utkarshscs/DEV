@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_comment__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of comment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>GE</label>
+            </value>
+            <value>
+                <fullName>Technical</fullName>
+                <default>false</default>
+                <label>TE</label>
+            </value>
+            <value>
+                <fullName>editorial</fullName>
+                <default>false</default>
+                <label>ED</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Project_Schedule</fullName>
+    <availability>online</availability>
+    <description>Launches the project schedule interface.</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Project Schedule</masterLabel>
+    <openType>noSidebar</openType>
+    <page>inspire1__InspireTasks</page>
+    <protected>false</protected>
+</WebLink>

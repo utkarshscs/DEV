@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__CreditCard</fullName>
+    <active>true</active>
+    <description>Credit Card Invalid</description>
+    <errorConditionFormula>AND ( 
+OR (LEN( fw1__CreditCardNumber__c ) &lt; 10, LEN( fw1__CreditCardNumber__c ) &gt; 19), 
+LEN( fw1__CreditCardNumber__c ) &gt; 0 
+)</errorConditionFormula>
+    <errorDisplayField>fw1__CreditCardNumber__c</errorDisplayField>
+    <errorMessage>Credit Card Invalid</errorMessage>
+</ValidationRule>

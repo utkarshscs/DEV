@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Non_SLIMF_Acres__c</fullName>
+    <description>FSC</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(Boreal_NF_Acres__c  ) , 0, Boreal_NF_Acres__c  )+ 
+ IF( ISBLANK(Community_Forestry_NF_Acres__c  ) , 0, Community_Forestry_NF_Acres__c  )+ 
+ IF( ISBLANK(Conservation_Purposes_NF_Acres__c  ) , 0, Conservation_Purposes_NF_Acres__c  )+ 
+ IF( ISBLANK(Temperate_NF_Acres__c  ) , 0, Temperate_NF_Acres__c  )+ 
+ IF( ISBLANK(Tropical_NF_Acres__c  ) , 0, Tropical_NF_Acres__c  )+ 
+ IF( ISBLANK(Plantations_NF_Acres__c) , 0, Plantations_NF_Acres__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total (Non-SLIMF) (Acres)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Presupuesto ganado hasta la fecha basado en el porcentaje completado del proyecto.
+Cálculo: Coste presupuestado x % completado</help>
+    <label></label>
+    <name>inspire1__Earned_Value__c</name>
+</CustomFieldTranslation>

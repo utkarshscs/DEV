@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DMS_Client_Link__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(DMS_Client_ID__c),
+
+&quot;Not linked &quot; &amp; hyperlink(&quot;https://www.scscertified.com/minnow/dms_redirect/?file=clients_scs&amp;script=find_by_name&amp;param=&quot; &amp; Name, &quot;(Click to search for match in DMS)&quot;),
+
+hyperlink(&quot;https://www.scscertified.com/minnow/dms_redirect/?file=clients_scs&amp;script=find_by_id&amp;param=&quot; &amp; DMS_Client_ID__c, &quot;View in DMS&quot;)
+
+)
+
+/* &quot;fmp://$/clients_scs?script=find_by_id&amp;param=&quot; &amp; DMS_Client_ID__c */</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Copy and paste into a browser address bar (be sure &apos;http://&apos; is *not* part of the URL in the browser -- just &apos;fmp://&apos;)</inlineHelpText>
+    <label>DMS Client Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

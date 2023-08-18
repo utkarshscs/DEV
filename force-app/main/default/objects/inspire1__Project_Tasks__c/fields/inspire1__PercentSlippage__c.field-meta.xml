@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__PercentSlippage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines the amount of duration the task has slipped from original baseline.</description>
+    <externalId>false</externalId>
+    <formula>IF (
+  AND(inspire1__Duration__c - inspire1__Baseline_Duration_Edit__c &gt; 0, inspire1__Baseline_Duration_Edit__c &gt; 0),
+  (inspire1__Duration__c - inspire1__Baseline_Duration_Edit__c)/inspire1__Baseline_Duration_Edit__c,
+  0
+  )</formula>
+    <inlineHelpText>Defines the amount of duration the task has slipped from original baseline.</inlineHelpText>
+    <label>% Slippage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

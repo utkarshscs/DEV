@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Invoice Layout - Payment</layout>
+        <sections>
+            <label></label>
+            <section>Auto-BillPay Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Billing Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>More Actions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SCS Invoice Layout</layout>
+        <sections>
+            <label></label>
+            <section>Auto-BillPay Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Billing Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>More Actions</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Ivory_Coast_Invoice_Details</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Credit_Memo</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cannot_edit_Invoice_if_sent_or_paid</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Create_Credit_Memo</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Generate_Ivory_Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Batch_Payments</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Create_Credit_Memo_From_This_Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Email_Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Email_Selections</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Invoice_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Pay_Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Pay_Invoice2</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>fw1__Print_Batch_Invoice</name>
+    </webLinks>
+</CustomObjectTranslation>

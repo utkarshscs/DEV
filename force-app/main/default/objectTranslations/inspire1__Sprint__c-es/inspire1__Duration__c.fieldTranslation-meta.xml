@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Definir la duración del Sprint o timebox.</help>
+    <label></label>
+    <name>inspire1__Duration__c</name>
+    <picklistValues>
+        <masterLabel>1 Week</masterLabel>
+        <translation>1 semana</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 Weeks</masterLabel>
+        <translation>2 semanas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 Weeks</masterLabel>
+        <translation>3 semanas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Weeks</masterLabel>
+        <translation>4 semanas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom</masterLabel>
+        <translation>Personalizado</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_for_deprecated_program_status</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(ISPICKVAL(Programc__r.Status__c, &apos;Deprecated&apos;))</errorConditionFormula>
+    <errorMessage>Invalid Program : Program Status is Deprecated. Please select a valid Program</errorMessage>
+</ValidationRule>

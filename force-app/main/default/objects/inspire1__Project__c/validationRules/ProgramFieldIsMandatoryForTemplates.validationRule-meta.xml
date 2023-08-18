@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProgramFieldIsMandatoryForTemplates</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( (inspire1__Template__c = true), ISBLANK(Program__c), NOT( OR( RecordType.Name = &apos;SCS Standard&apos; , RecordType.Name = &apos;Admin&apos; )))</errorConditionFormula>
+    <errorMessage>Please choose related program</errorMessage>
+</ValidationRule>

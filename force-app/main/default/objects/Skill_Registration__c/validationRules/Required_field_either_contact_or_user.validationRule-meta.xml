@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_field_either_contact_or_user</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( 
+   AND( NOT(ISBLANK( Contact__c )) ,  NOT( ISBLANK( User__c ) ) ) , 
+   AND( ISBLANK( Contact__c ) , ISBLANK( User__c ) ) 
+)</errorConditionFormula>
+    <errorMessage>Please register skill against either USER or CONTACT field.</errorMessage>
+</ValidationRule>

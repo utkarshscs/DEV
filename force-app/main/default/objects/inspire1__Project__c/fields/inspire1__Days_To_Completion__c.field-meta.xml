@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Days_To_Completion__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines the number of remaining days till project completion.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  inspire1__Complete__c &lt; 1,
+  inspire1__Actual_Finish_Date__c - TODAY(),
+  0
+)</formula>
+    <label>Days To Completion</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

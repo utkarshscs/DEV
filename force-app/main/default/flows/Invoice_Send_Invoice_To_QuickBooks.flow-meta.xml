@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Re_Send_Invoice_To_QuickBooks</name>
+        <label>Re-Send Invoice To QuickBooks</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <actionName>fw1__Invoice__c.Send_Invoice_to_Quickbooks</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Invoice_To_QuickBooks</name>
+        <label>Send Invoice To QuickBooks</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>fw1__Invoice__c.Send_Invoice_to_Quickbooks</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Master_Decision</name>
+        <label>Master Decision</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Send_Invoice_To_QB</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.fw1__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sent</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varIsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.fw1__Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Invoice_To_QuickBooks</targetReference>
+            </connector>
+            <label>Is Send Invoice To QB?</label>
+        </rules>
+        <rules>
+            <name>Is_Re_Send_Invoice_To_QB</name>
+            <conditionLogic>1 AND ( 2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Resync__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varIsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Resync__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Re_Send_Invoice_To_QuickBooks</targetReference>
+            </connector>
+            <label>Is Re-Send Invoice To QB?</label>
+        </rules>
+    </decisions>
+    <description>[1-Send Invoice To QuickBooks
+2- Re-Send Send Invoice To QuickBooks
+]</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>varIsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Invoice-Send Invoice To QuickBooks {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Invoice-Send Invoice To QuickBooks</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Master_Decision</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Quickbooks_ID__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>fw1__Invoice__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Defines the type of attribute</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Certification</fullName>
+                <default>false</default>
+                <label>Certification</label>
+            </value>
+            <value>
+                <fullName>Department</fullName>
+                <default>false</default>
+                <label>Department</label>
+            </value>
+            <value>
+                <fullName>Job Title</fullName>
+                <default>false</default>
+                <label>Job Title</label>
+            </value>
+            <value>
+                <fullName>Language</fullName>
+                <default>false</default>
+                <label>Language</label>
+            </value>
+            <value>
+                <fullName>Region</fullName>
+                <default>false</default>
+                <label>Region</label>
+            </value>
+            <value>
+                <fullName>Skill</fullName>
+                <default>true</default>
+                <label>Skill</label>
+            </value>
+            <value>
+                <fullName>Standard</fullName>
+                <default>false</default>
+                <label>Standard</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Expertise</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Expertise</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

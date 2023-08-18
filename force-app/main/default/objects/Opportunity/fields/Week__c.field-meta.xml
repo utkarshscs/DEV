@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Week__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+  MOD(CloseDate - DATE(1900, 1, 7), 7),
+  5, (IF(
+	  AND(
+		VALUE( MID( TEXT( Closed_Date_Time__c), 12, 2 ) )&gt;=17,
+		VALUE( MID( TEXT( Closed_Date_Time__c), 15, 2 ) )&gt;=0,
+		VALUE( MID( TEXT( Closed_Date_Time__c), 18, 2 ) )&gt;0
+	  ),
+	  SFWeek__c+1,
+	  SFWeek__c
+	)),
+  6, SFWeek__c + 1,
+  0, SFWeek__c + 1,
+  SFWeek__c
+)</formula>
+    <label>Week</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

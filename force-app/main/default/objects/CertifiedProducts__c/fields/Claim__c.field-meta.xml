@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim__c</fullName>
+    <externalId>false</externalId>
+    <label>Claim</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>100% Organic</fullName>
+                <default>false</default>
+                <label>100% Organic</label>
+            </value>
+            <value>
+                <fullName>Organic</fullName>
+                <default>false</default>
+                <label>Organic</label>
+            </value>
+            <value>
+                <fullName>Made with Organic</fullName>
+                <default>false</default>
+                <label>Made with Organic</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

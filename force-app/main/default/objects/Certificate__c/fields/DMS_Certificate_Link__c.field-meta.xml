@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DMS_Certificate_Link__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(DMS_Certificate_ID__c),&quot;&quot;,
+
+hyperlink(&quot;https://www.scscertified.com/minnow/dms_redirect/?file=certificates_scs&amp;script=find_by_id&amp;param=&quot; &amp; DMS_Certificate_ID__c, &quot;View in DMS&quot;)
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Click to navigate to the full Certificate record in DMS.</inlineHelpText>
+    <label>DMS Certificate Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

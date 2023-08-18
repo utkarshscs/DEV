@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Treat_Partners_As_Internal_Users__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Give partners the same capabilities as internal users</inlineHelpText>
+    <label>Treat Partners As Internal Users</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

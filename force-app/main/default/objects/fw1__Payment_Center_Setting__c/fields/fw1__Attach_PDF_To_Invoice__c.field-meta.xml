@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Attach_PDF_To_Invoice__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>When sending an invoice, you can have the PDF attached to the invoice record. This field serves as the default value.</inlineHelpText>
+    <label>Attach PDF To Invoice</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_Session_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Audit Session Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancelling Certificate</fullName>
+                <default>false</default>
+                <label>Cancelling Certificate</label>
+            </value>
+            <value>
+                <fullName>Current-Active</fullName>
+                <default>false</default>
+                <label>Current-Active</label>
+            </value>
+            <value>
+                <fullName>Done-Archive</fullName>
+                <default>false</default>
+                <label>Done-Archive</label>
+            </value>
+            <value>
+                <fullName>Dormant</fullName>
+                <default>false</default>
+                <label>Dormant</label>
+            </value>
+            <value>
+                <fullName>New-Active</fullName>
+                <default>false</default>
+                <label>New-Active</label>
+            </value>
+            <value>
+                <fullName>Transfer-Active</fullName>
+                <default>false</default>
+                <label>Transfer-Active</label>
+            </value>
+            <value>
+                <fullName>Transfer Out</fullName>
+                <default>false</default>
+                <label>Transfer Out</label>
+            </value>
+            <value>
+                <fullName>1. Dormant</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1. Dormant</label>
+            </value>
+            <value>
+                <fullName>2.1 Current-Active</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2.1 Current-Active</label>
+            </value>
+            <value>
+                <fullName>2.2 New-Active</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2.2 New-Active</label>
+            </value>
+            <value>
+                <fullName>2.3 Transfer-Active</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2.3 Transfer-Active</label>
+            </value>
+            <value>
+                <fullName>3. Done-Archive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3. Done-Archive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCS_Total_Credit_Amount__c</fullName>
+    <description>Use in Quickbooks Integration</description>
+    <externalId>false</externalId>
+    <formula>(Bad_Debt__c + Bank_Charges__c + Foreign_Currency_Exchange_Loss__c + REVENUE_Other_Revenue__c + TAXES_Foreign_Taxes__c )</formula>
+    <label>SCS Total Credit Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

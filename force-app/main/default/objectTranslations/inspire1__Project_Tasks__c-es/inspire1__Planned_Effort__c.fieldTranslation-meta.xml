@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Número de horas estimadas para completar la tarea del proyecto.</help>
+    <label></label>
+    <name>inspire1__Planned_Effort__c</name>
+</CustomFieldTranslation>

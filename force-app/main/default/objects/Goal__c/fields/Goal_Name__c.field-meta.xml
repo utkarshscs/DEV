@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Goal_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.Name = &apos;Program Goal&apos;,Programc__r.Name +&apos;-&apos;+ TEXT(Year__c)+&apos;-&apos;+ TEXT(Quarter__c),User__r.FirstName +&apos; &apos;+ User__r.LastName+&apos;-&apos;+Programc__r.Name +&apos;-&apos;+ TEXT(Year__c)+&apos;-&apos;+ TEXT(Quarter__c))</formula>
+    <label>Goal Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

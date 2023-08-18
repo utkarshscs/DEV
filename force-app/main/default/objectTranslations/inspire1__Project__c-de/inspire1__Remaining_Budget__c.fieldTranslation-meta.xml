@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Differenz zwischen tatsächlichen Kosten und budgetierten Kosten. Kalkulation: Budgetierte Kosten -Tatsächliche Kosten</help>
+    <label></label>
+    <name>inspire1__Remaining_Budget__c</name>
+</CustomFieldTranslation>

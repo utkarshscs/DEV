@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Contacts_for_Waterfall_Only</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK( inspire1__Contact__c )),
+  OR(
+    ISPICKVAL(inspire1__Project__r.inspire1__Project_Type2__c, &quot;Agile&quot;),
+    ISPICKVAL(inspire1__Project__r.inspire1__Project_Type2__c, &quot;Task List&quot;)
+    )
+  )</errorConditionFormula>
+    <errorMessage>Contact collaborators can only be added to Projects of type Waterfall.</errorMessage>
+</ValidationRule>

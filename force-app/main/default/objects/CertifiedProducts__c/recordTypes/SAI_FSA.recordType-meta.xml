@@ -1,0 +1,2315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAI_FSA</fullName>
+    <active>true</active>
+    <label>SAI FSA</label>
+    <picklistValues>
+        <picklist>Claim__c</picklist>
+        <values>
+            <fullName>100%25 Organic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Made with Organic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Compliance__c</picklist>
+        <values>
+            <fullName>US-CA Equivalency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USDA-NOP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Covered_by_PCHF__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Covered_by_PSR__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Diversion_Method__c</picklist>
+        <values>
+            <fullName>Composting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incineration %28No Energy Recovery%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landfill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reclamation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale %28Other%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale for Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale for Reuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unaccounted for</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste-to-Energy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FEFAC__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Harvest_Included__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ISCC_Add_On__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ISCC_EU_waste_process_applied__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ISCC_waste_process_applied__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_1__c</picklist>
+        <values>
+            <fullName>010000 Roundwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>020000 Fuelwood and energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030000 Sawnwood and treated wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040000 Engineered wood products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050000 Wood based panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060000 Wood manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070000 Indoor Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080000 Exterior products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090000 Wooden Buildings and construction material</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100000 Pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110000 Paper and paper board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120000 Non-wood products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>130000 Other products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N1 Barks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N10 Other NTFP n%2Ee%2Ec%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N2 Soil conditioner and substrates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N3 Cork and articles of cork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N4 Straw%2C wicker%2C rattan and similar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5 Bamboo and articles of bamboo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N6 Plants and parts of plants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7 Natural gums%2C oils and derivatives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N8 Chemical%2C medicinal and cosmetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9 Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1 Pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P10 Other pulp and paper products n%2Ee%2Ec%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2 Paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3 Paperboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P4 Corrugated paper and paperboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P5 Packaging and wrappings of paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P6 Household and sanitary products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7 Stationery of paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P8 Printed materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P9 Bobbins%2C spools%2C rolls and similar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W1 Rough wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W10 Wood package and similar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11 Wood for construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12 Indoor furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13 Outdooor furniture and gardening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W14 Musical instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W15 Recreational goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16 Household articles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W17 Stationery of wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18 Other manufactured wood products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W19 Other wood products n%2Ee%2Ec%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W2 Wood charcoal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W3 Wood in chips or particles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W4 Impregnated%2Ftreated wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W5 Solid wood %28sawn%2C chipped%2C peeled%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W6 Products from planing mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W7 Veneer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8 Wood panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9 Engineered wood products</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_2__c</picklist>
+        <values>
+            <fullName>010100 Sawlogs and veneer logs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>010200 Pulpwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>010300 Chips and particles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>010400 Wood residues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>010500 Bark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>010600 Other roundwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>020100 Fuelwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>020200 Charcoal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>020300 Pellets and brickets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030100 Sawnwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030200 Railway sleepers %2F ties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030300 Impregnated or treated wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040100 Cross Laminated Timber %28CLT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040200 Finger Jointed Lumber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040300 Glue Laminated Products %28Glulam%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040400 Laminated Veneer Lumber %28LVL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040500 Parallel Strand Lumber %28PSL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040600 I-Joists %2F I-Beams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040700 Trusses %26 Engineered Panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040800 Scantlings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>040900 Composite board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>041000 Other engineered wood products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050100 Veneer sheets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050200 Plywood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050300 Blockboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050400 Panels for transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050500 Particle board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050600 Fibreboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050700 Cement board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050800 Other wood based panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060100 Wood packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060200 Household goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060300 Tools and turned wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060400 Other manufactured wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070100 Tables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070200 Chairs and stools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070300 Sofas and armchairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070400 Benches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070500 Bedroom Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070600 Storage systems and units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070700 Kitchen units and worktops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070800 Office furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070900 Educational %2F Institutional furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>071100 Childrens Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>071200 Custom Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>071300 Furniture components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>071400 Other furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080100 Garden Furniture %2F Outdoor Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080200 Landscaping Timbers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080400 Other exterior products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090100 General Wooden Buildings and constructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090200 Integrated Parts of Wooden Buildings and constructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090300 Wood material for construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100300 Dissolving pulp and derivatives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100400 Chemical pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110100 Graphic papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110200 Printed matter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110300 Household and sanitary paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110400 Packaging materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110500 Stationery Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110600 Other paper and paperboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110700 Other converted paper products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120100 Cork and cork products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120200 Rubber %2F Latex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120900 Other non-wood products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N3%2E1 Natural cork%2C raw or boiled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N3%2E2 Cork powder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N3%2E3 Cork granules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N3%2E4 Cork stoppers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N3%2E5 Rolls and panels of compressed cork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N3%2E6 Cork disks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N3%2E7 Articles of cork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N4%2E1 Rattan cane %28rough form%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N4%2E2 Rattan taper %28clean%2C peeled etc%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N4%2E3 Decorative objects and wickerwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N4%2E4 Rattan furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N4%2E5 Rattan furniture components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5%2E1 Natural bamboo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5%2E10 Bamboo pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5%2E2 Edible bamboo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5%2E3 Fuel bamboo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5%2E4 Bamboo plywood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5%2E5 Bamboo flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5%2E6 Bamboo furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5%2E7 Bamboo home articles%2C wickerwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5%2E8 Bamboo textiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5%2E9 Bamboo vinegar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N6%2E1 Flowers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N6%2E2 Grasses%2C ferns%2C mosses and lichens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N6%2E3 Wholetreesor plants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E1 Rubber %2F latex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E2 Gum resin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E3 Resin and manufactured products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E4 Tannin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E5 Essential oils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N8%2E1 Ethanol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N8%2E2 Medicinal plants and products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N8%2E3 Pharmaceutical raw materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N8%2E4 Cosmetics and health care products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N8%2E5 Wood vinegar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N8%2E6 Pyroligneous acid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9%2E1 Nuts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9%2E2 Tea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9%2E3 Palm-hearts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9%2E4 Mushrooms%2C truffles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9%2E5 Fruits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9%2E6 Sap-based foods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9%2E7 Game</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9%2E8 Honey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E1 Mechanical pulp%2C bleached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E2 Mechanical pulp%2C unbleached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E3 Chemical pulp%2C bleached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E4 Chemical pulp%2C unbleached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E5 Semi-chemical pulp%2C bleached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E6 Semi-chemical pulp%2C unbleached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E7 Dissolving pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E8 Pulp from recovered paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E1 Copying%2C printing%2C communication paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E2 Newsprint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E3 Wrapping and packaging paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4 Specialty paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E5 Hand-made papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E6 Tissue paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3%2E1 Uncoated paperboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3%2E2 Coated paperboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3%2E3 Pressboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3%2E4 Paperboardlaminates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3%2E5 Metalized paperboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3%2E6 Crepe paperboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P4%2E1 Linerboard or testliner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P4%2E2 Fluting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P4%2E3 Corrugated fibreboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P5%2E1 Cardboard packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P5%2E2 Corrugated paper packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P5%2E3 Sacks and bags of paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P5%2E4 Food wrapping paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P5%2E5 Carton packfor beverages and liquidfood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P5%2E6 Egg boxes and similar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P5%2E7 Optical disc packaging and covers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P6%2E1 Cleaning tissues and paper towels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P6%2E2 Facial tissues and refreshing tissues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P6%2E3 Napkins %2F serviettes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P6%2E4 Toilet paper %2F bathroom tissue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P6%2E5 Sanitary towels%2C tampons%2C diapers and similar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P6%2E6 Tablecloths</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P6%2E7 Dinnerware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P6%2E8 Medical supplies made of pulp%2Fpaper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7%2E1 Notebooks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7%2E10 Postage stamps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7%2E2 Pads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7%2E3 File folders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7%2E4 Rolled thermal paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7%2E5 Post and greeting cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7%2E6 Envelopes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7%2E7 Gummed papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7%2E8 Adhesive labels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P7%2E9 Transfers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P8%2E1 Books</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P8%2E2 Magazines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P8%2E3 Newspaper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P8%2E4 Advertising materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P8%2E5 Business cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P8%2E6 Calendars%2C diaries and organisers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P8%2E7 Toys and games made with paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P8%2E8 Wallpapers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W1%2E1 Roundwood %28logs%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W1%2E2 Fuel wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W1%2E3 Twigs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W10%2E1 Solid wood packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W10%2E2 Cable-drums</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W10%2E3 Pallets and skids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W10%2E4 Cooper%27s products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W10%2E5 Container flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E1 Doors and door frames</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E10 Wooden insulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E11 Window blinds%2C shutters etc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E12 Houses and building elements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E13 Marine constructions%2C excl%2E boats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E14 Trusses and roofs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E15 Roofing tiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E2 Windows and window frames</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E3 Stairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E4 Dividers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E5 Flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E6 Gates and garage doors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E7 Wall cladding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E8 Mouldings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E9 Hot tubs and sauna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E1 Cabinet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E10 Cupboards and chests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E11 Kitchen countertops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E12 Parts of furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E13 Shelves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E2 Custom furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E3 Tables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E4 Beds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E5 Couches and armchairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E6 Chairs and stools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E7 Office furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E8 Institutional casework</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W12%2E9 Wardrobes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E1 Garden furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E2 Trellis and plant support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E3 Shelters and parasols</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E4 Fences%2C fence stakes%2C pales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E5 Decking and garden sleepers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E6 Garden sheds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E7 Other furniture and garden prod%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W14%2E1 String musical instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W14%2E2 Keyboard musical instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W14%2E3 Wind or mouth-blown instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W14%2E4 Percussions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W14%2E5 Parts of musical instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W15%2E1 Playground equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W15%2E2 Toys and games made with wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W15%2E3 Sporting goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16%2E1 Wooden frames</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16%2E10 Bath items or accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16%2E2 Brooms%2C brushes and brush handles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16%2E3 Tableware%2C kitchenware and similar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16%2E4 Clothes hangers and pegs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16%2E5 Toilet seats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16%2E6 Matches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16%2E7 Mousetraps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16%2E8 Fans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W16%2E9 Ladders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W17%2E1 Pens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W17%2E2 Pencils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W17%2E3 Rulers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W17%2E4 Stamps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E1 Dowels and turnery parts of wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E10 Boats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E11 Wooden lighters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E12 Wildlife and pet products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E2 Coffins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E3 Medical supplies made of wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E4 Tools%2C tool bodies and handles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E5 Icepop%2Flollysticks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E6 Jewellery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E7 Works of art</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E8 Ornamental %26 decorative objects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W18%2E9 Wheels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W3%2E1 Wood chips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W3%2E2 Sawdust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W3%2E3 Wood shavings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W3%2E4 Wood wool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W3%2E5 Wood flour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W3%2E6 Wood pellets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W3%2E7 Sawdust briquettes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W4%2E1 Impregnated railway sleepers%2Fties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W4%2E1 Impregnated roundwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W4%2E3 Treated dimensional timber%2C lumber or plywood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W5%2E1 Filtches and boules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W5%2E2 Solid wood boards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W5%2E3 Beams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W5%2E4 Planks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W5%2E5 Poles and piles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W5%2E6 Railway ties%2C not impregnated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W5%2E7 Raw wood for parquet flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W5%2E8 Slabs and edgings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W5%2E9 Pencil slats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W6%2E1 Dimensional lumber%2C finished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W6%2E2 Non-dimensional timber and lumber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W6%2E3 Boards%2C finished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W7%2E1 Peeled veneer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W7%2E2 Sliced veneer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W7%2E3 Sawn veneer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W7%2E4 Veneer strips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E1 Plywood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E2 Particleboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E3 Fibreboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E1 Finger jointed wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E10 Compressed wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E11 Wood-plastic composites</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E2 Laminated veneer lumber %28LVL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E3 Parallel strand lumber %28PSL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E4 Wood-wool board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E5 Solid-wood board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E6 Glued laminated timber %28GLULAM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E7 I-joists%2C I-beams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E8 Laminated compressed wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W9%2E9 Composite board</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_3__c</picklist>
+        <values>
+            <fullName>030101 Flitches%2C boules and slabs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030102 Solid wood boards and planks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030103 Beams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030104 Poles and piles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030105 Peeler cores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030106 Pencil slat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030107 Other sawnwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050501 Chipboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050502 OSB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050503 Other particle board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050601 Medium Density Fiberboard %28MDF%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050602 High Density Fiberboard %28HDF%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050603 Softboard and insulating board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060104 Barrels%2C staves and other cooperage products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060201 Wooden frames</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060203 Kitchenware and similar utensils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060204 Hangers and clothes pegs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060206 Bathroom accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060209 Other household products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060302 Toys and games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060303 Sport goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060305 Wooden stationery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060306 Dowels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060307 Decorative objects and art</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060310 Other tools and turned wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060402 Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080101 Garden furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080103 Decking and garden sleepers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080201 Garden sheds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080202 Trellis and plant support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080203 Fencing material</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080204 Pergolas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080205 Garden storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090201 Exterior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090202 Structure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090203 Roof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090204 Wall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090206 Interior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090301 Windows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090302 Doors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090303 Shingles and shakes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090304 Flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090305 Architectural joinery items</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090307 Other wood material for construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100301 cellulosic fibre from dissolving pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100403 Unbleached sulphate %28kraft%29 pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100404 Bleached sulphate %28kraft%29 pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110101 Newsprint paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110102 Uncoated mechanical papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110103 Coated mechanical papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110104 Woodfree papers %28coated and uncoated%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110105 Paper for blank forms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110106 Paper for tickets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110107 Other graphic papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110201 Books</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110202 Book covers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110203 Magazines and Newspaper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110204 Paper toys and games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110205 Marketing collateral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110206 Calendars%2C diaries and organisers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110207 Point-of-sales materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110208 Other printed matter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110301 Tissues products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110302 Toilet paper %2F bathroom tissue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110304 Kitchen paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110305 Tablecloths and napkins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110306 Paper dinnerware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110307 Sanitary products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110309 Wet wipes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110310 Other household and sanitary paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110401 Case materials and corrugated and Solid Fiber Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110402 Cartonboard%2C Folding boxboards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110403 Wrapping papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110404 Sacks and Paper bags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110405 Food and beverages packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110407 Flexible paper packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110408 Paper trays%2C containers%2C cups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110411 Other papers mainly for packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110501 Notebooks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110504 Rolled thermal paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110506 Envelopes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110508 Adhesive labels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110605 Impregnated paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120104 Rolls and panels of compressed cork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120106 Cork for construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120203 Foam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N6%2E3%2E1 Christmas trees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E1%2E1 Natural rubber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E1%2E2 Tyres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E1%2E3 Balls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E1%2E4 Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E1%2E5 Rubber foam pillows%2C mattresses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E1%2E6 Balata%2C gutta-percha%2C guayule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N7%2E1%2E7 Other manufactured rubber prods%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9%2E6%2E1 Maple syrup or sugar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N9%2E6%2E2 Birch syrup or sugar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E1%2E1 Groundwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E1%2E2 Refiner pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E2%2E1 Groundwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E2%2E2 Refiner pulp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E7%2E1 Specialty cellulose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E7%2E2 Cellulose derivatives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E7%2E3 Regenerated cllulose film</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E7%2E4 Rayon and other synthetic fibres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E8%2E1 Recovered pulp%2C deinked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1%2E8%2E2 Recovered pulp%2C not deinked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E1%2E1 Coated paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E1%2E2 Uncoated paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E1 Impregnated papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E10 Composite papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E11 Wallpaper base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E12 Security paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E2 Photographic base papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E3 Thermographic papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E4 Translucent papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E5 Self-copying and carbon papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E6 Cigarette papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E7 Filter papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E8 Crepe papers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2%2E4%2E9 Embossed and perforated paper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3%2E4%2E1 High-pressure laminates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3%2E4%2E2 Low-pressure laminates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3%2E4%2E3 Continuous pressure laminates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E5%2E1 Laminate flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E5%2E2 Parquet flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E5%2E3 Plank flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E5%2E4 Wood-block flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W11%2E5%2E5 Engineered flooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E1%2E1 Garden tables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E1%2E2 Gardenbenches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E1%2E3 Garden chairs and stools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W13%2E1%2E4 Hammocks and hammock frames</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W15%2E3%2E1 Bicycles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W15%2E3%2E2 Bats%2C sticks%2C poles and paddles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W15%2E3%2E3 Boards and skis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W15%2E3%2E4 Other sporting goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W4%2E3%2E1 Treated glued laminated timber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W4%2E3%2E2 Treated finger jointed lumber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E1%2E1 Laminboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E1%2E2 Veneer plywood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E2%2E1 Melamineparticleboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E2%2E2 Veneered particleboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E2%2E3 Oriented Strand Board%28OSB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E2%2E4 Smooth-surface panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E2%2E5 Wood cement particleboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E2%2E6 Plasterboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E2%2E7 Strawboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E2%2E8 Graded particleboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E3%2E1 High-density fibreboard %28HDF%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E3%2E2 Medium-density fibreboard %28MDF%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E3%2E3 Softboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W8%2E3%2E4 Medium-hard-fibreboard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Observed_during_audit__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Output_Category__c</picklist>
+        <values>
+            <fullName>FSC 100%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSC Controlled Wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSC Mix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSC Recycled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Parallel_Ownership__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Parallel_Production__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Activity__c</picklist>
+        <values>
+            <fullName>Brokers%2FTraders with physical possession</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brokers%2FTraders without physical possession</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor%2FWholesaler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gathering of non-wood products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Processor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing and related service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publishing activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary Processor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Handling_Facility__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Handling_Field__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Handling_inspected_for_FSMA_PSR__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SAI_FSA__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondary_Activity__c</picklist>
+        <values>
+            <fullName>Brokers%2FTraders with physical possession</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brokers%2FTraders without physical possession</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor%2FWholesaler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gathering of non-wood products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Processor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing and related service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publishing activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary Processor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

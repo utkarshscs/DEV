@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salesforce_Entity__c</fullName>
+    <externalId>false</externalId>
+    <label>Salesforce Entity 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ECS</fullName>
+                <default>false</default>
+                <label>ECS</label>
+            </value>
+            <value>
+                <fullName>Food and Agriculture</fullName>
+                <default>false</default>
+                <label>Food and Agriculture</label>
+            </value>
+            <value>
+                <fullName>Natural Resources</fullName>
+                <default>false</default>
+                <label>Natural Resources</label>
+            </value>
+            <value>
+                <fullName>SCS Consulting</fullName>
+                <default>false</default>
+                <label>SCS Consulting</label>
+            </value>
+            <value>
+                <fullName>SCS Standard</fullName>
+                <default>false</default>
+                <label>SCS Standard</label>
+            </value>
+            <value>
+                <fullName>Research and Development</fullName>
+                <default>false</default>
+                <label>Research and Development</label>
+            </value>
+            <value>
+                <fullName>Advanced Technical Programs</fullName>
+                <default>false</default>
+                <label>Advanced Technical Programs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

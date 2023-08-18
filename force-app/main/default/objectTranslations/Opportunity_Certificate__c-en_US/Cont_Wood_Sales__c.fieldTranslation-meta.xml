@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Cont_Wood_Sales__c</name>
+    <picklistValues>
+        <masterLabel>Does not sell CW</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No CW Certificate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sells CW</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

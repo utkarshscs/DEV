@@ -1,0 +1,60 @@
+<template>
+    <lightning-modal-header label="Bundle Opportunity Renewal">
+    </lightning-modal-header>
+    <lightning-modal-body>
+        <template if:true={loaded}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template><!--record-id={recordId}-->
+        <lightning-record-edit-form object-api-name={objectApiName} record-type-id={recTypeId}>
+            <lightning-card  title="Bundle Opportunity"  icon-name="standard:opportunity">
+                <div class="demo-only demo-only--sizing slds-grid slds-wrap slds-box slds-box_x-small">
+                    <div class="slds-size_1-of-2">
+                        <lightning-input-field field-name="Name"  onchange={handleBundleName}></lightning-input-field>
+                    </div>
+                    <div class="slds-size_1-of-2">
+                        <lightning-input-field field-name="CloseDate" onchange={handleCloseDate}></lightning-input-field>
+                    </div>
+                    <div class="slds-size_1-of-2">
+                        <lightning-input-field field-name="StageName" onchange={handleStageName}></lightning-input-field>
+                    </div>
+                    <div class="slds-size_1-of-2"></div>
+                </div>
+            </lightning-card>
+        </lightning-record-edit-form>
+        <lightning-card  title="Select child opportunity for renewal"  icon-name="standard:opportunity">
+            <div class="demo-only demo-only--sizing slds-grid slds-wrap slds-box slds-box_x-small">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                                <div class="slds-truncate">
+                                    <lightning-input onchange={allSelected} type="checkbox" label="Name" checked={isAllChecked}></lightning-input>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={oppoList} for:item="con">
+                            <tr key={con.Id}>
+                                <th scope="col">
+                                    <div>
+                                        <lightning-input type="checkbox" value={con.Name} data-id={con.Id} label={con.Name} checked="checked"></lightning-input>
+                                    </div>
+                                </th>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </lightning-card>  
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap slds-box slds-box_x-small">
+            <lightning-checkbox-group name="Do you want to copy child opportunity related records(Product/Site Covered/Standard Covered/Scope/TC/Opportunity Teams)"
+            label="Select related records to copy"
+            options={options} value={selectedRecord}  onchange={handleRelatedRecord}></lightning-checkbox-group>
+        </div>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button class="slds-button slds-text-align_right" variant="neutral" label="Cancel" onclick={closeAction}></lightning-button>                
+        <lightning-button class="slds-button slds-text-align_right" variant="brand" label="Save" onclick={submitAction}></lightning-button>
+    </lightning-modal-footer>
+</template>

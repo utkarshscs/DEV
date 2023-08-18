@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Assign_to_ECS_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Assign to ECS Group</label>
+        <sharedTo>
+            <group>SCS_Global_Services</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>ECS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Assign_to_Food_and_Agriculture_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Assign to Food and Agriculture Group</label>
+        <sharedTo>
+            <group>SCS_Global_Services</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Food and Agriculture</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Assign_to_Natural_Resources_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Assign to Natural Resources Group</label>
+        <sharedTo>
+            <group>SCS_Global_Services</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Natural Resources</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Assign_to_Research_and_Development_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Assign to Research and Development Group</label>
+        <sharedTo>
+            <group>SCS_Global_Services</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Research and Development</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Assign_to_SCS_Consulting_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Assign to SCS Consulting Group</label>
+        <sharedTo>
+            <group>SCS_Consulting</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>SCS Consulting</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Assign_to_SCS_Standard_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Assign to SCS Standard Group</label>
+        <sharedTo>
+            <group>SCS_Standard</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>SCS Standard</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CVENT_Opportunity_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing CVENT Opp to SCS Consulting Role</description>
+        <label>CVENT Opportunity Sharing</label>
+        <sharedTo>
+            <role>SCS_Consulting</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Training Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>SCS Consulting</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MSC_Fisheries_opps</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>MSC Fisheries opportunities sharing</description>
+        <label>MSC Fisheries opps</label>
+        <sharedTo>
+            <group>MSC_Fisheries</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Program_List__c</field>
+            <operation>equals</operation>
+            <value>MSC Fisheries</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SCS_Consulting_F_A</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Assign to SCS Consulting F &amp; A Training if Program list is Food safety training</description>
+        <label>SCS Consulting F &amp; A</label>
+        <sharedTo>
+            <group>SCS_Consulting_F_A_Training</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Program_List__c</field>
+            <operation>equals</operation>
+            <value>Food Safety Training,Food Safety Consulting</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sharing_Advance_Object_Permission_Opportunity</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing all the records to Advance Object Permission Group to have RW permission</description>
+        <label>Sharing Advance Object Permission Opportunity</label>
+        <sharedTo>
+            <group>Sales_super_user</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Research and Development,SCS Standard</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Specific_Programs_to_Global_Services</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share Opportunities to SCS Global Services team where Programs are - GMP/GDP/HACCP, SQF, and BRCGS</description>
+        <label>Specific Programs to Global Services</label>
+        <sharedTo>
+            <group>SCS_Global_Services</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Program_List__c</field>
+            <operation>equals</operation>
+            <value>HACCP Verification,SQF,BRCGS,GMP/GDP,GMP/GDP - AG</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>X703_703h_opp_acess</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>703_703h opp acess</label>
+        <sharedTo>
+            <group>X703_703h</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Program_List__c</field>
+            <operation>equals</operation>
+            <value>Starbucks C.A.F.E. Practices,Responsible Sourcing,Responsible Sourcing Strategies</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>sharing_with_Accounting_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>sharing with Accounting Team</label>
+        <sharedTo>
+            <group>Accounting_Team</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>ECS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Food and Agriculture</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Natural Resources</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Entity__c</field>
+            <operation>equals</operation>
+            <value>Research and Development</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

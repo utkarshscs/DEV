@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>inspire1__Disable_Effort_in_Project_Portal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Setting field to TRUE will hide the Planned and Actual Effort columns in external project portal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Setting field to TRUE will hide the Planned and Actual Effort columns in external project portal.</inlineHelpText>
+    <label>Disable Effort in Project Portal</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

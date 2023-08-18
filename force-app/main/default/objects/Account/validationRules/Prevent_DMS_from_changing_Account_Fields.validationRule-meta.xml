@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_DMS_from_changing_Account_Fields</fullName>
+    <active>true</active>
+    <description>Restricts DMS from updating Name, Quickbook Id &amp; Billing Address.</description>
+    <errorConditionFormula>AND(CONTAINS($Label.UserListForSOQL,$User.Id),
+RecordType.DeveloperName = &apos;Customer&apos;,
+OR( AND(NOT(ISBLANK(PRIORVALUE( Quickbooks_ID__c))),ISCHANGED(Quickbooks_ID__c)),
+ISCHANGED(BillingAddress),
+ISCHANGED(Name)))</errorConditionFormula>
+    <errorMessage>DMS user cannot modify Name, Quickbook Id &amp; Billing Address.</errorMessage>
+</ValidationRule>

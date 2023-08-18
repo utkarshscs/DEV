@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>R_D_Projects</fullName>
+    <columns>NAME</columns>
+    <columns>inspire1__Owner_Name__c</columns>
+    <columns>inspire1__Project_Status__c</columns>
+    <columns>inspire1__Complete__c</columns>
+    <columns>inspire1__Percent_Slippage__c</columns>
+    <columns>inspire1__Actual_Start_Date__c</columns>
+    <columns>inspire1__Actual_Finish_Date__c</columns>
+    <columns>inspire1__Description__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>inspire1__Project__c.Research_and_Development</value>
+    </filters>
+    <filters>
+        <field>inspire1__Owner_Name__c</field>
+        <operation>notContain</operation>
+        <value>DMS</value>
+    </filters>
+    <label>R&amp;D Projects</label>
+    <sharedTo>
+        <group>Research_and_Development</group>
+    </sharedTo>
+</ListView>

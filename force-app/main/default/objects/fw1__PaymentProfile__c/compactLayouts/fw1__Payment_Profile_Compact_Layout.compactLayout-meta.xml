@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fw1__Payment_Profile_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>fw1__Account__c</fields>
+    <fields>fw1__Contact__c</fields>
+    <fields>fw1__Profile_Type__c</fields>
+    <fields>fw1__UseAsDefault__c</fields>
+    <label>Payment Profile Compact Layout</label>
+</CompactLayout>

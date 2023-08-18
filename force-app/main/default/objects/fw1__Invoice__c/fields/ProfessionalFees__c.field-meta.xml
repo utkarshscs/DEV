@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProfessionalFees__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Professional Fees</label>
+    <summarizedField>fw1__Invoice_Line__c.fw1__Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>fw1__Invoice_Line__c.Revenue_Type__c</field>
+        <operation>equals</operation>
+        <value>P - Professional Fees</value>
+    </summaryFilterItems>
+    <summaryForeignKey>fw1__Invoice_Line__c.fw1__Invoice__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

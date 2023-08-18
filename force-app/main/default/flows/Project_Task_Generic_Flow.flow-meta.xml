@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Master_Check</name>
+        <label>Master Check</label>
+        <locationX>578</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Actual_Date</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.inspire1__Actual_Finish_Date__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.inspire1__Actual_Finish_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Task_Category_Check</targetReference>
+            </connector>
+            <label>Update Actual Date</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Task_Category_Check</name>
+        <label>Task Category Check</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Conduct_Audit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Task_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Conduct Audit</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Project_Actual_Date</targetReference>
+            </connector>
+            <label>Conduct Audit ?</label>
+        </rules>
+        <rules>
+            <name>Certificate_Decision</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Task_Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Certificate Decision</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Latest_Related_Tasks</targetReference>
+            </connector>
+            <label>Certificate Decision ?</label>
+        </rules>
+    </decisions>
+    <description>Context : After Create, After Update
+Please try to accommodate new logic in this flow, instead of creating new flow</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>certificateDecisionDate</name>
+        <dataType>Date</dataType>
+        <expression>If(
+{!Get_Latest_Related_Tasks.inspire1__Actual_Finish_Date__c} &gt; {!$Record.inspire1__Actual_Finish_Date__c},
+{!Get_Latest_Related_Tasks.inspire1__Actual_Finish_Date__c},
+{!$Record.inspire1__Actual_Finish_Date__c}
+)</expression>
+    </formulas>
+    <formulas>
+        <name>daysToAudit</name>
+        <dataType>Number</dataType>
+        <expression>If(
+	NOT(ISBLANK({!$Record.inspire1__Project__r.Certificate_Decision_Date__c})),
+        {!$Record.inspire1__Project__r.Certificate_Decision_Date__c} - {!$Record.inspire1__Project__r.Audit_Date__c},
+       null
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>daysUntil</name>
+        <dataType>Number</dataType>
+        <expression>If(
+ISBLANK({!$Record.inspire1__Project__r.Days_From_Audit_To_Cert_Decision__c}),
+Today() - {!$Record.inspire1__Project__r.Due_Date__c},
+null
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>daysUntilString</name>
+        <dataType>String</dataType>
+        <expression>If(
+ISBLANK({!$Record.inspire1__Project__r.Days_From_Audit_To_Cert_Decision__c}),
+TEXT(Today() - {!$Record.inspire1__Project__r.Due_Date__c}),
+&apos;X&apos;
+)</expression>
+    </formulas>
+    <interviewLabel>Project Task Generic Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Project Task Generic Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Latest_Related_Tasks</name>
+        <label>Get Latest Related Tasks</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Certificate_Decision_Date</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>inspire1__Project__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.inspire1__Project__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Task_Category__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Certificate Decision</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>inspire1__Actual_Finish_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>inspire1__Project_Tasks__c</object>
+        <sortField>inspire1__Actual_Finish_Date__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Certificate_Decision_Date</name>
+        <label>Update Certificate Decision Date</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <connector>
+            <targetReference>Update_Project_Days_Audit</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Certificate_Decision_Date__c</field>
+            <value>
+                <elementReference>certificateDecisionDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.inspire1__Project__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Days_Until</name>
+        <label>Update Days Until</label>
+        <locationX>314</locationX>
+        <locationY>1031</locationY>
+        <inputAssignments>
+            <field>DaysUntilDue__c</field>
+            <value>
+                <elementReference>daysUntilString</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.inspire1__Project__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Project_Actual_Date</name>
+        <label>Update Project Actual Date</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>Update_Project_Days_Audit</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Audit_Date__c</field>
+            <value>
+                <elementReference>$Record.inspire1__Actual_Finish_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.inspire1__Project__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Project_Days_Audit</name>
+        <label>Update Project Days Audit</label>
+        <locationX>314</locationX>
+        <locationY>911</locationY>
+        <connector>
+            <targetReference>Update_Days_Until</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Days_From_Audit_To_Cert_Decision__c</field>
+            <value>
+                <elementReference>daysToAudit</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.inspire1__Project__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Master_Check</targetReference>
+        </connector>
+        <object>inspire1__Project_Tasks__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>
