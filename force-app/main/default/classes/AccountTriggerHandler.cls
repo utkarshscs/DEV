@@ -10,7 +10,7 @@ public  class AccountTriggerHandler {
      * @param oldAccounts to be validated
      */
     public static void preventDeleteAccount(List<Account> oldAccounts){
-        //test github utkarsh
+        //test github utkarsh - change after accept
         Boolean hasPermission = FeatureManagement.checkPermission('Bypass_Permission');
 
         for (Account account : oldAccounts) {
